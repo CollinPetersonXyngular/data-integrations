@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" name="aurora_talend_audit_Password" prompt="aurora_talend_audit_Password?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_Password" value="enc:system.encryption.key.v1:4LcSl0VwQQdRAEWmXNxZ/x0OHxUSJ4M/di2bMHl1jA+Mx/OMIcebI/W5KRg="/>
+    <contextParameter comment="" name="aurora_talend_audit_Port" prompt="aurora_talend_audit_Port?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="5432"/>
+    <contextParameter comment="" name="aurora_talend_audit_Server" prompt="aurora_talend_audit_Server?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="xyndbcluster-instance-1.cilo6pqeze5v.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" name="aurora_talend_audit_AdditionalParams" prompt="aurora_talend_audit_AdditionalParams?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value=""/>
+    <contextParameter comment="" name="aurora_talend_audit_Login" prompt="aurora_talend_audit_Login?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="xynadmin"/>
+    <contextParameter comment="" name="aurora_talend_audit_Database" prompt="aurora_talend_audit_Database?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="talend_audit"/>
+    <contextParameter comment="" name="aurora_talend_audit_Schema" prompt="aurora_talend_audit_Schema?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value=""/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Port" prompt="AuroraPuttyDeepak_Port?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;5432&quot;"/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Database" prompt="AuroraPuttyDeepak_Database?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;DataTrax&quot;"/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Schema" prompt="AuroraPuttyDeepak_Schema?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;public&quot;"/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Password" prompt="AuroraPuttyDeepak_Password?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_Password" value="enc:system.encryption.key.v1:Cf1lOBbBadNplI3TpVJugvxYyXxCuosWQNkSo+LhPzYX6bB6O2lmLxYnxaU="/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Login" prompt="AuroraPuttyDeepak_Login?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;xynadmin&quot;"/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Server" prompt="AuroraPuttyDeepak_Server?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;xyndbcluster-instance-1.cilo6pqeze5v.us-east-1.rds.amazonaws.com&quot;"/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_AdditionalParams" prompt="AuroraPuttyDeepak_AdditionalParams?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="mysql_talend_log_Login" prompt="mysql_talend_log_Login?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="dadmin"/>
+    <contextParameter comment="" name="mysql_talend_log_Password" prompt="mysql_talend_log_Password?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_Password" value="enc:system.encryption.key.v1:x+wKlfzsZ0rxnc0SSZSoI4ceWN0dFL3ppDGLsI7Sntr7B+s="/>
+    <contextParameter comment="" name="mysql_talend_log_Server" prompt="mysql_talend_log_Server?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="mysql_talend_log_Database" prompt="mysql_talend_log_Database?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="talend_log"/>
+    <contextParameter comment="" name="mysql_talend_log_AdditionalParams" prompt="mysql_talend_log_AdditionalParams?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="mysql_talend_log_Port" prompt="mysql_talend_log_Port?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="3306"/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="" name="aurora_talend_audit_Password" prompt="aurora_talend_audit_Password?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_Password" value="enc:system.encryption.key.v1:/lcsQL/pojxcqxCZu8fjleqBGqAtkeJWeCg2lqrBcHicI8UvWaE4W4d8B6k="/>
+    <contextParameter comment="" name="aurora_talend_audit_Port" prompt="aurora_talend_audit_Port?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="5432"/>
+    <contextParameter comment="" name="aurora_talend_audit_Server" prompt="aurora_talend_audit_Server?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="xyndbcluster-instance-1.cilo6pqeze5v.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" name="aurora_talend_audit_AdditionalParams" prompt="aurora_talend_audit_AdditionalParams?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value=""/>
+    <contextParameter comment="" name="aurora_talend_audit_Login" prompt="aurora_talend_audit_Login?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="xynadmin"/>
+    <contextParameter comment="" name="aurora_talend_audit_Database" prompt="aurora_talend_audit_Database?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="talend_audit"/>
+    <contextParameter comment="" name="aurora_talend_audit_Schema" prompt="aurora_talend_audit_Schema?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value=""/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Port" prompt="AuroraPuttyDeepak_Port?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value=" "/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Database" prompt="AuroraPuttyDeepak_Database?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value=" "/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Schema" prompt="AuroraPuttyDeepak_Schema?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value=" "/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Password" prompt="AuroraPuttyDeepak_Password?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_Password" value="enc:system.encryption.key.v1:hKDfxVbFKSt6fK2l3a3aWqPaQsJ5S5m7+3LFQv4Podf/P16P6Mam8vrYP9A="/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Login" prompt="AuroraPuttyDeepak_Login?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value=" "/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Server" prompt="AuroraPuttyDeepak_Server?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value=" "/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_AdditionalParams" prompt="AuroraPuttyDeepak_AdditionalParams?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value=" "/>
+    <contextParameter comment="" name="mysql_talend_log_Login" prompt="mysql_talend_log_Login?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="dadmin"/>
+    <contextParameter comment="" name="mysql_talend_log_Password" prompt="mysql_talend_log_Password?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_Password" value="enc:system.encryption.key.v1:qVvBib6WjsgrjQk7Y8m4v2jUEOkA44l0kjd6O/NkErH9uO8="/>
+    <contextParameter comment="" name="mysql_talend_log_Server" prompt="mysql_talend_log_Server?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="mysql_talend_log_Database" prompt="mysql_talend_log_Database?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="talend_log"/>
+    <contextParameter comment="" name="mysql_talend_log_AdditionalParams" prompt="mysql_talend_log_AdditionalParams?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="mysql_talend_log_Port" prompt="mysql_talend_log_Port?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="3306"/>
+  </context>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="aurora_talend_audit_Password" prompt="aurora_talend_audit_Password?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_Password" value="enc:system.encryption.key.v1:5CRhdAWn5wlDvdEVfAS3Yw3pbnTrzK+T0JGSxY6XzQyMRNQjzHfddyJclMk="/>
+    <contextParameter comment="" name="aurora_talend_audit_Port" prompt="aurora_talend_audit_Port?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="19999"/>
+    <contextParameter comment="" name="aurora_talend_audit_Server" prompt="aurora_talend_audit_Server?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="aurora_talend_audit_AdditionalParams" prompt="aurora_talend_audit_AdditionalParams?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value=""/>
+    <contextParameter comment="" name="aurora_talend_audit_Login" prompt="aurora_talend_audit_Login?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="xynadmin"/>
+    <contextParameter comment="" name="aurora_talend_audit_Database" prompt="aurora_talend_audit_Database?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value="talend_audit"/>
+    <contextParameter comment="" name="aurora_talend_audit_Schema" prompt="aurora_talend_audit_Schema?" promptNeeded="false" repositoryContextId="_6pZ34FqnEeu2aKIkXHXmRA" type="id_String" value=""/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Port" prompt="AuroraPuttyDeepak_Port?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;19999&quot;"/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Database" prompt="AuroraPuttyDeepak_Database?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;DataTrax&quot;"/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Schema" prompt="AuroraPuttyDeepak_Schema?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;public&quot;"/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Password" prompt="AuroraPuttyDeepak_Password?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_Password" value="enc:system.encryption.key.v1:TO/cpl8DytP6+rdZ9/PujdJWswhoR4sJrz32N0D6CGSXI3QVSGprjW1+EA0="/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Login" prompt="AuroraPuttyDeepak_Login?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;xynadmin&quot;"/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_Server" prompt="AuroraPuttyDeepak_Server?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;localhost&quot;"/>
+    <contextParameter comment="" name="AuroraPuttyDeepak_AdditionalParams" prompt="AuroraPuttyDeepak_AdditionalParams?" promptNeeded="false" repositoryContextId="_JvHC0FqUEeu2aKIkXHXmRA" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="mysql_talend_log_Login" prompt="mysql_talend_log_Login?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="dadmin"/>
+    <contextParameter comment="" name="mysql_talend_log_Password" prompt="mysql_talend_log_Password?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_Password" value="enc:system.encryption.key.v1:UMuGr7gY/Qi2DV+GJtx6dBpH9D+q1XsnlNg/Eb+tEdRkR0Q="/>
+    <contextParameter comment="" name="mysql_talend_log_Server" prompt="mysql_talend_log_Server?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="mysql_talend_log_Database" prompt="mysql_talend_log_Database?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="talend_log"/>
+    <contextParameter comment="" name="mysql_talend_log_AdditionalParams" prompt="mysql_talend_log_AdditionalParams?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="mysql_talend_log_Port" prompt="mysql_talend_log_Port?" promptNeeded="false" repositoryContextId="_KIlJEByWEeutB9uvCmKI4Q" type="id_String" value="3306"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="32"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:woHACaIK58ZqTHqlxJDjtW9akvAKU7lbeKneStpB"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:w5PHQVhkc8SR6k4PbYtQd5yJUz1s8GDxuN8LBB50"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_WY5GkPnYEeqraJ6uSReOQA" name="DataOperation"/>
+    <routinesParameter id="_WaOjUPnYEeqraJ6uSReOQA" name="Mathematical"/>
+    <routinesParameter id="_WaRmoPnYEeqraJ6uSReOQA" name="Numeric"/>
+    <routinesParameter id="_WaUp8PnYEeqraJ6uSReOQA" name="Relational"/>
+    <routinesParameter id="_WazyIPnYEeqraJ6uSReOQA" name="SQLike"/>
+    <routinesParameter id="_WaXtQPnYEeqraJ6uSReOQA" name="StringHandling"/>
+    <routinesParameter id="_WabXoPnYEeqraJ6uSReOQA" name="TalendDataGenerator"/>
+    <routinesParameter id="_Waea8PnYEeqraJ6uSReOQA" name="TalendDate"/>
+    <routinesParameter id="_WavgsPnYEeqraJ6uSReOQA" name="TalendStringUtil"/>
+    <routinesParameter id="_WaheQPnYEeqraJ6uSReOQA" name="TalendString"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;the end is near&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="jblt_aurora_talend_auditing" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jblt_mysql_talend_logging_copy_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="jblt_aurora_talend_auditing"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_sjZ9oFqTEeu2aKIkXHXmRA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.AuroraPuttyDeepak_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.AuroraPuttyDeepak_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.AuroraPuttyDeepak_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.AuroraPuttyDeepak_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.AuroraPuttyDeepak_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sPsGEVmUCsFOkrubnxM2ArTzx5jO0BEZM19XCwkAQZOUKp+Uxkc0fMX1xScCbooeTuA1bQtvXWmTaO9mRg0="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.AuroraPuttyDeepak_AdditionalParams"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AuroraPuttyDeepak"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_sjZ9oFqTEeu2aKIkXHXmRA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.AuroraPuttyDeepak_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.AuroraPuttyDeepak_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.AuroraPuttyDeepak_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.AuroraPuttyDeepak_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.AuroraPuttyDeepak_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TmXMCA6qsuaWL95W56+ZYtY5V3+kRy1iEescd7W5Pr+EJD0Nn6R3si/zwTHZFkAhXxzbDDTlytEdEp5jEzc="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_sjZ9oFqTEeu2aKIkXHXmRA - curdb"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;curdb&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Select * from curdb&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.AuroraPuttyDeepak_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="currency_code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="currency_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="decimal_places"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="conversion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="bonus_conversion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cur_comment"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="short_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="primary_country_code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_upload_dt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="curdb" name="tDBInput_1">
+      <column comment="" key="false" length="4" name="currency_code" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="45" name="currency_name" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="decimal_places" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="conversion" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="bonus_conversion" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="45" name="cur_comment" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="short_name" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="primary_country_code" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="dw_upload_dt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowMeter_2"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" show="false" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" show="false" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="curdb" name="tFlowMeter_2">
+      <column comment="" key="false" length="4" name="currency_code" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="45" name="currency_name" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="decimal_places" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="conversion" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="bonus_conversion" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="45" name="cur_comment" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="short_name" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="primary_country_code" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="dw_upload_dt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="currency_code"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="currency_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="decimal_places"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="conversion"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="bonus_conversion"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cur_comment"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="short_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="primary_country_code"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_upload_dt"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="curdb" name="tLogRow_1">
+      <column comment="" key="false" length="4" name="currency_code" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="45" name="currency_name" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="decimal_places" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="conversion" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="bonus_conversion" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="45" name="cur_comment" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="short_name" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="primary_country_code" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="dw_upload_dt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tDBClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tFlowMeter_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFlowMeter_2" offsetLabelX="0" offsetLabelY="0" source="tFlowMeter_2" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="jblt_mysql_talend_logging_copy_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Joblet to log data to mysql"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cdf9a3e7-a8f1-4ea4-b0de-871552d4cd76"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KTomF957ffbaqgWwSggtNkBQcJnnn58oCRKCDbnOSrwV425yyfA74bJ1US8L+9kybDyhBFQSZtjX&#13;
+FxKQdWYJPg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e7327dad-5e34-4d78-be34-7d243969aaaa"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9UVOQbem1yXtlVVcYJWOmeYjzO/wtzBueOkpleKdF3pFbdJ7OMThOD8m5kufKk7pr5j31TJ2H9ZQ&#13;
+4wdCSKlu1Q==</DigestValue></Reference></SignedInfo><SignatureValue>pDWvstvZPu8tbCirA9WelJTuyRqAgTc+KiwO+69VcdIJWuI3yefmLSePMiEvUyYbKVt93AIYRM25&#13;
+dTjg7sr/TmHHYYG+ttevOtUkYYbZ5IzjNeW6C3z+J1NQsg5xXrCX9oEp5kC3JsVsxNLZfO4PsUhw&#13;
+9cE8tGYLmh2vyW07fEzhc1JaKJ6/zIYd8ZZpRKx5lgaP/0NoGGxvC9/27SVf4a5qBqYY9Z/gZ4wv&#13;
+KbSJm8wNrv/HoUgjuWEIEYJvtSuhnvmC/8wsGilVbPUCpb4a8HHG7gn/rLJ4nuMaiMmc43z1HqEc&#13;
+pKS0Ja/t3WTAjPT6/8sGkUiGjXNHslYb/skttg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e7327dad-5e34-4d78-be34-7d243969aaaa" Target="#_cdf9a3e7-a8f1-4ea4-b0de-871552d4cd76"><Timestamp>2021-01-20 18:59:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
