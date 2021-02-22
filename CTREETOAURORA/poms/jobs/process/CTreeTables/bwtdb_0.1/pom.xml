@@ -9,9 +9,9 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.ctreetoaurora.job</groupId>
-  <artifactId>artdb</artifactId>
+  <artifactId>bwtdb</artifactId>
   <version>0.1.0</version>
-  <name>CTREETOAURORA artdb-0.1.0 (0.1,Job Designs)</name>
+  <name>CTREETOAURORA bwtdb-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -24,7 +24,7 @@
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>CTREETOAURORA</talend.project.name>
     <talend.product.version>7.3.1.20200219_1130</talend.product.version>
-    <talend.job.finalName>artdb_0_1</talend.job.finalName>
+    <talend.job.finalName>bwtdb_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.ctreetoaurora.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.ctreetoaurora.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,8 +33,8 @@
     <talend.job.context>Development</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>artdb</talend.job.name>
-    <talend.job.id>_OS6CcBSpEeuUA4Cue17h8Q</talend.job.id>
+    <talend.job.name>bwtdb</talend.job.name>
+    <talend.job.id>_eHvFgHIREeuGefjTYvrS7w</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.folder>ctreetables/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
@@ -46,6 +46,11 @@
       <groupId>net.minidev</groupId>
       <artifactId>accessors-smart</artifactId>
       <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>advancedPersistentLookupLib-1.2</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>net.hydromatic</groupId>
@@ -111,6 +116,11 @@
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
       <version>1.10</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>commons-codec-1.7</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>commons-collections</groupId>
@@ -274,6 +284,11 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>jboss-serialization</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>job-audit</artifactId>
       <version>1.1</version>
     </dependency>
@@ -301,6 +316,11 @@
       <groupId>com.google.code.findbugs</groupId>
       <artifactId>jsr305</artifactId>
       <version>1.3.9</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-1.2-api</artifactId>
+      <version>2.12.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -373,11 +393,6 @@
       <version>3.3.0</version>
     </dependency>
     <dependency>
-      <groupId>com.amazon.redshift</groupId>
-      <artifactId>redshift-jdbc42-no-awssdk</artifactId>
-      <version>1.2.37.1061</version>
-    </dependency>
-    <dependency>
       <groupId>com.yahoo.datasketches</groupId>
       <artifactId>sketches-core</artifactId>
       <version>0.9.0</version>
@@ -400,6 +415,11 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>talend_file_enhanced_20070724</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>trove</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>

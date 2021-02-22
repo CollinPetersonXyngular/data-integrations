@@ -9,9 +9,9 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.ctreetoaurora.job</groupId>
-  <artifactId>artdb</artifactId>
+  <artifactId>artdb_Copy</artifactId>
   <version>0.1.0</version>
-  <name>CTREETOAURORA artdb-0.1.0 (0.1,Job Designs)</name>
+  <name>CTREETOAURORA artdb_Copy-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -24,17 +24,17 @@
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>CTREETOAURORA</talend.project.name>
     <talend.product.version>7.3.1.20200219_1130</talend.product.version>
-    <talend.job.finalName>artdb_0_1</talend.job.finalName>
+    <talend.job.finalName>artdb_copy_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.ctreetoaurora.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.ctreetoaurora.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>Development</talend.job.context>
+    <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>artdb</talend.job.name>
-    <talend.job.id>_OS6CcBSpEeuUA4Cue17h8Q</talend.job.id>
+    <talend.job.name>artdb_Copy</talend.job.name>
+    <talend.job.id>_AyeM4HLbEeusmOlB7nVMnQ</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.folder>ctreetables/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
@@ -93,6 +93,11 @@
       <version>1.8.1</version>
     </dependency>
     <dependency>
+      <groupId>com.amazonaws</groupId>
+      <artifactId>aws-java-sdk</artifactId>
+      <version>1.11.406</version>
+    </dependency>
+    <dependency>
       <groupId>org.apache.calcite</groupId>
       <artifactId>calcite-core</artifactId>
       <version>1.16.0</version>
@@ -111,6 +116,11 @@
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
       <version>1.10</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>commons-codec-1.6</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>commons-collections</groupId>
@@ -146,6 +156,11 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
       <version>3.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.1.3</version>
     </dependency>
     <dependency>
       <groupId>commons-logging</groupId>
@@ -283,6 +298,11 @@
       <version>2.8.2</version>
     </dependency>
     <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <version>2.8.1</version>
+    </dependency>
+    <dependency>
       <groupId>com.cedarsoftware</groupId>
       <artifactId>json-io</artifactId>
       <version>4.9.9-TALEND</version>
@@ -310,6 +330,11 @@
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
+      <version>2.12.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-jcl</artifactId>
       <version>2.12.1</version>
     </dependency>
     <dependency>
