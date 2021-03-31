@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="smBcc" prompt="smBcc?" promptNeeded="false" repositoryContextId="_H7CBIHuFEeuJ1bX0YVHyhQ" type="id_String" value="&quot;&quot;"/>
-    <contextParameter comment="" name="smCc" prompt="smCc?" promptNeeded="false" repositoryContextId="_H7CBIHuFEeuJ1bX0YVHyhQ" type="id_String" value="&quot;&quot;"/>
-    <contextParameter comment="" name="smFrom" prompt="smFrom?" promptNeeded="false" repositoryContextId="_H7CBIHuFEeuJ1bX0YVHyhQ" type="id_String" value="&quot;itsystems@xyngular.com&quot;"/>
-    <contextParameter comment="" name="smMessage" prompt="smMessage?" promptNeeded="false" repositoryContextId="_H7CBIHuFEeuJ1bX0YVHyhQ" type="id_String" value="&quot;\nAn error occurred in job: &quot; + jobName +&quot;\n\nObject: &quot; + errorInfo.origin +&quot;\nError Message: &quot; + errorInfo.message"/>
-    <contextParameter comment="" name="smPassword" prompt="smPassword?" promptNeeded="false" repositoryContextId="_H7CBIHuFEeuJ1bX0YVHyhQ" type="id_String" value="&quot;uZfhjPHX&gt;9=:L6/E&quot;"/>
-    <contextParameter comment="" name="smSendername" prompt="smSendername?" promptNeeded="false" repositoryContextId="_H7CBIHuFEeuJ1bX0YVHyhQ" type="id_String" value="&quot;Talend Error Reporting&quot;"/>
-    <contextParameter comment="" name="smSMTPHost" prompt="smSMTPHost?" promptNeeded="false" repositoryContextId="_H7CBIHuFEeuJ1bX0YVHyhQ" type="id_String" value="&quot;smtp-relay.gmail.com&quot;"/>
-    <contextParameter comment="" name="smSMTPPort" prompt="smSMTPPort?" promptNeeded="false" repositoryContextId="_H7CBIHuFEeuJ1bX0YVHyhQ" type="id_String" value="587"/>
-    <contextParameter comment="" name="smSubject" prompt="smSubject?" promptNeeded="false" repositoryContextId="_H7CBIHuFEeuJ1bX0YVHyhQ" type="id_String" value="&quot;Error Occurred in Job: &quot; + jobName"/>
-    <contextParameter comment="" name="smTo" prompt="smTo?" promptNeeded="false" repositoryContextId="_H7CBIHuFEeuJ1bX0YVHyhQ" type="id_String" value="&quot;BI@xyngular.com&quot;"/>
-    <contextParameter comment="" name="smUserName" prompt="smUserName?" promptNeeded="false" repositoryContextId="_H7CBIHuFEeuJ1bX0YVHyhQ" type="id_String" value="&quot;itsystems@xyngular.com&quot;"/>
-  </context>
+  <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
@@ -54,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:UfnHl2QUPCZrFiLvKVzOj2pdUGTf6rZnxgUCZ3Ta"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:gfj4cGUBos8BpNAIcjYVhBt7dr1qidpfAAzThZYr"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -89,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ko0TptfNJjpdn2OjfdCW2eOXlzcjjHzO68W24ig5"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LOlxVequ5MONcUodTHT4lIpu9AuYJAiTttZmz0ik"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -150,25 +138,25 @@
   </node>
   <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
-    <elementParameter field="TEXT" name="TO" value="context.smTo"/>
-    <elementParameter field="TEXT" name="FROM" value="context.smFrom"/>
-    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
-    <elementParameter field="TEXT" name="PERSONAL_NAME" show="false" value="&quot;sender&quot;"/>
-    <elementParameter field="TEXT" name="CC" value="context.smCc"/>
-    <elementParameter field="TEXT" name="BCC" value="context.smBcc"/>
+    <elementParameter field="TEXT" name="TO" value="&quot;BI@xyngular.com&quot;"/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;itsystems@xyngular.com&quot;"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Talend Error Reporting&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=""/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
     <elementParameter field="TEXT" name="SUBJECT" value="&quot;Error Occurred in Job: &quot; + jobName"/>
     <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;\nAn error occurred in job: &quot; + jobName +&quot;\n\nObject: &quot; + errorInfo.origin +&quot;\nError Message: &quot; + errorInfo.message"/>
     <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
     <elementParameter field="TABLE" name="ATTACHMENTS"/>
     <elementParameter field="TABLE" name="HEADERS"/>
-    <elementParameter field="TEXT" name="SMTP_HOST" value="context.smSMTPHost"/>
-    <elementParameter field="TEXT" name="SMTP_PORT" value="context.smSMTPPort"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp-relay.gmail.com&quot;"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="587"/>
     <elementParameter field="CHECK" name="SSL" value="false"/>
     <elementParameter field="CHECK" name="STARTTLS" value="false"/>
     <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:vQduyKjkCNUBepGzgrTqDqWk6A46GWipK4M3WVEfVx8gt6qgnsI="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:N8MUCAtYLa+T+5i/s/dLnWkVnoRND9+AowK8bfLrXYUuE80M8nA="/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
@@ -205,13 +193,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_58970ad5-cd4a-401b-92e8-5f5c95bb202a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3iPapR1+1S40OYhlB4OWPrUxds5FLueU0SMv8AYGhEDwu2Itmj5S4F0iT4LQdoWPd+2ABZClhHd1&#13;
-mHQ0l/6R7A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ed3ddc54-8548-4485-ba5f-46a70d31dea2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Y4HdGLV0xb7wVEI2knCPlVf2Oh0SL79AkFCtABiaZ6tDmno1ZI4zWCYJF+7NZ8IY5A+x0xIwfnTr&#13;
-forKUrEesQ==</DigestValue></Reference></SignedInfo><SignatureValue>JcFOWwy1poD/LRWGQx9u2jzkw0/K+GurCA+cgFUTcsHCJbxrgbqB1G2/4teM76ZdLF+jGqEjOWAr&#13;
-VX9L8rrAaGfedqH5SvC6pdLB3CkKTW7vpfPm/SHSURgSxPVsFSGSgIBJiVQj51rMCtvHCumPVzbH&#13;
-DFu5X/RhZhE2un0i6gOMOVjPakVGUDMdRppBsBAaZGrZu2bwLalalwdAYtu9xyvro+z46fAWWNjX&#13;
-ZOJ3SbDZGPV42Mshun7kmTZLUYrMIhGe2+zxU31WajQHAwsJaKuBf/cSjU4c6xTdrRyA+XNb/tgA&#13;
-dj8+y1wcOIsgAaUnM97mr5qpAttft7cerTQI8Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2f62425b-475f-44b0-9156-67dd3ad9f829"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>V2+YAVmPmLMmxxfzEktMqGZsjb0UWCoVT2c/JCPgSUNG6ni98QOSvwwDmrSFkL7PfKumm+DwSE+P&#13;
+azTt9mo6KA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bed442e1-2502-45d7-b091-d61ad76f7711"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JSpgRpNxChtKKtL0A9cGmc4FzgpqNcKp23kA5W6dimtQzFzh5PTjloaLPNCmAfwDjAucGcosOgVa&#13;
+nArqkLLeig==</DigestValue></Reference></SignedInfo><SignatureValue>EtWcC4KhQrQwpdszNVxFNqDdNvkPOHZpS4/R3whYyxkq2wDfZkPl1vEDuEJeI5p3r2Hai/q54veK&#13;
+pK5ASpA5eO61cfxh0SuwRAa9Z9gyRitPFhtMedgleccyc1d9cc8hmDJcaH0Sn4Eij3FdIbAywtkh&#13;
+RTDI/vKrTiG/V4raZcQpozUPzDTaa1wbl70607mDcg7FImFD7eCtONCnF3DcGgpFQ/rpdIuh6/gJ&#13;
+Jddshl+rDmSiS5WqwyXyP3bDx8GEdtGDgv0FwRZ8a6POx1NYKDROpRaHwebsUNx1JHyILC+bfGG3&#13;
+cwkx6F5MOcmVrjIZ89/fuX8C6g5k+cwKJYWHVQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -233,4 +221,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ed3ddc54-8548-4485-ba5f-46a70d31dea2" Target="#_58970ad5-cd4a-401b-92e8-5f5c95bb202a"><Timestamp>2021-03-30 15:55:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bed442e1-2502-45d7-b091-d61ad76f7711" Target="#_2f62425b-475f-44b0-9156-67dd3ad9f829"><Timestamp>2021-03-31 16:36:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
