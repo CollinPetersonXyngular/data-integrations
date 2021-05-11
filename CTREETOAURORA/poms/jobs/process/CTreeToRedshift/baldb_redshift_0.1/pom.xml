@@ -9,9 +9,9 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.ctreetoaurora.job</groupId>
-  <artifactId>cntdbHash</artifactId>
+  <artifactId>baldb_redshift</artifactId>
   <version>0.1.0</version>
-  <name>CTREETOAURORA cntdbHash-0.1.0 (0.1,Job Designs)</name>
+  <name>CTREETOAURORA baldb_redshift-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -24,19 +24,19 @@
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>CTREETOAURORA</talend.project.name>
     <talend.product.version>7.3.1.20200219_1130</talend.product.version>
-    <talend.job.finalName>cntdbhash_0_1</talend.job.finalName>
+    <talend.job.finalName>baldb_redshift_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.ctreetoaurora.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.ctreetoaurora.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms512M -Xmx2048M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>cntdbHash</talend.job.name>
-    <talend.job.id>_9HUUIDM8EeuoTtnc3XNZxA</talend.job.id>
+    <talend.job.name>baldb_redshift</talend.job.name>
+    <talend.job.id>_bZK5wLHIEeuUVIBX3IAEow</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>ctreetables/</talend.job.folder>
+    <talend.job.folder>ctreetoredshift/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
@@ -46,11 +46,6 @@
       <groupId>net.minidev</groupId>
       <artifactId>accessors-smart</artifactId>
       <version>1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>advancedPersistentLookupLib-1.2</artifactId>
-      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>net.hydromatic</groupId>
@@ -98,6 +93,11 @@
       <version>1.8.1</version>
     </dependency>
     <dependency>
+      <groupId>com.amazonaws</groupId>
+      <artifactId>aws-java-sdk</artifactId>
+      <version>1.11.406</version>
+    </dependency>
+    <dependency>
       <groupId>org.apache.calcite</groupId>
       <artifactId>calcite-core</artifactId>
       <version>1.16.0</version>
@@ -119,7 +119,7 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-codec-1.7</artifactId>
+      <artifactId>commons-codec-1.6</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
@@ -156,6 +156,11 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
       <version>3.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.1.3</version>
     </dependency>
     <dependency>
       <groupId>commons-logging</groupId>
@@ -284,11 +289,6 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>jboss-serialization</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>job-audit</artifactId>
       <version>1.1</version>
     </dependency>
@@ -296,6 +296,11 @@
       <groupId>joda-time</groupId>
       <artifactId>joda-time</artifactId>
       <version>2.8.2</version>
+    </dependency>
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <version>2.8.1</version>
     </dependency>
     <dependency>
       <groupId>com.cedarsoftware</groupId>
@@ -319,17 +324,17 @@
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-1.2-api</artifactId>
-      <version>2.12.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
       <version>2.12.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
+      <version>2.12.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-jcl</artifactId>
       <version>2.12.1</version>
     </dependency>
     <dependency>
@@ -383,14 +388,14 @@
       <version>2.6.2</version>
     </dependency>
     <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <version>42.2.9</version>
-    </dependency>
-    <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
       <version>3.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.amazon.redshift</groupId>
+      <artifactId>redshift-jdbc42-no-awssdk</artifactId>
+      <version>1.2.37.1061</version>
     </dependency>
     <dependency>
       <groupId>com.yahoo.datasketches</groupId>
@@ -418,13 +423,8 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.components.lib</groupId>
-      <artifactId>thashfile</artifactId>
-      <version>3.1-20190910</version>
-    </dependency>
-    <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>trove</artifactId>
+      <artifactId>talendcsv</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
