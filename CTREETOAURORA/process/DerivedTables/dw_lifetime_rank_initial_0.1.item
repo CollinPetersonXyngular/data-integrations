@@ -4,7 +4,7 @@
     <contextParameter comment="" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="localhost"/>
     <contextParameter comment="" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
     <contextParameter comment="" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
-    <contextParameter comment="" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:uxJJ5EQL5xEom0EmNgnDLu7sgGRBN2X5LUmJR/Q4khjwYjvu1cldjwCU8po="/>
+    <contextParameter comment="" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:S8FCbUPNyR9D+AyuSjw6I+ct2Ot/+t9sj6SFmqHyAz2k9q9B27L8+QcGTUo="/>
     <contextParameter comment="" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
     <contextParameter comment="" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
   </context>
@@ -13,7 +13,7 @@
     <contextParameter comment="" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xyndbcluster-instance-1.cilo6pqeze5v.us-east-1.rds.amazonaws.com"/>
     <contextParameter comment="" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
     <contextParameter comment="" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
-    <contextParameter comment="" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:x2IIW1+qzw5cYa5tk6fvmLUntY+MnDOgZ7irJSG40X3xUy98XMC0e+Oj0g8="/>
+    <contextParameter comment="" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:8pk2LqCNj4i9YQY7b7K06awjJFtSrJhMGD7uEOxSayHBXaqUDcscn7yWZmU="/>
     <contextParameter comment="" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
     <contextParameter comment="" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
   </context>
@@ -59,7 +59,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:QLNyHrrw1lRMBR64wx5CfMzCM/TSKU1BibhJgfcQ"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Vi3LsNeG/E4ExOBsctxNtFEIz17m1Nb+2+YTDeLp"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -94,7 +94,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:m34sVKzy31BP+4Fp4znhLGKRGZ48nT2LIP+UCPbI"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5xcwHSWjOL2dmh14I8BIsXI4ER1gcUJFOco70tWL"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -124,33 +124,32 @@
     <routinesParameter id="_9QQ0QECvEeu3bLVe3VddqA" name="TalendStringUtil"/>
     <routinesParameter id="_9P9SRkCvEeu3bLVe3VddqA" name="TalendString"/>
   </parameters>
-  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+  <node componentName="tRedshiftInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_goEBwGpREeuxePq_acW5ow"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
-    <elementParameter field="TEXT" name="HOST" value="context.Aurora_Server"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.Aurora_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.Aurora_Database"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Aurora_Schema"/>
-    <elementParameter field="TEXT" name="USER" value="context.Aurora_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+dbNXn+9QDybZ28fj38V8q34AK8TFCT5FR4UaQo3yPVVXSdtxBurTfboHUcxnTh/AqJK"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;xyngular-dw-prod.cxao0mrnwrg0.us-east-1.redshift.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="REDSHIFT"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5439&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;xyngulardw&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;xdwmaster&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fP4TnndS7GpVR2CljeU6SqxAOkZ14V+/4EdxHubtzi+F1XjEshpB01F4/eNAXsPTsDGt/5tf"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw - dw_lifetime_rank"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_goEBwGpREeuxePq_acW5ow - dw_lifetime_rank"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;dw_lifetime_rank&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;--select dw_pv_date from bwtdb&#13;&#10;&#13;&#10;SELECT p.dist_id&#13;&#10;&#9;, p.rank_index&#13;&#10;&#9;, r.description&#13;&#10;&#9;, p.pv_date&#13;&#10;&#9;, p.entry_init&#13;&#10;&#9;, p.event_description&#13;&#10;&#9;, p.effective_dtz&#13;&#10;&#9;, p.src_created_dtz&#13;&#10;&#9;, l.last_achieved_date::date AS last_achieved_date&#13;&#10;&#9;, l.last_achieved_pv_date&#13;&#10;&#13;&#10;FROM&#13;&#10;&#9;(&#13;&#10;&#9;&#9;SELECT dist_id&#13;&#10;&#9;&#9;,MAX(rank_index) rank_index&#13;&#10;&#9;&#9;FROM pdfdb&#13;&#10;&#9;&#9;GROUP BY dist_id&#13;&#10;&#9;)r1&#13;&#10;&#9;JOIN&#13;&#10;&#9;&#9;(&#13;&#10;&#9;&#9;&#9;SELECT dist_id&#13;&#10;&#9;&#9;&#9;&#9;, rank_index&#13;&#10;&#9;&#9;&#9;&#9;, MIN(f_dtx_timestamp(effective_date,0)::timestamptz) effective_dtz&#13;&#10;&#9;&#9;&#9;FROM pdfdb&#13;&#10;&#9;&#9;&#9;WHERE rank_index &lt;&gt; 1&#13;&#10;&#9;&#9;&#9;GROUP BY dist_id&#13;&#10;&#9;&#9;&#9;&#9;, rank_index&#13;&#10;&#9;&#9;)r2 ON r1.dist_id = r2.dist_id AND r1.rank_index = r2.rank_index&#13;&#10;&#9;JOIN&#13;&#10;&#9;&#9;(&#13;&#10;&#9;&#9;&#9;SELECT dist_id&#13;&#10;&#9;&#9;&#9;&#9;, rank_index&#13;&#10;&#9;&#9;&#9;&#9;, entry_init&#13;&#10;&#9;&#9;&#9;&#9;, pv_date&#13;&#10;&#9;&#9;&#9;&#9;, event_description&#13;&#10;&#9;&#9;&#9;&#9;, f_dtx_timestamp(effective_date,0)::timestamptz effective_dtz&#13;&#10;&#9;&#9;&#9;&#9;, f_dtx_timestamp(entry_date,entry_time)::timestamptz src_created_dtz&#13;&#10;        , row_number() over (partition by dist_id order by rank_index desc, pv_date, dw_upload_dt) as rn&#13;&#10;&#9;&#9;&#9;FROM pdfdb&#13;&#10;&#9;&#9;&#9;WHERE rank_index &lt;&gt; 1&#13;&#10;&#9;&#9;)p ON r2.dist_id = p.dist_id AND r2.rank_index = p.rank_index AND r2.effective_dtz = p.effective_dtz AND p.rn = 1&#13;&#10;&#9;JOIN dw_ranks r ON p.rank_index = r.rank_id&#13;&#10;&#9;LEFT JOIN (select&#13;&#10; a.dist_id&#13;&#10; , a.end_rank as LifetimeTitle&#13;&#10; , a.last_achieved_date&#13;&#10; , a.last_achieved_pv_date&#13;&#10; FROM&#13;&#10;(&#13;&#10;  select&#13;&#10;  b.dist_id&#13;&#10;  , b.end_rank&#13;&#10;  , case&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 1 then b.rnk_dt1&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 2 then b.rnk_dt2&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 3 then b.rnk_dt3&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 4 then b.rnk_dt4&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 5 then b.rnk_dt5&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 6 then b.rnk_dt6&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 7 then b.rnk_dt7&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 8 then b.rnk_dt8&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 9 then b.rnk_dt9&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 10 then b.rnk_dt10&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 11 then b.rnk_dt11&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 12 then b.rnk_dt12&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 13 then b.rnk_dt13&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 14 then b.rnk_dt14&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 15 then b.rnk_dt15&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 16 then b.rnk_dt16&#13;&#10;    when tr.last_achieved_date IS NULL and b.end_rank = 17 then b.rnk_dt17&#13;&#10;    else tr.last_achieved_date&#13;&#10;  end as last_achieved_date&#13;&#10;--  , tr.last_achieved_date&#13;&#10;  , case&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 1 then to_char(b.rnk_dt1, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 2 then to_char(b.rnk_dt2, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 3 then to_char(b.rnk_dt3, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 4 then to_char(b.rnk_dt4, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 5 then to_char(b.rnk_dt5, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 6 then to_char(b.rnk_dt6, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 7 then to_char(b.rnk_dt7, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 8 then to_char(b.rnk_dt8, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 9 then to_char(b.rnk_dt9, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 10 then to_char(b.rnk_dt10, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 11 then to_char(b.rnk_dt11, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 12 then to_char(b.rnk_dt12, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 13 then to_char(b.rnk_dt13, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 14 then to_char(b.rnk_dt14, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 15 then to_char(b.rnk_dt15, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 16 then to_char(b.rnk_dt16, 'YYYYMM')&#13;&#10;    when tr.last_achieved_pv_date IS NULL and b.end_rank = 17 then to_char(b.rnk_dt17, 'YYYYMM')&#13;&#10;    else tr.last_achieved_pv_date&#13;&#10;  end as last_achieved_pv_date&#13;&#10;--  , tr.last_achieved_pv_date&#13;&#10;  , row_number() over (partition by b.dist_id order by b.end_rank DESC, c.last_day_of_month DESC) as number&#13;&#10;  from&#13;&#10;  bwtdb b&#13;&#10;  inner join dw_calendar c on c.pv_date = cast(b.dw_pv_date as char(6))&#13;&#10;  left JOIN&#13;&#10;  (&#13;&#10;    select&#13;&#10;    b2.dist_id&#13;&#10;    , c.last_day_of_month as last_achieved_date&#13;&#10;    , c.pv_date as last_achieved_pv_date&#13;&#10;    , b2.paid_rank&#13;&#10;    , row_number() over (partition by b2.dist_id order by b2.paid_rank DESC, c.last_day_of_month DESC) as number&#13;&#10;    from&#13;&#10;    bwtdb b2&#13;&#10;    inner join dw_calendar c on c.pv_date = cast(b2.dw_pv_date as char(6))&#13;&#10;    where b2.paid_rank = b2.end_rank&#13;&#10;  ) tr on b.dist_id = tr.dist_id and tr.number = 1&#13;&#10;) a&#13;&#10;where a.number = 1&#13;&#10;) l on l.dist_id = p.dist_id&#13;&#10;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.Aurora_AdditionalParams"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;public\&quot;.dw_lifetime_rank.account_id,&#10;&#9;&#9;\&quot;public\&quot;.dw_lifetime_rank.rank_id,&#10;&#9;&#9;\&quot;public\&quot;.dw_lifetime_rank.rank_name,&#10;&#9;&#9;\&quot;public\&quot;.dw_lifetime_rank.achieved_bonus_period,&#10;&#9;&#9;\&quot;public\&quot;.dw_lifetime_rank.created_initials,&#10;&#9;&#9;\&quot;public\&quot;.dw_lifetime_rank.created_notes,&#10;&#9;&#9;\&quot;public\&quot;.dw_lifetime_rank.effective_dtz,&#10;&#9;&#9;\&quot;public\&quot;.dw_lifetime_rank.src_created_dtz,&#10;&#9;&#9;\&quot;public\&quot;.dw_lifetime_rank.last_achieved_date,&#10;&#9;&#9;\&quot;public\&quot;.dw_lifetime_rank.last_achieved_pv_date&#10;FROM&#9;\&quot;public\&quot;.dw_lifetime_rank&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="redshift_id"/>
+    <elementParameter field="CHECK" name="USE_LOG_FILE" value="false"/>
+    <elementParameter field="FILE" name="LOG_FILE" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/redshift-jdbc.log&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOG_LEVEL" value="1"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -177,13 +176,12 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="last_achieved_pv_date"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="dw_upload_dt"/>
-      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="JDBC_URL" value="STANDARD"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="dw_lifetime_rank" name="tDBInput_1">
-      <column comment="" key="false" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="rank_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
@@ -201,10 +199,10 @@
       <column comment="" key="false" length="65535" name="created_notes" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="35" name="effective_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="35" name="effective_dtz" nullable="true" pattern="" precision="0" sourceType="TIMESTAMPTZ" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="35" name="src_created_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="35" name="src_created_dtz" nullable="true" pattern="" precision="0" sourceType="TIMESTAMPTZ" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="13" name="last_achieved_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
@@ -213,17 +211,14 @@
       <column comment="" key="false" length="6" name="last_achieved_pv_date" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="29" name="dw_upload_dt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_GDPOgIBmEeurxdu1DWmadw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_tcJY8MhvEeuD1rx6pe_h3A-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -232,7 +227,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="dw_lifetime_rank" name="outpu">
+    <metadata connector="FLOW" label="dw_lifetime_rank" name="out">
       <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -268,9 +263,9 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="outpu" sizeState="INTERMEDIATE">
+      <outputTables name="out" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.account_id" name="account_id" type="id_Long"/>
         <mapperTableEntries expression="row1.rank_id" name="rank_id" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row1.rank_name" name="rank_name" nullable="true" type="id_String"/>
@@ -281,7 +276,7 @@
         <mapperTableEntries expression="row1.src_created_dtz" name="src_created_dtz" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.last_achieved_date" name="last_achieved_date" type="id_Date"/>
         <mapperTableEntries expression="row1.last_achieved_pv_date" name="last_achieved_pv_date" type="id_String"/>
-        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="dw_upload_dt" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="dw_upload_dt" nullable="true" type="id_Date"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="account_id" type="id_Long"/>
@@ -290,15 +285,14 @@
         <mapperTableEntries name="achieved_bonus_period" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="created_initials" nullable="true" type="id_String"/>
         <mapperTableEntries name="created_notes" nullable="true" type="id_String"/>
-        <mapperTableEntries name="effective_dtz" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="src_created_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="effective_dtz" nullable="true" type="id_String"/>
+        <mapperTableEntries name="src_created_dtz" nullable="true" type="id_String"/>
         <mapperTableEntries name="last_achieved_date" type="id_Date"/>
         <mapperTableEntries name="last_achieved_pv_date" type="id_String"/>
-        <mapperTableEntries name="dw_upload_dt" nullable="true" type="id_Date"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="64">
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw"/>
@@ -311,7 +305,7 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Aurora_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.Aurora_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:42Yudkk/Oqb/AyRRhk3HZNBku55R6e4DMsJo6Ol++nyvRhZF3sSLFszfZSHcYbO0a35j"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RRUEscB8fo4mSm7GzUsaG8ysHrD4fLDipog/n9Arvw+i2L0IWs26vo3opxqvckZfs9V5"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;dw_lifetime_rank&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
@@ -469,44 +463,26 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
-    <elementParameter field="TABLE" name="VARIABLES">
-      <elementValue elementRef="KEY" value="&quot;DummyComponentForIF&quot;"/>
-      <elementValue elementRef="VALUE" value="TalendDate.getCurrentDate()"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSetGlobalVar_1"/>
-  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="outpu" lineStyle="0" metaname="outpu" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="outpu"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If3thru7" lineStyle="6" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tDBInput_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="TalendDate.getPartOfDate(&quot;DAY_OF_MONTH&quot;,TalendDate.getCurrentDate()) == 3 || TalendDate.getPartOfDate(&quot;DAY_OF_MONTH&quot;,TalendDate.getCurrentDate()) == 4 || TalendDate.getPartOfDate(&quot;DAY_OF_MONTH&quot;,TalendDate.getCurrentDate()) == 5 || TalendDate.getPartOfDate(&quot;DAY_OF_MONTH&quot;,TalendDate.getCurrentDate()) == 6 || TalendDate.getPartOfDate(&quot;DAY_OF_MONTH&quot;,TalendDate.getCurrentDate()) == 7"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If3thru7"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_839a19eb-fe83-429e-bbad-2fc163616e1c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>j9XZL1vRQafL6+0R5p0k9AfAoDWY6Kb1M12USQMuL9XS0SLOrT51rbDhvqhpdjhwxSLDgxWypiex&#13;
-gyHE5YwfLQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_09c56932-0c44-4a12-a409-2e39aca25e7d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>57bDdc5Ly1PuzIvZ0Xv+QADNDi/coEJxW8QxIrqKrbGCRLZsi5PIIhimhVH9Ch3DMiLurC8ioUqM&#13;
-tQrYTWjstw==</DigestValue></Reference></SignedInfo><SignatureValue>Zii6gNWPqCHUikYydVv431hDTEJcb3dItDFeS2cS8ctk50we0KUPYqLU7xu4n2mm8i43EHueipnz&#13;
-DNzSctapwZyXF1fGA+K5F6RScd8QOVhNE0lKS1xUkRpxS/A0g9WpgDxSlxG37QMQW0Zoft4tk8bS&#13;
-ngR7a1QUfpJ9RdA+ZAcxKN5Ik/P9bvK0A/dxHEldW16u7fE25sVkJ6cBHUPfnm7wKz1XiD8YBO34&#13;
-g62/WfyHSAOMlZlOHryefaw7uy+NcGtC5MncSiMNYkgU064KWj8Zdq96D1G0sULuKq2trtgptgWo&#13;
-1jnbTPK7J86vC/Gfze8IdMqj1EtA/LBBpQdysQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_89d724f1-af7c-4347-be16-d24ba74d2111"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3Qtqly5CZbrZ5UV3NJbMIYnYw9vkujpHCHRFEnT5rp6edNFzxZCE96Ci7YyC2Z45tZ/DD9FUIi2w&#13;
+pFLRH4+KBg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dd4a4fdb-b594-4069-b426-2874f1eaae2d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NbNj0UTk7FX7VbPhDX+MS5fmENBRO4iodRHPHbGmEgUT9SLPD5XQS2ZlNIIgCokl0xCYYBaL0wNT&#13;
+WSbnXoFUVQ==</DigestValue></Reference></SignedInfo><SignatureValue>nd2Wtb/Ah+YdZGzOhet6OaQPVq0CScNiBON0m/F9kAS9SALNS5JCkmwp9JkBxCgi6ZD/+HVQvyQa&#13;
+jCgympb2vCqmcdy1sCEzf1Q9fhHxpSUWPa4BvhsArdMYOb3DHvic8D4kfq0lOwKzvXL3z1Czq0XX&#13;
+0QU+AjM9gxhxT8W1+Rwek1fuxifLRSW5Qe207p2Wgr9vioIVIdamP2RT8JnW/TuRivyWlNc/npAu&#13;
+gyMRyQR524AYaDsCq4I7g5UIxdRvzL8OqvbofzsGWCNfiej6FG7IQmrJDQIpmuzwtJsdqxaQEObF&#13;
+V/3fIvWlgDrt3xJfWSIRhlPgu6R54Hqph5q+ZA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -528,4 +504,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_09c56932-0c44-4a12-a409-2e39aca25e7d" Target="#_839a19eb-fe83-429e-bbad-2fc163616e1c"><Timestamp>2021-06-08 16:54:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dd4a4fdb-b594-4069-b426-2874f1eaae2d" Target="#_89d724f1-af7c-4347-be16-d24ba74d2111"><Timestamp>2021-06-08 15:44:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
