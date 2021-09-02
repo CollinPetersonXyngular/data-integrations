@@ -30,7 +30,7 @@
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>Default</talend.job.context>
+    <talend.job.context>Production</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
     <talend.job.name>odhdb</talend.job.name>
@@ -46,6 +46,11 @@
       <groupId>net.minidev</groupId>
       <artifactId>accessors-smart</artifactId>
       <version>2.4.7</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>advancedPersistentLookupLib-1.2</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>net.hydromatic</groupId>
@@ -116,6 +121,11 @@
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
       <version>1.14</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>commons-codec-1.7</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>commons-collections</groupId>
@@ -293,6 +303,11 @@
       <version>3.1.0</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>jboss-serialization</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.talend.components.lib</groupId>
       <artifactId>job-audit</artifactId>
       <version>1.4</version>
@@ -326,6 +341,11 @@
       <groupId>com.google.guava</groupId>
       <artifactId>listenablefuture</artifactId>
       <version>9999.0-empty-to-avoid-conflict-with-guava</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-1.2-api</artifactId>
+      <version>2.12.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -421,6 +441,11 @@
       <groupId>org.talend.components.lib</groupId>
       <artifactId>talend_file_enhanced</artifactId>
       <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>trove</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.tukaani</groupId>
