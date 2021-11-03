@@ -9,9 +9,9 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.ctreetoaurora.job</groupId>
-  <artifactId>FillDw_Accounts</artifactId>
+  <artifactId>dw_accounts_last_paid_ord_info_update</artifactId>
   <version>0.1.0</version>
-  <name>CTREETOAURORA FillDw_Accounts-0.1.0 (0.1,Job Designs)</name>
+  <name>CTREETOAURORA dw_accounts_last_paid_ord_info_update-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -24,19 +24,19 @@
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>CTREETOAURORA</talend.project.name>
     <talend.product.version>7.3.1.20210723_0711-patch</talend.product.version>
-    <talend.job.finalName>filldw_accounts_0_1</talend.job.finalName>
+    <talend.job.finalName>dw_accounts_last_paid_ord_info_update_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.ctreetoaurora.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.ctreetoaurora.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms1G -Xmx4G -XX:-UseGCOverheadLimit -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>Production</talend.job.context>
+    <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>FillDw_Accounts</talend.job.name>
-    <talend.job.id>_-cfVMBpYEeyq1dUlTf8jVg</talend.job.id>
+    <talend.job.name>dw_accounts_last_paid_ord_info_update</talend.job.name>
+    <talend.job.id>_IzacUDjPEeyU9fbo4bqK7Q</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>misc/</talend.job.folder>
+    <talend.job.folder>derivedtables/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
@@ -111,11 +111,6 @@
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <version>42.2.14</version>
-    </dependency>
-    <dependency>
-      <groupId>com.amazon.redshift</groupId>
-      <artifactId>redshift-jdbc42-no-awssdk</artifactId>
-      <version>1.2.37.1061</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
