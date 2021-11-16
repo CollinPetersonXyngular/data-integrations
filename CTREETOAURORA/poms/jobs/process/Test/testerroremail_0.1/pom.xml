@@ -23,7 +23,7 @@
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>CTREETOAURORA</talend.project.name>
-    <talend.product.version>7.3.1.20210723_0711-patch</talend.product.version>
+    <talend.product.version>7.3.1.20211105_0234-patch</talend.product.version>
     <talend.job.finalName>testerroremail_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.ctreetoaurora.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.ctreetoaurora.code</talend.routine.groupid>
@@ -83,6 +83,11 @@
       <version>2.1.3</version>
     </dependency>
     <dependency>
+      <groupId>com.sun.mail</groupId>
+      <artifactId>javax.mail</artifactId>
+      <version>1.6.2</version>
+    </dependency>
+    <dependency>
       <groupId>org.talend.components.lib</groupId>
       <artifactId>job-audit</artifactId>
       <version>1.4</version>
@@ -111,11 +116,6 @@
       <groupId>org.talend.daikon</groupId>
       <artifactId>logging-event-layout</artifactId>
       <version>1.16.1</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.mail</groupId>
-      <artifactId>mail</artifactId>
-      <version>1.4.7</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -162,18 +162,6 @@
                 </configuration>
               </execution>
             </executions>
-            <dependencies>
-              <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-compress</artifactId>
-                <version>1.19</version>
-              </dependency>
-              <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>1.15</version>
-              </dependency>
-            </dependencies>
           </plugin>
         </plugins>
       </build>
@@ -386,13 +374,6 @@
                 </configuration>
               </execution>
             </executions>
-            <dependencies>
-              <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-compress</artifactId>
-                <version>1.19</version>
-              </dependency>
-            </dependencies>
           </plugin>
         </plugins>
       </build>
