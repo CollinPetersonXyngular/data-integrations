@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_3DMW8BpZEeyq1dUlTf8jVg" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="19999"/>
+    <contextParameter comment="" internalId="_3DMW8RpZEeyq1dUlTf8jVg" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_3DMW8hpZEeyq1dUlTf8jVg" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_3DMW8xpZEeyq1dUlTf8jVg" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_3DMW9BpZEeyq1dUlTf8jVg" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:bCFUOoR9GFvYqJ2Pj9MpVEzB9yg3yFOYEpTjdjqlO1G9v+AJw3uXm9OLwVE="/>
+    <contextParameter comment="" internalId="_3DMW9RpZEeyq1dUlTf8jVg" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_3DMW9hpZEeyq1dUlTf8jVg" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" internalId="_3DMW9xpZEeyq1dUlTf8jVg" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_3DMW-BpZEeyq1dUlTf8jVg" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xyndbcluster-instance-1.c5lyjxktqflt.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_3DMW-RpZEeyq1dUlTf8jVg" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_3DMW-hpZEeyq1dUlTf8jVg" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_3DMW-xpZEeyq1dUlTf8jVg" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:m98chpaRxjNSupKhwquSl/wuVIMLVHYdWpF6+rD2SiD8xAJU3RkkwRtyhQ=="/>
+    <contextParameter comment="" internalId="_3DMW_BpZEeyq1dUlTf8jVg" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_3DMW_RpZEeyq1dUlTf8jVg" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="" internalId="_3DMW_hpZEeyq1dUlTf8jVg" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_3DMW_xpZEeyq1dUlTf8jVg" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xyndbcluster-instance-1.cilo6pqeze5v.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_3DMXABpZEeyq1dUlTf8jVg" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_3DMXARpZEeyq1dUlTf8jVg" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_3DMXAhpZEeyq1dUlTf8jVg" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:Yc2R+wX/V5Xf5IhMaKJUGPW8s4pa3RV2lCEGN92X/YQ5evGzBeSJNPstbyQ="/>
+    <contextParameter comment="" internalId="_3DMXAxpZEeyq1dUlTf8jVg" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_3DMXBBpZEeyq1dUlTf8jVg" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <context confirmationNeeded="false" name="DefaultProduction">
+    <contextParameter comment="" internalId="_3DMXBRpZEeyq1dUlTf8jVg" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="19997"/>
+    <contextParameter comment="" internalId="_3DMXBhpZEeyq1dUlTf8jVg" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_3DMXBxpZEeyq1dUlTf8jVg" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_3DMXCBpZEeyq1dUlTf8jVg" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_3DMXCRpZEeyq1dUlTf8jVg" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:3Ho731OBbGkG1lNjWMC45dcBlfu9ED5LxwlE91w821Rfk19YICB5dbcAIQ=="/>
+    <contextParameter comment="" internalId="_3DMXChpZEeyq1dUlTf8jVg" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_3DMXCxpZEeyq1dUlTf8jVg" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms1G&quot;,&quot;-Xmx4G&quot;,&quot;-XX:-UseGCOverheadLimit&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:FnMlNFtcl2PSzmJaomLThPFKEYcsvcbUABp5JNQF"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:VXhPlexiRxcujOCgyEXxqWvTOwthAppRK9n2dPAI"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_9MPP40CvEeu3bLVe3VddqA" name="DataOperation"/>
+    <routinesParameter id="_9OU6kECvEeu3bLVe3VddqA" name="Mathematical"/>
+    <routinesParameter id="_9Ow_cECvEeu3bLVe3VddqA" name="Numeric"/>
+    <routinesParameter id="_9O6wdkCvEeu3bLVe3VddqA" name="Relational"/>
+    <routinesParameter id="_9QZ-NkCvEeu3bLVe3VddqA" name="SQLike"/>
+    <routinesParameter id="_9PNrYECvEeu3bLVe3VddqA" name="StringHandling"/>
+    <routinesParameter id="_9PhNYECvEeu3bLVe3VddqA" name="TalendDataGenerator"/>
+    <routinesParameter id="_9PqXVkCvEeu3bLVe3VddqA" name="TalendDate"/>
+    <routinesParameter id="_9QQ0QECvEeu3bLVe3VddqA" name="TalendStringUtil"/>
+    <routinesParameter id="_9P9SRkCvEeu3bLVe3VddqA" name="TalendString"/>
+  </parameters>
+  <node componentName="tRedshiftInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_goEBwGpREeuxePq_acW5ow"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;xyngular-dw-prod.cxao0mrnwrg0.us-east-1.redshift.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="REDSHIFT"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5439&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;xyngulardw&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;xdwmaster&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KU3SgOCeyaVHe8zoOSwtGdMzS497rhpvA9RV+MYi53LNXlVBBjceNayUk1l27ZkSPdNrxkTd"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_goEBwGpREeuxePq_acW5ow - dw_accounts"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dw_accounts&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;public\&quot;.dw_accounts.account_id,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.first_name,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.last_name,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.full_name,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.alternate_first_name,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.alternate_last_name,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.alternate_full_name,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.recognition_name,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.full_rec,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.first_rec,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.last_rec,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.report_rec_name,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.award_type,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.account_type,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.quickstart_status,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.quickstart_start_dtz,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.quickstart_end_dtz,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.quickstart_signup_count,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.address,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.address2,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.address3,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.city,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.state,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.postal_code,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.country_code,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.region,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.sub_region,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.is_fraud,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.is_symmetry_related,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.is_symmetry_import,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.email_address,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.cell_phone,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.home_phone,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.work_phone,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.xander_phone,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.birth_date,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.last_paid_ord_date,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.last_paid_ord_account_type,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.src_system_name,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.sponsor_account_id,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.title_rank_id,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.title_rank_first_achieved_dtz,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.comm_eligible_date,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.comm_eligible_dtz,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.inactive_dtz,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.src_created_date,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.src_created_dtz,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.src_created_dtz_local,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.src_updated_dtz,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.last_renew_date,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.next_renew_date,&#10;&#9;&#9;\&quot;public\&quot;.dw_accounts.dw_updated_dtz&#10;FROM&#9;\&quot;public\&quot;.dw_accounts&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="redshift_id"/>
+    <elementParameter field="CHECK" name="USE_LOG_FILE" value="false"/>
+    <elementParameter field="FILE" name="LOG_FILE" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/redshift-jdbc.log&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOG_LEVEL" value="1"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="first_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="full_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alternate_first_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alternate_last_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alternate_full_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="recognition_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="full_rec"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="first_rec"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_rec"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="report_rec_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="award_type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quickstart_status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quickstart_start_dtz"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quickstart_end_dtz"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quickstart_signup_count"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="address"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="address2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="address3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="postal_code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country_code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="region"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sub_region"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_fraud"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_symmetry_related"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_symmetry_import"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="email_address"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cell_phone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="home_phone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="work_phone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="xander_phone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="birth_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_paid_ord_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_paid_ord_account_type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="src_system_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sponsor_account_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title_rank_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title_rank_first_achieved_dtz"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comm_eligible_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comm_eligible_dtz"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inactive_dtz"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="src_created_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="src_created_dtz"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="src_created_dtz_local"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="src_updated_dtz"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_renew_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="next_renew_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_updated_dtz"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="JDBC_URL" value="STANDARD"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dw_accounts" name="tDBInput_2">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="last_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="full_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="alternate_first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="alternate_last_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="alternate_full_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="recognition_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="full_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="first_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="last_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="report_rec_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="award_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="36" name="account_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="quickstart_status" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="35" name="quickstart_start_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="35" name="quickstart_end_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="quickstart_signup_count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="address3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="postal_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="sub_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="is_fraud" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="is_symmetry_related" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="is_symmetry_import" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="email_address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="cell_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="home_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="work_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="xander_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="birth_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="last_paid_ord_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="36" name="last_paid_ord_account_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="36" name="src_system_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="sponsor_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="title_rank_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="35" name="title_rank_first_achieved_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="35" name="comm_eligible_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="35" name="inactive_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="src_created_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="35" name="src_created_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="35" name="src_created_dtz_local" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="35" name="src_updated_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="last_renew_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="next_renew_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="35" name="dw_updated_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_-cfVMBpYEeyq1dUlTf8jVg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dw_accounts" name="out">
+      <column comment="" key="false" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="last_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="full_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="alternate_first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="alternate_last_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="alternate_full_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="recognition_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="full_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="first_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="last_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="report_rec_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="award_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="account_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="quickstart_status" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="quickstart_start_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="quickstart_end_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="quickstart_signup_count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="address3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="postal_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="sub_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_fraud" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_symmetry_related" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_symmetry_import" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="email_address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="cell_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="home_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="work_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="xander_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="birth_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="last_paid_ord_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="last_paid_ord_account_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="src_system_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="sponsor_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="title_rank_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="title_rank_first_achieved_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="comm_eligible_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="inactive_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="src_created_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="src_created_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="src_created_dtz_local" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="src_updated_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="last_renew_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="next_renew_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="dw_updated_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="300" name="hash_key" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.account_id" name="account_id" type="id_Long"/>
+        <mapperTableEntries expression="row1.first_name" name="first_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.last_name" name="last_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.full_name" name="full_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.alternate_first_name" name="alternate_first_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.alternate_last_name" name="alternate_last_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.alternate_full_name" name="alternate_full_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.recognition_name" name="recognition_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.full_rec" name="full_rec" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.first_rec" name="first_rec" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.last_rec" name="last_rec" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.report_rec_name" name="report_rec_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.award_type" name="award_type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.account_type" name="account_type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.quickstart_status" name="quickstart_status" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.quickstart_start_dtz" name="quickstart_start_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.quickstart_end_dtz" name="quickstart_end_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.quickstart_signup_count" name="quickstart_signup_count" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.address" name="address" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.address2" name="address2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.address3" name="address3" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.city" name="city" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.state" name="state" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.postal_code" name="postal_code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.country_code" name="country_code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.region" name="region" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.sub_region" name="sub_region" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.is_fraud" name="is_fraud" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="row1.is_symmetry_related" name="is_symmetry_related" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="row1.is_symmetry_import" name="is_symmetry_import" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="row1.email_address" name="email_address" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.cell_phone" name="cell_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.home_phone" name="home_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.work_phone" name="work_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.xander_phone" name="xander_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.birth_date" name="birth_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.last_paid_ord_date" name="last_paid_ord_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.last_paid_ord_account_type" name="last_paid_ord_account_type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.src_system_name" name="src_system_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.sponsor_account_id" name="sponsor_account_id" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.title_rank_id" name="title_rank_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.title_rank_first_achieved_dtz" name="title_rank_first_achieved_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.comm_eligible_date" name="comm_eligible_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.comm_eligible_dtz" name="comm_eligible_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.inactive_dtz" name="inactive_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.src_created_date" name="src_created_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.src_created_dtz" name="src_created_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.src_created_dtz_local" name="src_created_dtz_local" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.src_updated_dtz" name="src_updated_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.last_renew_date" name="last_renew_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.next_renew_date" name="next_renew_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.dw_updated_dtz" name="dw_updated_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="TalendString.getAsciiRandomString(6) " name="hash_key" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="account_id" type="id_Long"/>
+        <mapperTableEntries name="first_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="last_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="full_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="alternate_first_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="alternate_last_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="alternate_full_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="recognition_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="full_rec" nullable="true" type="id_String"/>
+        <mapperTableEntries name="first_rec" nullable="true" type="id_String"/>
+        <mapperTableEntries name="last_rec" nullable="true" type="id_String"/>
+        <mapperTableEntries name="report_rec_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="award_type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="account_type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="quickstart_status" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="quickstart_start_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="quickstart_end_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="quickstart_signup_count" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="address" nullable="true" type="id_String"/>
+        <mapperTableEntries name="address2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="address3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="city" nullable="true" type="id_String"/>
+        <mapperTableEntries name="state" nullable="true" type="id_String"/>
+        <mapperTableEntries name="postal_code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="country_code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="region" nullable="true" type="id_String"/>
+        <mapperTableEntries name="sub_region" nullable="true" type="id_String"/>
+        <mapperTableEntries name="is_fraud" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="is_symmetry_related" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="is_symmetry_import" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="email_address" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cell_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="home_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="work_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="xander_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="birth_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="last_paid_ord_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="last_paid_ord_account_type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="src_system_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="sponsor_account_id" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="title_rank_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="title_rank_first_achieved_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="comm_eligible_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="comm_eligible_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="inactive_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="src_created_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="src_created_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="src_created_dtz_local" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="src_updated_dtz" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="last_renew_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="next_renew_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="dw_updated_dtz" nullable="true" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Aurora_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Aurora_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Aurora_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Aurora_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.Aurora_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XwJL1H/VTssoZ+2aZjqolt92A/mhwYF32ol3R6bgUfRq5prVITe2DhSGGYYRqi57GUOK"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dw_accounts&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw - dw_accounts"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Aurora_AdditionalParams"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="first_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="full_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alternate_first_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alternate_last_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alternate_full_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="recognition_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="full_rec"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="first_rec"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_rec"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="report_rec_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="award_type"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_type"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quickstart_status"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quickstart_start_dtz"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quickstart_end_dtz"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quickstart_signup_count"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="address"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="address2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="address3"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="postal_code"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country_code"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="region"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sub_region"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_fraud"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_symmetry_related"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_symmetry_import"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="email_address"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cell_phone"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="home_phone"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="work_phone"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="xander_phone"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="birth_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_paid_ord_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_paid_ord_account_type"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="src_system_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sponsor_account_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title_rank_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title_rank_first_achieved_dtz"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comm_eligible_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comm_eligible_dtz"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inactive_dtz"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="src_created_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="src_created_dtz"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="src_created_dtz_local"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="src_updated_dtz"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_renew_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="next_renew_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_updated_dtz"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hash_key"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dw_accounts" name="tDBOutput_1">
+      <column comment="" key="false" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="last_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="full_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="alternate_first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="alternate_last_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="alternate_full_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="recognition_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="full_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="first_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="last_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="report_rec_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="award_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="account_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="quickstart_status" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="quickstart_start_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="quickstart_end_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="quickstart_signup_count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="address3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="postal_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="sub_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_fraud" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_symmetry_related" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_symmetry_import" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="email_address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="cell_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="home_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="work_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="xander_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="birth_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="last_paid_ord_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="last_paid_ord_account_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="src_system_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="sponsor_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="title_rank_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="title_rank_first_achieved_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="comm_eligible_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="inactive_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="src_created_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="src_created_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="src_created_dtz_local" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="src_updated_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="last_renew_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="next_renew_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="dw_updated_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="300" name="hash_key" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="dw_accounts" name="REJECT">
+      <column comment="" key="false" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="last_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="full_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="alternate_first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="alternate_last_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="alternate_full_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="recognition_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="full_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="first_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="last_rec" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="report_rec_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="award_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="account_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="quickstart_status" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="quickstart_start_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="quickstart_end_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="quickstart_signup_count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="address3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="postal_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="sub_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_fraud" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_symmetry_related" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_symmetry_import" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="email_address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="cell_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="home_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="work_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="xander_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="birth_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="last_paid_ord_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="last_paid_ord_account_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="src_system_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="sponsor_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="title_rank_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="title_rank_first_achieved_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="comm_eligible_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="inactive_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="src_created_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="src_created_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="src_created_dtz_local" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="src_updated_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="last_renew_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="next_renew_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="dw_updated_dtz" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="300" name="hash_key" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8abdc8b8-43f3-4fd5-a2c2-2a7c79836477"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QtXybLlk5S7Qr/1tksI7BzkTBPh2CQL0AGCWEf1VQGUHJSgE+IqUdX1Dh/iQjnS7nt/Nkq/bTQ6b&#13;
+ssHLzfn+Hw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c0b1140b-3b93-48b2-812a-8edd743aba37"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Io3htIjQdJHo7Sw9LPffSiU9GdWigsAsXlJAbPKnlkSpqBSWOAwwwv+6FqfyFEvTaF508i/Valjr&#13;
+7MVxxC6w8A==</DigestValue></Reference></SignedInfo><SignatureValue>VRi3sHGJYHkaraL4cIZd8bLZKakybF0ErY3KTutDf8SPdwdt5jewDD+3f4fcQP+zWPClSFH2pJ00&#13;
+1f2QA4o9erP4x57jL5uYcsPKndOdcF/cG83DcfQWLynZmCvz4ZTcFOnrP1Bvh75SpDYsOfCyyjF7&#13;
+NwF9orbshLFW284CYez1ranJvo8wUCq+RC4rKyJ0Sf3FJledExLY5jpkpwF4dKrqUq36HSFJ0GA7&#13;
+ZiD/JiPteNNJcWhG0O3UHosrcAeK5wOiXDif+Cf7UOwCEte7iBRNHA9/X+jdYbWBPjiwNNQjeazC&#13;
+EpN52mwbSa7i2AgiY276kh9JRP6lm/KlutNHbA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c0b1140b-3b93-48b2-812a-8edd743aba37" Target="#_8abdc8b8-43f3-4fd5-a2c2-2a7c79836477"><Timestamp>2021-11-02 22:50:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
