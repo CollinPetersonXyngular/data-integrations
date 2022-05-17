@@ -34,7 +34,7 @@
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
     <talend.job.name>odldb_redshift</talend.job.name>
-    <talend.job.id>_dqWMENYZEeydmqRFDqbQcg</talend.job.id>
+    <talend.job.id>_7Ye_sBihEeuUA4Cue17h8Q</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.folder>ctreetoredshift/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
@@ -46,6 +46,11 @@
       <groupId>net.minidev</groupId>
       <artifactId>accessors-smart</artifactId>
       <version>2.4.7</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>advancedPersistentLookupLib-1.2</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>net.hydromatic</groupId>
@@ -298,6 +303,11 @@
       <version>3.1.0</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>jboss-serialization</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.talend.components.lib</groupId>
       <artifactId>job-audit</artifactId>
       <version>1.4</version>
@@ -331,6 +341,11 @@
       <groupId>com.google.guava</groupId>
       <artifactId>listenablefuture</artifactId>
       <version>9999.0-empty-to-avoid-conflict-with-guava</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-1.2-api</artifactId>
+      <version>2.17.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -393,14 +408,14 @@
       <version>2.6.2</version>
     </dependency>
     <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.2.14</version>
+    </dependency>
+    <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
       <version>3.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.amazon.redshift</groupId>
-      <artifactId>redshift-jdbc42-no-awssdk</artifactId>
-      <version>1.2.37.1061</version>
     </dependency>
     <dependency>
       <groupId>com.yahoo.datasketches</groupId>
@@ -426,6 +441,11 @@
       <groupId>org.talend.components.lib</groupId>
       <artifactId>talend_file_enhanced</artifactId>
       <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>trove</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.tukaani</groupId>
