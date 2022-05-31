@@ -1,0 +1,1336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_FqmQcNU_EeyHApe9iuc3VA" name="DataTrax_connection_jdbcUrl" prompt="DataTrax_connection_jdbcUrl?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="jdbc:ctree:6597@ctree-live.xyngular.com:livesql"/>
+    <contextParameter comment="" internalId="_FqmQcdU_EeyHApe9iuc3VA" name="DataTrax_connection_userPassword_password" prompt="DataTrax_connection_userPassword_password?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:zH9Bz0gI7yk/R7jRAta8ZjHWWSut2nX3Y+DaXF/HdFmsFNNlanmAwA=="/>
+    <contextParameter comment="" internalId="_FqmQctU_EeyHApe9iuc3VA" name="DataTrax_connection_userPassword_userId" prompt="DataTrax_connection_userPassword_userId?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="xyn_user"/>
+    <contextParameter comment="" internalId="_FqmQc9U_EeyHApe9iuc3VA" name="DataTrax_mappingFile" prompt="DataTrax_mappingFile?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="mysql_id"/>
+    <contextParameter comment="" internalId="_FqmQdNU_EeyHApe9iuc3VA" name="DataTrax_drivers" prompt="DataTrax_drivers?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="&quot;mvn:org.talend.libraries/ctreeJDBC/6.0.0-SNAPSHOT/jar&quot;"/>
+    <contextParameter comment="" internalId="_FqmQddU_EeyHApe9iuc3VA" name="DataTrax_connection_driverClass" prompt="DataTrax_connection_driverClass?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="ctree.jdbc.ctreeDriver"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" internalId="_FqmQdtU_EeyHApe9iuc3VA" name="DataTrax_connection_jdbcUrl" prompt="DataTrax_connection_jdbcUrl?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="jdbc:ctree:6597@ctree-live.xyngular.com:livesql"/>
+    <contextParameter comment="" internalId="_FqmQd9U_EeyHApe9iuc3VA" name="DataTrax_connection_userPassword_password" prompt="DataTrax_connection_userPassword_password?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:WYmZpAPyTDy3pSI9vMQfeIayP7bZaBZQD7vDvy7Ty7JCtcUfh9evAg=="/>
+    <contextParameter comment="" internalId="_FqmQeNU_EeyHApe9iuc3VA" name="DataTrax_connection_userPassword_userId" prompt="DataTrax_connection_userPassword_userId?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="xyn_user"/>
+    <contextParameter comment="" internalId="_FqmQedU_EeyHApe9iuc3VA" name="DataTrax_mappingFile" prompt="DataTrax_mappingFile?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="mysql_id"/>
+    <contextParameter comment="" internalId="_FqmQetU_EeyHApe9iuc3VA" name="DataTrax_drivers" prompt="DataTrax_drivers?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="&quot;mvn:org.talend.libraries/ctreeJDBC/6.0.0-SNAPSHOT/jar&quot;"/>
+    <contextParameter comment="" internalId="_FqmQe9U_EeyHApe9iuc3VA" name="DataTrax_connection_driverClass" prompt="DataTrax_connection_driverClass?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="ctree.jdbc.ctreeDriver"/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="" internalId="_FqmQfNU_EeyHApe9iuc3VA" name="DataTrax_connection_jdbcUrl" prompt="DataTrax_connection_jdbcUrl?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="jdbc:ctree:6597@ctree-live.xyngular.com:livesql"/>
+    <contextParameter comment="" internalId="_FqmQfdU_EeyHApe9iuc3VA" name="DataTrax_connection_userPassword_password" prompt="DataTrax_connection_userPassword_password?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:6ey9mRRUE4qdTxn08/2RBn2tImIhTrfsYzDvhmwhCcnI7NuGZfvO7Q=="/>
+    <contextParameter comment="" internalId="_FqmQftU_EeyHApe9iuc3VA" name="DataTrax_connection_userPassword_userId" prompt="DataTrax_connection_userPassword_userId?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="xyn_user"/>
+    <contextParameter comment="" internalId="_FqmQf9U_EeyHApe9iuc3VA" name="DataTrax_mappingFile" prompt="DataTrax_mappingFile?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="mysql_id"/>
+    <contextParameter comment="" internalId="_FqmQgNU_EeyHApe9iuc3VA" name="DataTrax_drivers" prompt="DataTrax_drivers?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="&quot;mvn:org.talend.libraries/ctreeJDBC/6.0.0-SNAPSHOT/jar&quot;"/>
+    <contextParameter comment="" internalId="_FqmQgdU_EeyHApe9iuc3VA" name="DataTrax_connection_driverClass" prompt="DataTrax_connection_driverClass?" promptNeeded="false" repositoryContextId="_GfYV0GS4EeuTn6xEN4xmUg" type="id_String" value="ctree.jdbc.ctreeDriver"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:N9w67nBWOBjhOEWzvSkDauemF//emv4in3v8pMfj"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:pgJewl2soGOvWAc2PS1vNfy4q7l3jE0ElMcMwBnk"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_2O_E4LtREeyS0KY9MHgf7Q" name="DataOperation"/>
+    <routinesParameter id="_2PGZoLtREeyS0KY9MHgf7Q" name="Mathematical"/>
+    <routinesParameter id="_2PNHULtREeyS0KY9MHgf7Q" name="Numeric"/>
+    <routinesParameter id="_2PT1ALtREeyS0KY9MHgf7Q" name="Relational"/>
+    <routinesParameter id="_2NyyELtREeyS0KY9MHgf7Q" name="SQLike"/>
+    <routinesParameter id="_2PZUkLtREeyS0KY9MHgf7Q" name="StringHandling"/>
+    <routinesParameter id="_2PgpULtREeyS0KY9MHgf7Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_2PpzQLtREeyS0KY9MHgf7Q" name="TalendDate"/>
+    <routinesParameter id="_2P2nkLtREeyS0KY9MHgf7Q" name="TalendStringUtil"/>
+    <routinesParameter id="_2Pwg8LtREeyS0KY9MHgf7Q" name="TalendString"/>
+  </parameters>
+  <node componentName="tS3Connection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tS3Connection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CREDENTIAL_PROVIDER" value="STATIC_CREDENTIALS"/>
+    <elementParameter field="FILE" name="PROFILE_PATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROFILE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;AKIA6CPZOYKDADCENFVZ&quot;"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v1:DFsoDwP7cs1IC6eAjlWknRYxQsH4UxzpXxzm+ped4QQAZ4f/4NxbsHmKJDtU8zQtqGzP9HSyYpwFiz3E0prZufVCKyv8uw=="/>
+    <elementParameter field="CHECK" name="ASSUME_ROLE" value="false"/>
+    <elementParameter field="TEXT" name="ARN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ROLE_SESSION_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SESSION_DURATION" show="false" value="15"/>
+    <elementParameter field="OPENED_LIST" name="REGION" value="&quot;us-east-1&quot;"/>
+    <elementParameter field="CHECK" name="ENCRYPT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEY_TYPE" show="false" value="KMS_CMK"/>
+    <elementParameter field="CLOSED_LIST" name="ALGORITHM_SYMMETRIC_MASTER_KEY" show="false" value="AES"/>
+    <elementParameter field="CLOSED_LIST" name="ALGORITHM_ASYMMETRIC_MASTER_KEY" show="false" value="RSA"/>
+    <elementParameter field="CLOSED_LIST" name="ENCODING" show="false" value="BASE64"/>
+    <elementParameter field="PASSWORD" name="ENCRYPTED_KEY_CMK" show="false" value="enc:system.encryption.key.v1:d7jGKKdE7/NDfcoyOq9Mb/Kwg2KVgeejzd9fupAL"/>
+    <elementParameter field="PASSWORD" name="ENCRYPTED_KEY_BASE64" show="false" value="enc:system.encryption.key.v1:qz817QjeIGtBLbEblaA7UUVB7US91FFtPlGwxY/Z"/>
+    <elementParameter field="FILE" name="ENCRYPTED_KEY_X509" show="false" value="&quot;&quot;"/>
+    <elementParameter field="FILE" name="PUBLIC_KEY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="FILE" name="PRIVATE_KEY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_REGION_ENDPOINT" value="false"/>
+    <elementParameter field="TEXT" name="REGION_ENDPOINT" show="false" value="&quot;s3.amazonaws.com&quot;"/>
+    <elementParameter field="CHECK" name="PATHSTYLEACCESS" show="false" value="false"/>
+    <elementParameter field="FILE" name="WEB_IDENTITY_TOKEN_FILE" show="false" value=""/>
+    <elementParameter field="TEXT" name="WEB_TOKEN_ARN" show="false" value=""/>
+    <elementParameter field="TEXT" name="WEB_TOKEN_ROLE_SESSION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false"/>
+    <elementParameter field="TABLE" name="CLIENT_CONFIGURATION" show="false"/>
+    <elementParameter field="CHECK" name="SET_STS_ENDPOINT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="STS_ENDPOINT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="OPENED_LIST" name="SIGNING_REGION" show="false" value="DEFAULT"/>
+    <elementParameter field="TEXT" name="EXTERNALID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SERIALNUMBER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TOKENCODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="TAGS" show="false"/>
+    <elementParameter field="TABLE" name="POLICY_TABLE" show="false"/>
+    <elementParameter field="MEMO" name="POLICY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_ACCESSIBILITY" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="CHECK_METHOD" value="BY_ACCOUNT_OWNER"/>
+    <elementParameter field="CHECK" name="ENABLE_ACCELERATE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJDBCInput" componentVersion="0.36.5" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="odpdb"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter name="PROPERTIES" value="{&quot;@id&quot;:1,&quot;@type&quot;:&quot;org.talend.components.jdbc.tjdbcinput.TJDBCInputProperties&quot;,&quot;__version&quot;:2,&quot;referencedComponent&quot;:{&quot;referenceType&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;THIS_COMPONENT&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_TYPE&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_INSTANCE&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties&lt;P extends org.talend.daikon.properties.Properties&gt;.ReferenceType&quot;,&quot;name&quot;:&quot;referenceType&quot;,&quot;tags&quot;:null},&quot;componentInstanceId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;componentInstanceId&quot;,&quot;tags&quot;:null},&quot;referenceDefinitionName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;tJDBCConnection&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;referenceDefinitionName&quot;,&quot;tags&quot;:null},&quot;reference&quot;:null,&quot;name&quot;:&quot;referencedComponent&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;connection&quot;:{&quot;jdbcUrl&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.DataTrax_connection_jdbcUrl&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.jdbcUrl&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;jdbcUrl&quot;,&quot;tags&quot;:null},&quot;driverTable&quot;:{&quot;drivers&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;context.DataTrax_drivers&quot;]},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.driverTable&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;drivers&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;driverTable&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;driverClass&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.DataTrax_connection_driverClass&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.driverClass&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;driverClass&quot;,&quot;tags&quot;:null},&quot;userPassword&quot;:{&quot;useAuth&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useAuth&quot;,&quot;tags&quot;:null},&quot;userId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.DataTrax_connection_userPassword_userId&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.userPassword.userId&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;userId&quot;,&quot;tags&quot;:null},&quot;password&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:8M8uMHJ/srLnTXxrHWAbBN0tMrXRwvp+mO4O5LTPf7xV+1mYr4JvCogJOjQB4FYhm9D6dHTpJMcarBJjMIUgOL/tBlkHipyDwF8RbUQ=&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.userPassword.password&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;password&quot;,&quot;tags&quot;:null},&quot;needSwitch&quot;:false,&quot;name&quot;:&quot;userPassword&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;useInWizard&quot;:false,&quot;name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;schemaListener&quot;:{&quot;@type&quot;:&quot;org.talend.components.jdbc.tjdbcinput.TJDBCInputProperties$2&quot;,&quot;this$0&quot;:{&quot;@ref&quot;:1}},&quot;main&quot;:{&quot;@type&quot;:&quot;org.talend.components.jdbc.tjdbcinput.TJDBCInputProperties$1&quot;,&quot;this$0&quot;:{&quot;@ref&quot;:1},&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;odpdb\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;order_number\&quot;,\&quot;type\&quot;:\&quot;long\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;BIGINT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Long\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;order_number\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;talend.field.isKey\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;order_number\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;talend.field.length\&quot;:\&quot;20\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;payment_number\&quot;,\&quot;type\&quot;:{\&quot;type\&quot;:\&quot;int\&quot;,\&quot;java-class\&quot;:\&quot;java.lang.Short\&quot;},\&quot;talend.field.dbType\&quot;:\&quot;SMALLINT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Short\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;payment_number\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;talend.field.isKey\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;payment_number\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;talend.field.length\&quot;:\&quot;5\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;dist_id\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;NUMERIC\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;dist_id\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;talend.field.length\&quot;:\&quot;20\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;dist_id\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;post_date\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;java-class\&quot;:\&quot;java.util.Date\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;DATE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Date\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;di.table.label\&quot;:\&quot;post_date\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;post_date\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;10\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;country_code\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;country_code\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;country_code\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;4\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;receipt_type\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;int\&quot;,\&quot;java-class\&quot;:\&quot;java.lang.Byte\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;TINYINT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Byte\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;receipt_type\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;receipt_type\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;3\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;post_init\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;post_init\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;post_init\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;6\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;check_cc_account\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;check_cc_account\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;check_cc_account\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;40\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;status\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;int\&quot;,\&quot;java-class\&quot;:\&quot;java.lang.Byte\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;TINYINT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Byte\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;status\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;status\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;3\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;status_4_date\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;java-class\&quot;:\&quot;java.util.Date\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;DATE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Date\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;di.table.label\&quot;:\&quot;status_4_date\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;status_4_date\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;10\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;status_7_date\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;java-class\&quot;:\&quot;java.util.Date\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;DATE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Date\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;di.table.label\&quot;:\&quot;status_7_date\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;status_7_date\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;10\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;status_8_date\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;java-class\&quot;:\&quot;java.util.Date\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;DATE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Date\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;di.table.label\&quot;:\&quot;status_8_date\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;status_8_date\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;10\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;status_9_date\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;java-class\&quot;:\&quot;java.util.Date\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;DATE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Date\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;di.table.label\&quot;:\&quot;status_9_date\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;status_9_date\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;10\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;auth_date\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;java-class\&quot;:\&quot;java.util.Date\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;DATE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Date\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;di.table.label\&quot;:\&quot;auth_date\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;auth_date\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;10\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bank_date\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;java-class\&quot;:\&quot;java.util.Date\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;DATE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Date\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;di.table.label\&quot;:\&quot;bank_date\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bank_date\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;10\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;last_auth_attempt\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;java-class\&quot;:\&quot;java.util.Date\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;DATE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Date\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;di.table.label\&quot;:\&quot;last_auth_attempt\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;last_auth_attempt\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;10\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;auth_attempts\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;int\&quot;,\&quot;java-class\&quot;:\&quot;java.lang.Byte\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;TINYINT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Byte\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;auth_attempts\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;auth_attempts\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;3\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;entry_init\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;entry_init\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;entry_init\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;6\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;entry_date\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;java-class\&quot;:\&quot;java.util.Date\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;DATE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Date\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;di.table.label\&quot;:\&quot;entry_date\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;entry_date\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;10\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;entry_time\&quot;,\&quot;type\&quot;:\&quot;long\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;BIGINT\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;entry_time\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Long\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;talend.field.length\&quot;:\&quot;20\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;entry_time\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;check_number\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;TINYINT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Long\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;check_number\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;check_number\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;3\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;cc_type\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;cc_type\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;cc_type\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;4\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;amount_recd\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;NUMERIC\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;amount_recd\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;talend.field.length\&quot;:\&quot;15\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;amount_recd\&quot;,\&quot;talend.field.precision\&quot;:\&quot;2\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;cc_exp_yy\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;int\&quot;,\&quot;java-class\&quot;:\&quot;java.lang.Short\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;SMALLINT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Short\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;cc_exp_yy\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;cc_exp_yy\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;5\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;cc_exp_mm\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;int\&quot;,\&quot;java-class\&quot;:\&quot;java.lang.Byte\&quot;},\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;TINYINT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Byte\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;cc_exp_mm\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;cc_exp_mm\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;3\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;auto_authed_f\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;auto_authed_f\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;auto_authed_f\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;1\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;cc_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;cc_name\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;cc_name\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;60\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;currency_code\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;currency_code\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;currency_code\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;4\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_first_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_first_name\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_first_name\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;20\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_last_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_last_name\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_last_name\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;20\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_addr1\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_addr1\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_addr1\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;60\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_addr2\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_addr2\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_addr2\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;60\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_addr3\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_addr3\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_addr3\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;60\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_city\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_city\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_city\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;25\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_state\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_state\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_state\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;10\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_zip\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_zip\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_zip\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;15\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_email\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_email\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_email\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;60\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_phone\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_phone\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_phone\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;20\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_country_code\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_country_code\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_country_code\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;4\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;bill_ip_address\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;bill_ip_address\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;bill_ip_address\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;20\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;dont_encrypt_f\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;dont_encrypt_f\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;dont_encrypt_f\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;1\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;save_payment_f\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.dbType\&quot;:\&quot;CHARACTER\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;save_payment_f\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;save_payment_f\&quot;,\&quot;di.prop.Comment\&quot;:\&quot;\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;1\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;}],\&quot;di.table.name\&quot;:\&quot;MAIN\&quot;,\&quot;di.table.label\&quot;:\&quot;odpdb\&quot;}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;main&quot;,&quot;validationResult&quot;:{&quot;status&quot;:{&quot;name&quot;:&quot;OK&quot;},&quot;message&quot;:null,&quot;number&quot;:0},&quot;tags&quot;:null},&quot;tableSelection&quot;:{&quot;tablename&quot;:{&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;odp1db\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;tablename&quot;,&quot;tags&quot;:null},&quot;connection&quot;:{&quot;@ref&quot;:1},&quot;name&quot;:&quot;tableSelection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;sql&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;SELECT \t\r\n\torder_number,\r\n\tpayment_number,\r\n\tdist_id,\r\n\tpost_date,\r\n\tcountry_code,\r\n\treceipt_type,\r\n\tpost_init,\r\n\tcheck_cc_account,\r\n\tstatus,\r\n\tstatus_4_date,\r\n\tstatus_7_date,\r\n\tstatus_8_date,\r\n\tstatus_9_date,\r\n\tauth_date,\r\n\tbank_date,\r\n\tlast_auth_attempt,\r\n\tauth_attempts,\r\n\tentry_init,\r\n\tentry_date,\r\n\tentry_time,\r\n\tcheck_number,\r\n\tcc_type,\r\n\tamount_recd,\r\n\tcc_exp_yy,\r\n\tcc_exp_mm,\r\n\tauto_authed_f,\r\n\tcc_name,\r\n\tcurrency_code,\r\n\tbill_first_name,\r\n\tbill_last_name,\r\n\tbill_addr1,\r\n\tbill_addr2,\r\n\tbill_addr3,\r\n\tbill_city,\r\n\tbill_state,\r\n\tbill_zip,\r\n\tbill_email,\r\n\tbill_phone,\r\n\tbill_country_code,\r\n\tbill_ip_address,\r\n\tdont_encrypt_f,\r\n\tsave_payment_f\r\nFROM admin.odp1db\r\nWHERE entry_date &gt;= CURRENT_DATE - 1\r\n    OR status_4_date &gt;= CURRENT_DATE - 1\r\n    OR status_7_date &gt;= CURRENT_DATE - 1\r\n    OR auth_date &gt;= CURRENT_DATE - 1\r\n    OR bank_date &gt;= CURRENT_DATE - 1\r\n    OR last_auth_attempt &gt;= CURRENT_DATE - 1\r\n    OR post_date &gt;= CURRENT_DATE - 1\r\nunion all\r\nSELECT \r\n\torder_number,\r\n\tpayment_number,\r\n\tdist_id,\r\n\tpost_date,\r\n\tcountry_code,\r\n\treceipt_type,\r\n\tpost_init,\r\n\tcheck_cc_account,\r\n\tstatus,\r\n\tstatus_4_date,\r\n\tstatus_7_date,\r\n\tstatus_8_date,\r\n\tstatus_9_date,\r\n\tauth_date,\r\n\tbank_date,\r\n\tlast_auth_attempt,\r\n\tauth_attempts,\r\n\tentry_init,\r\n\tentry_date,\r\n\tentry_time,\r\n\tcheck_number,\r\n\tcc_type,\r\n\tamount_recd,\r\n\tcc_exp_yy,\r\n\tcc_exp_mm,\r\n\tauto_authed_f,\r\n\tcc_name,\r\n\tcurrency_code,\r\n\tbill_first_name,\r\n\tbill_last_name,\r\n\tbill_addr1,\r\n\tbill_addr2,\r\n\tbill_addr3,\r\n\tbill_city,\r\n\tbill_state,\r\n\tbill_zip,\r\n\tbill_email,\r\n\tbill_phone,\r\n\tbill_country_code,\r\n\tbill_ip_address,\r\n\tdont_encrypt_f,\r\n\tsave_payment_f\r\nFROM admin.odp2db\r\nWHERE entry_date &gt;= CURRENT_DATE - 1\r\n    OR status_4_date &gt;= CURRENT_DATE - 1\r\n    OR status_7_date &gt;= CURRENT_DATE - 1\r\n    OR auth_date &gt;= CURRENT_DATE - 1\r\n    OR bank_date &gt;= CURRENT_DATE - 1\r\n    OR last_auth_attempt &gt;= CURRENT_DATE - 1\r\n    OR post_date &gt;= CURRENT_DATE - 1\r\n\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;LINE_SEPARATOR_REPLACED_TO&quot;:&quot; &quot;,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;sql&quot;,&quot;tags&quot;:null},&quot;useDataSource&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useDataSource&quot;,&quot;tags&quot;:null},&quot;dataSource&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSource&quot;,&quot;tags&quot;:null},&quot;useCursor&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useCursor&quot;,&quot;tags&quot;:null},&quot;cursor&quot;:{&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:{&quot;@type&quot;:&quot;int&quot;,&quot;value&quot;:1000},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;cursor&quot;,&quot;tags&quot;:null},&quot;trimStringOrCharColumns&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:true},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;trimStringOrCharColumns&quot;,&quot;tags&quot;:null},&quot;trimTable&quot;:{&quot;trim&quot;:{&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.Collections$EmptyList&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.Boolean&gt;&quot;,&quot;name&quot;:&quot;trim&quot;,&quot;tags&quot;:null},&quot;columnName&quot;:{&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;order_number&quot;,&quot;payment_number&quot;,&quot;dist_id&quot;,&quot;post_date&quot;,&quot;country_code&quot;,&quot;receipt_type&quot;,&quot;post_init&quot;,&quot;check_cc_account&quot;,&quot;status&quot;,&quot;status_4_date&quot;,&quot;status_7_date&quot;,&quot;status_8_date&quot;,&quot;status_9_date&quot;,&quot;auth_date&quot;,&quot;bank_date&quot;,&quot;last_auth_attempt&quot;,&quot;auth_attempts&quot;,&quot;entry_init&quot;,&quot;entry_date&quot;,&quot;entry_time&quot;,&quot;check_number&quot;,&quot;cc_type&quot;,&quot;amount_recd&quot;,&quot;cc_exp_yy&quot;,&quot;cc_exp_mm&quot;,&quot;auto_authed_f&quot;,&quot;cc_name&quot;,&quot;currency_code&quot;,&quot;bill_first_name&quot;,&quot;bill_last_name&quot;,&quot;bill_addr1&quot;,&quot;bill_addr2&quot;,&quot;bill_addr3&quot;,&quot;bill_city&quot;,&quot;bill_state&quot;,&quot;bill_zip&quot;,&quot;bill_email&quot;,&quot;bill_phone&quot;,&quot;bill_country_code&quot;,&quot;bill_ip_address&quot;,&quot;dont_encrypt_f&quot;,&quot;save_payment_f&quot;]},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;ADD_QUOTES&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;columnName&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;trimTable&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;enableDBMapping&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;enableDBMapping&quot;,&quot;tags&quot;:null},&quot;dbMapping&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;MYSQL&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;AS400&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;ACCESS&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;DB2&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;FIREBIRD&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;HSQLDB&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;INFORMIX&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;INGRES&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;VECTORWISE&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;INTERBASE&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;JAVADB&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;MAXDB&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;MSSQL&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;MYSQL&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;NETEZZA&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;ORACLE&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;POSTGRESQL&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;POSTGREPLUS&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;SQLITE&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;SYBASE&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;SAPHANA&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;TERADATA&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;VERTICA&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;H2&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;ODBC&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;dbMapping&quot;,&quot;tags&quot;:null},&quot;enableSpecialTableName&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:true},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;enableSpecialTableName&quot;,&quot;tags&quot;:null},&quot;usePreparedStatement&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;usePreparedStatement&quot;,&quot;tags&quot;:null},&quot;preparedStatementTable&quot;:{&quot;indexs&quot;:{&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.Integer&gt;&quot;,&quot;name&quot;:&quot;indexs&quot;,&quot;tags&quot;:null},&quot;types&quot;:{&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;BigDecimal&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;BigDecimal&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Blob&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Boolean&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Byte&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Bytes&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Clob&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Date&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Double&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Float&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Int&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Long&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Object&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Short&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;String&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Time&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.PreparedStatementTable$Type&quot;,&quot;name&quot;:&quot;Null&quot;}]},&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;types&quot;,&quot;tags&quot;:null},&quot;values&quot;:{&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.Object&gt;&quot;,&quot;name&quot;:&quot;values&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;preparedStatementTable&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;useQueryTimeout&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useQueryTimeout&quot;,&quot;tags&quot;:null},&quot;queryTimeout&quot;:{&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:{&quot;@type&quot;:&quot;int&quot;,&quot;value&quot;:30},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;queryTimeout&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:{&quot;status&quot;:{&quot;name&quot;:&quot;OK&quot;},&quot;message&quot;:null,&quot;number&quot;:0},&quot;tags&quot;:null}"/>
+    <metadata connector="MAIN" label="odpdb" name="MAIN">
+      <column comment="" key="true" length="20" name="order_number" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="5" name="payment_number" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="dist_id" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="post_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="country_code" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="receipt_type" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="post_init" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="check_cc_account" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="status" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_4_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_7_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_8_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_9_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="auth_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="bank_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="last_auth_attempt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="auth_attempts" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="entry_init" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="entry_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="entry_time" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="check_number" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="cc_type" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="amount_recd" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="cc_exp_yy" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="cc_exp_mm" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="auto_authed_f" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="cc_name" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="currency_code" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_first_name" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_last_name" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_addr1" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_addr2" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_addr3" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="bill_city" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="bill_state" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="bill_zip" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_email" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_phone" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="bill_country_code" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_ip_address" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="dont_encrypt_f" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="save_payment_f" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_GpySANU-EeyHApe9iuc3VA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out">
+      <column comment="" key="true" length="20" name="order_number" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="5" name="payment_number" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="dist_id" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="post_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="country_code" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="receipt_type" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="post_init" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="check_cc_account" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="status" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_4_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_7_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_8_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_9_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="auth_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="bank_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="last_auth_attempt" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="auth_attempts" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="entry_init" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="entry_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="entry_time" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="check_number" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="cc_type" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="amount_recd" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="cc_exp_yy" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="cc_exp_mm" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="auto_authed_f" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="cc_name" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="currency_code" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_first_name" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_last_name" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_addr1" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_addr2" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_addr3" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="bill_city" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="bill_state" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="bill_zip" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_email" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_phone" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="bill_country_code" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_ip_address" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="dont_encrypt_f" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="save_payment_f" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="dw_upload_dt" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.order_number" name="order_number" type="id_Long"/>
+        <mapperTableEntries expression="row1.payment_number" name="payment_number" type="id_Short"/>
+        <mapperTableEntries expression="row1.dist_id" name="dist_id" type="id_String"/>
+        <mapperTableEntries expression="row1.post_date" name="post_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.country_code" name="country_code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.receipt_type" name="receipt_type" nullable="true" type="id_Byte"/>
+        <mapperTableEntries expression="row1.post_init" name="post_init" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.check_cc_account" name="check_cc_account" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.status" name="status" nullable="true" type="id_Byte"/>
+        <mapperTableEntries expression="row1.status_4_date" name="status_4_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.status_7_date" name="status_7_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.status_8_date" name="status_8_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.status_9_date" name="status_9_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.auth_date" name="auth_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.bank_date" name="bank_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.last_auth_attempt" name="last_auth_attempt" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.auth_attempts" name="auth_attempts" nullable="true" type="id_Byte"/>
+        <mapperTableEntries expression="row1.entry_init" name="entry_init" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.entry_date" name="entry_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.entry_time" name="entry_time" type="id_Long"/>
+        <mapperTableEntries expression="row1.check_number" name="check_number" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.cc_type" name="cc_type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.amount_recd" name="amount_recd" type="id_String"/>
+        <mapperTableEntries expression="row1.cc_exp_yy" name="cc_exp_yy" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row1.cc_exp_mm" name="cc_exp_mm" nullable="true" type="id_Byte"/>
+        <mapperTableEntries expression="row1.auto_authed_f" name="auto_authed_f" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.cc_name" name="cc_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.currency_code" name="currency_code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_first_name" name="bill_first_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_last_name" name="bill_last_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_addr1" name="bill_addr1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_addr2" name="bill_addr2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_addr3" name="bill_addr3" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_city" name="bill_city" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_state" name="bill_state" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_zip" name="bill_zip" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_email" name="bill_email" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_phone" name="bill_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_country_code" name="bill_country_code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.bill_ip_address" name="bill_ip_address" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.dont_encrypt_f" name="dont_encrypt_f" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.save_payment_f" name="save_payment_f" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="dw_upload_dt" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="order_number" type="id_Long"/>
+        <mapperTableEntries name="payment_number" type="id_Short"/>
+        <mapperTableEntries name="dist_id" type="id_String"/>
+        <mapperTableEntries name="post_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="country_code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="receipt_type" nullable="true" type="id_Byte"/>
+        <mapperTableEntries name="post_init" nullable="true" type="id_String"/>
+        <mapperTableEntries name="check_cc_account" nullable="true" type="id_String"/>
+        <mapperTableEntries name="status" nullable="true" type="id_Byte"/>
+        <mapperTableEntries name="status_4_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="status_7_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="status_8_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="status_9_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="auth_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="bank_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="last_auth_attempt" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="auth_attempts" nullable="true" type="id_Byte"/>
+        <mapperTableEntries name="entry_init" nullable="true" type="id_String"/>
+        <mapperTableEntries name="entry_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="entry_time" type="id_Long"/>
+        <mapperTableEntries name="check_number" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="cc_type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="amount_recd" type="id_String"/>
+        <mapperTableEntries name="cc_exp_yy" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="cc_exp_mm" nullable="true" type="id_Byte"/>
+        <mapperTableEntries name="auto_authed_f" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cc_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="currency_code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_first_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_last_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_addr1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_addr2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_addr3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_city" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_state" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_zip" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_email" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_country_code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="bill_ip_address" nullable="true" type="id_String"/>
+        <mapperTableEntries name="dont_encrypt_f" nullable="true" type="id_String"/>
+        <mapperTableEntries name="save_payment_f" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/odpdb.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="true" length="20" name="order_number" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="5" name="payment_number" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="dist_id" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="post_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="country_code" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="receipt_type" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="post_init" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="check_cc_account" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="status" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_4_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_7_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_8_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="status_9_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="auth_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="bank_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="last_auth_attempt" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="auth_attempts" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="entry_init" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="entry_date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="entry_time" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="check_number" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="cc_type" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="amount_recd" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="cc_exp_yy" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="cc_exp_mm" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="auto_authed_f" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="cc_name" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="currency_code" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_first_name" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_last_name" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_addr1" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_addr2" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_addr3" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="bill_city" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="bill_state" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="bill_zip" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="bill_email" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_phone" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="bill_country_code" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_ip_address" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="dont_encrypt_f" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="save_payment_f" nullable="true" pattern="" precision="0" sourceType="CHARACTER" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="dw_upload_dt" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tS3Put" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tS3Put_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CREDENTIAL_PROVIDER" show="false" value="STATIC_CREDENTIALS"/>
+    <elementParameter field="FILE" name="PROFILE_PATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROFILE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" show="false" value="enc:system.encryption.key.v1:nfP/1cyEXnTaCN1PsVfdfX5ebTJlUZlb+N7S9EFq"/>
+    <elementParameter field="CHECK" name="ASSUME_ROLE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ARN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ROLE_SESSION_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SESSION_DURATION" show="false" value="15"/>
+    <elementParameter field="OPENED_LIST" name="REGION" show="false" value="DEFAULT"/>
+    <elementParameter field="CHECK" name="ENCRYPT" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEY_TYPE" show="false" value="KMS_CMK"/>
+    <elementParameter field="CLOSED_LIST" name="ALGORITHM_SYMMETRIC_MASTER_KEY" show="false" value="AES"/>
+    <elementParameter field="CLOSED_LIST" name="ALGORITHM_ASYMMETRIC_MASTER_KEY" show="false" value="RSA"/>
+    <elementParameter field="CLOSED_LIST" name="ENCODING" show="false" value="BASE64"/>
+    <elementParameter field="PASSWORD" name="ENCRYPTED_KEY_CMK" show="false" value="enc:system.encryption.key.v1:D5ORNdDIGHc+BLsmtVttbkufgAJ14aJul7vP0inV"/>
+    <elementParameter field="PASSWORD" name="ENCRYPTED_KEY_BASE64" show="false" value="enc:system.encryption.key.v1:mJ642aIW0Hh5S8kgFzqYPtNseOm2OKtmggyb4zSw"/>
+    <elementParameter field="FILE" name="ENCRYPTED_KEY_X509" show="false" value="&quot;&quot;"/>
+    <elementParameter field="FILE" name="PUBLIC_KEY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="FILE" name="PRIVATE_KEY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="BUCKET" value="&quot;talend-archive-xyng-oldprod-use1/talendbuffer&quot;"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;odpdb.csv&quot;"/>
+    <elementParameter field="FILE" name="FILE" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/odpdb.csv&quot;"/>
+    <elementParameter field="CHECK" name="ENABLE_SERVER_SIDE_ENCRYPTION" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_KMS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="KMSID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="FILE" name="WEB_IDENTITY_TOKEN_FILE" show="false" value=""/>
+    <elementParameter field="TEXT" name="WEB_TOKEN_ARN" show="false" value=""/>
+    <elementParameter field="TEXT" name="WEB_TOKEN_ROLE_SESSION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" show="false" value="false"/>
+    <elementParameter field="TABLE" name="CLIENT_CONFIGURATION" show="false"/>
+    <elementParameter field="CHECK" name="SET_STS_ENDPOINT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="STS_ENDPOINT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="OPENED_LIST" name="SIGNING_REGION" show="false" value="DEFAULT"/>
+    <elementParameter field="TEXT" name="EXTERNALID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SERIALNUMBER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TOKENCODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="TAGS" show="false"/>
+    <elementParameter field="TABLE" name="POLICY_TABLE" show="false"/>
+    <elementParameter field="MEMO" name="POLICY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="MULTIPART_THRESHOLD" value="5"/>
+    <elementParameter field="TEXT" name="PART_SIZE" value="5"/>
+    <elementParameter field="CHECK" name="ENABLE_ACCELERATE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ACCESS_CONTROL_LIST" value="false"/>
+    <elementParameter field="TABLE" name="ACL" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CANNED_ACCESS_CONTROL_LIST" value="&quot;NONE&quot;"/>
+    <elementParameter field="CHECK" name="ENABLE_OBJECT_LOCK" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="RETENTION_MODE" show="false" value="GOVERNANCE"/>
+    <elementParameter field="TEXT" name="RETENTION_PERIOD" show="false" value="1"/>
+    <elementParameter field="CLOSED_LIST" name="RETENTION_PERIOD_TYPE" show="false" value="DAYS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRedshiftBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBBulkExec_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_RrFDALwVEeykjIMOJw8xcA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;xyngular-dw-prod.cxao0mrnwrg0.us-east-1.redshift.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5439&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;xyngulardw&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;staging_talend&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="REDSHIFT"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;xdwmaster&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yMyglvAtbnYvsqjLNE0iiaHNEZPU6DykOYQO5uog0t7Z6MT9Wa9P2+MPDU/XBqKEgFTxMGgw"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;odpdb_staging&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_RrFDALwVEeykjIMOJw8xcA - odpdb_staging"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="redshift_id"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_SOURCE_TYPE" value="S3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION_S3" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_S3" value="tS3Connection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CREDENTIAL_PROVIDER" show="false" value="STATIC_CREDENTIALS"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" show="false" value="enc:system.encryption.key.v1:pB7owFmwNgX4gHRJlcSIUuBeHd4Ge+cNxNS+QXIa"/>
+    <elementParameter field="TEXT" name="BUCKET" value="&quot;talend-archive-xyng-oldprod-use1/talendbuffer&quot;"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;odpdb.csv&quot;"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY_EMR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY_EMR" show="false" value="enc:system.encryption.key.v1:2quoStO7c8/gMkzZgTGCeRY+y8+xZy3lug/tiwVh"/>
+    <elementParameter field="TEXT" name="EMR_CLUSTER_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HDFS_FILEPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY_DYNAMODB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY_DYNAMODB" show="false" value="enc:system.encryption.key.v1:SMtqs6Erg1nFIzhqyRJi3sOdnmE9owE6voV5Kyke"/>
+    <elementParameter field="TEXT" name="TABLENAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="READRATIO" show="false" value="50"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY_SSH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY_SSH" show="false" value="enc:system.encryption.key.v1:H4+LKYpuZYa5ygD1510Iw8YcHyjsHYAXKVU5TbHt"/>
+    <elementParameter field="TEXT" name="BUCKET_SSH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="KEY_SSH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ASSUME_ROLE" show="false" value="false"/>
+    <elementParameter field="TABLE" name="ROLE_TABLE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORT_TYPE" value="DELIMITED_OR_CSV"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="'|'"/>
+    <elementParameter field="OPENED_LIST" name="TEXT_ENCLOSURE" value="EMPTY"/>
+    <elementParameter field="TEXT" name="JSON_MAPPING" show="false" value="&quot;s3://jsonpaths_file&quot;"/>
+    <elementParameter field="TEXT" name="FIXEDWIDTH_MAPPING" show="false" value="&quot;column1:8,column2:64&quot;"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" show="false" value="GZIP"/>
+    <elementParameter field="CHECK" name="ENCRYPT" show="false" value="false"/>
+    <elementParameter field="PASSWORD" name="ENCRYPTED_KEY" show="false" value="enc:system.encryption.key.v1:k/F9QexMK4F2TebiLglV6/rLRNRBlgE/StA07yNa"/>
+    <elementParameter field="CLOSED_LIST" name="ENCODING" value="&quot;UTF8&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DATEFORMAT" value="NONE"/>
+    <elementParameter field="TEXT" name="DATE_PATTERN" show="false" value="&quot;YYYY-MM-DD&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TIMEFORMAT" value="NONE"/>
+    <elementParameter field="TEXT" name="TIME_PATTERN" show="false" value="&quot;YYYY-MM-DD HH:MI:SS&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="PARQUE_STATUPDATE" show="false" value="ON"/>
+    <elementParameter field="TABLE" name="OTHER_CONFIGURATION">
+      <elementValue elementRef="OTHER_PARAMETER" value="COMPUPDATE"/>
+      <elementValue elementRef="DATA_VALUE" value="OFF"/>
+      <elementValue elementRef="OTHER_PARAMETER" value="STATUPDATE"/>
+      <elementValue elementRef="DATA_VALUE" value="OFF"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="JDBC_URL" value="STANDARD"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="odpdb_staging" name="tDBBulkExec_1">
+      <column comment="" key="true" length="19" name="order_number" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="5" name="payment_number" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="dist_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="post_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="receipt_type" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="post_init" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="check_cc_account" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="status" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_4_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_7_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_8_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_9_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="auth_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="bank_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="last_auth_attempt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="auth_attempts" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="entry_init" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="entry_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="entry_time" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="check_number" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="cc_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="amount_recd" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="cc_exp_yy" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="cc_exp_mm" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="auto_authed_f" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="64" name="cc_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="currency_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_last_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_addr1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_addr2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_addr3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="bill_city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="bill_zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="bill_country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_ip_address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="dont_encrypt_f" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="save_payment_f" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'now()'" key="false" length="29" name="dw_upload_dt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tRedshiftRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_RrFDALwVEeykjIMOJw8xcA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;xyngular-dw-prod.cxao0mrnwrg0.us-east-1.redshift.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5439&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;xyngulardw&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;staging_talend&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="REDSHIFT"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;xdwmaster&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:T8cYtv/Hqsc+5bXk/5j8+/bYhAnNLM7qKQQ2VupXQaBRYiGx1i9jBY96YrxL+3JQ5HzseJC1"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_RrFDALwVEeykjIMOJw8xcA - odpdb_staging"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;odpdb_staging&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;BEGIN;&#13;&#10;&#13;&#10;delete from odpdb&#13;&#10;using staging_talend.odpdb_staging x&#13;&#10;where odpdb.order_number = x.order_number&#13;&#10;    and odpdb.payment_number = x.payment_number;&#13;&#10;&#13;&#10;insert into odpdb&#13;&#10;select x.* from staging_talend.odpdb_staging x&#13;&#10;    left join odpdb a&#13;&#10;    on a.order_number = x.order_number&#13;&#10;    and a.payment_number = x.payment_number&#13;&#10;where a.order_number is null;&#13;&#10;&#13;&#10;COMMIT;&#13;&#10;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="order_number"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="CLOSED_LIST" name="JDBC_URL" value="STANDARD"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="odpdb_staging" name="tDBRow_1">
+      <column comment="" key="true" length="19" name="order_number" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="5" name="payment_number" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="dist_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="post_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="receipt_type" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="post_init" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="check_cc_account" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="status" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_4_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_7_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_8_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_9_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="auth_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="bank_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="last_auth_attempt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="auth_attempts" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="entry_init" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="entry_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="entry_time" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="check_number" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="cc_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="amount_recd" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="cc_exp_yy" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="cc_exp_mm" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="auto_authed_f" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="64" name="cc_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="currency_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_last_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_addr1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_addr2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_addr3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="bill_city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="bill_zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="bill_country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_ip_address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="dont_encrypt_f" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="save_payment_f" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'now()'" key="false" length="29" name="dw_upload_dt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="odpdb_staging" name="REJECT">
+      <column comment="" key="true" length="19" name="order_number" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="5" name="payment_number" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="dist_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="post_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="receipt_type" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="post_init" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="check_cc_account" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="status" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_4_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_7_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_8_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="status_9_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="auth_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="bank_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="last_auth_attempt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="auth_attempts" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="entry_init" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="entry_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="entry_time" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="check_number" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="cc_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="amount_recd" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="cc_exp_yy" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="cc_exp_mm" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="auto_authed_f" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="64" name="cc_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="currency_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_last_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_addr1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_addr2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_addr3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="bill_city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="bill_state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="bill_zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="120" name="bill_email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="bill_country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="bill_ip_address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="dont_encrypt_f" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="save_payment_f" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'now()'" key="false" length="29" name="dw_upload_dt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tS3Connection_1" offsetLabelX="0" offsetLabelY="0" source="tS3Connection_1" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="MAIN" label="row1" lineStyle="0" metaname="MAIN" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tS3Put_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tS3Put_1" offsetLabelX="0" offsetLabelY="0" source="tS3Put_1" target="tDBBulkExec_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBBulkExec_1" offsetLabelX="0" offsetLabelY="0" source="tDBBulkExec_1" target="tDBRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tS3Connection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tS3Put_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBBulkExec_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0b6ff7c8-a4ac-4d4f-b43d-66be49ecb9fa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Z55lU9GCGZxyoFfFg7AO3BSlHkjCedi+XUMeuaVcJ9uipASTgdPEsNzJZmKmsvDSh3Z7OK7sxdbT&#13;
+mZQN21LEOA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_29490e9e-0535-44aa-8036-732ab6f1ed30"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>f7Z4ymW3Js37TdGYdI3L95T3kveH5OtEX4VV1xpPLqSHiUCOpMA4cQJa5d+zmXl4zSLl+TzGPdys&#13;
+0Q9cjG2kCw==</DigestValue></Reference></SignedInfo><SignatureValue>D2e041LdTL3xryX9nMhkIloehV/O1RrI+j/3yr6ZUfB4kFbcwzvZDztvZAeAfVlPim0qaV7J20Bn&#13;
+J1kGI7et9CVcm2BnbJTLDsYom4DZgnJtVsyQkgPKR/al8O1tHY1gGruUEv+47GCNq0p+ulHVPKSy&#13;
+Lt/k0CSJP2JTeNc88YNkwuj6KD1sggP2xGbDq3z2V139/PXWNgDiqtP4LztMmeTPqETqZ4NYoDpV&#13;
+bpcl7y4rT3G/vkmFazWIPkpLhPsALwXMsE5F/E+8NaD1NlDBXwtp6+eiEk1W0z1FgxWpy1J02O6M&#13;
+P4HFVdM99/X4+BLgj6helLNzMHqA6d5qbKQSag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_29490e9e-0535-44aa-8036-732ab6f1ed30" Target="#_0b6ff7c8-a4ac-4d4f-b43d-66be49ecb9fa"><Timestamp>2022-05-19 20:35:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
