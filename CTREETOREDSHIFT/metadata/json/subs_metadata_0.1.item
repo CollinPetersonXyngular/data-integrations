@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendJSON:JSONFileConnection Encoding="UTF-8" JSONFilePath="C:/Users/travis.schaugaard/workspace/minibc-dev-SubscriptionFirehose.json" dataPackage="_n5ljxJNQEe2KdMA4lSL01g" name="subs_metadata" readbyMode="JSONPATH" xmi:id="_n5k8gJNQEe2KdMA4lSL01g">
+    <schema AbsoluteXPathQuery="$.data" LimitBoucle="50" xmi:id="_n5ljkJNQEe2KdMA4lSL01g">
+      <schemaTargets RelativeXPathQuery="id" TagName="id" xmi:id="_n5ljkZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="order_id" TagName="order_id" xmi:id="_n5ljkpNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="customer.id" TagName="customer_id" xmi:id="_n5ljk5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="customer.first_name" TagName="first_name" xmi:id="_n5ljlJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="customer.last_name" TagName="last_name" xmi:id="_n5ljlZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="customer.email" TagName="email" xmi:id="_n5ljlpNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.id" TagName="payment_method_id" xmi:id="_n5ljl5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.method" TagName="method" xmi:id="_n5ljmJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.token" TagName="token" xmi:id="_n5ljmZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.credit_card.type" TagName="type" xmi:id="_n5ljmpNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.credit_card.last_digits" TagName="last_digits" xmi:id="_n5ljm5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.credit_card.expiry_month" TagName="expiry_month" xmi:id="_n5ljnJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.credit_card.expiry_year" TagName="expiry_year" xmi:id="_n5ljnZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.billing_address.street_1" TagName="street_1" xmi:id="_n5ljnpNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.billing_address.street_2" TagName="street_2" xmi:id="_n5ljn5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.billing_address.city" TagName="city" xmi:id="_n5ljoJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.billing_address.state" TagName="state" xmi:id="_n5ljoZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.billing_address.country_iso2" TagName="country_iso2" xmi:id="_n5ljopNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="payment_method.billing_address.zip" TagName="zip" xmi:id="_n5ljo5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="products[*].id" TagName="products_id" xmi:id="_n5ljpJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="products[*].store_product_id" TagName="store_product_id" xmi:id="_n5ljpZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="products[*].order_product_id" TagName="order_product_id" xmi:id="_n5ljppNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="products[*].name" TagName="name" xmi:id="_n5ljp5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="products[*].sku" TagName="sku" xmi:id="_n5ljqJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="products[*].options[*]" TagName="products_options" xmi:id="_n5ljqZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="products[*].quantity" TagName="quantity" xmi:id="_n5ljqpNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="products[*].price" TagName="price" xmi:id="_n5ljq5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="products[*].total" TagName="total" xmi:id="_n5ljrJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="periodicity.frequency" TagName="frequency" xmi:id="_n5ljrZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="periodicity.unit" TagName="unit" xmi:id="_n5ljrpNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="subtotal" TagName="subtotal" xmi:id="_n5ljr5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="shipping_cost" TagName="shipping_cost" xmi:id="_n5ljsJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="total" TagName="total1" xmi:id="_n5ljsZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="status" TagName="status" xmi:id="_n5ljspNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="shipping_address.street_1" TagName="shipping_address_street_1" xmi:id="_n5ljs5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="shipping_address.street_2" TagName="shipping_address_street_2" xmi:id="_n5ljtJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="shipping_address.city" TagName="shipping_address_city" xmi:id="_n5ljtZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="shipping_address.state" TagName="shipping_address_state" xmi:id="_n5ljtpNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="shipping_address.country_iso2" TagName="shipping_address_country_iso2" xmi:id="_n5ljt5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="shipping_address.zip" TagName="shipping_address_zip" xmi:id="_n5ljuJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="shipping_address.shipping_method" TagName="shipping_method" xmi:id="_n5ljuZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="signup_date" TagName="signup_date" xmi:id="_n5ljupNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="pause_date" TagName="pause_date" xmi:id="_n5lju5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="cancellation_date" TagName="cancellation_date" xmi:id="_n5ljvJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="next_payment_date" TagName="next_payment_date" xmi:id="_n5ljvZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="created_time" TagName="created_time" xmi:id="_n5ljvpNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="last_modified" TagName="last_modified" xmi:id="_n5ljv5NQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="last_updated_source" TagName="last_updated_source" xmi:id="_n5ljwJNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="last_updated_method" TagName="last_updated_method" xmi:id="_n5ljwZNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="last_updated_event_timestamp" TagName="last_updated_event_timestamp" xmi:id="_n5ljwpNQEe2KdMA4lSL01g"/>
+      <schemaTargets RelativeXPathQuery="last_updated_event_id" TagName="last_updated_event_id" xmi:id="_n5ljw5NQEe2KdMA4lSL01g"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_n5k8gJNQEe2KdMA4lSL01g" name="default" xmi:id="_n5ljxJNQEe2KdMA4lSL01g">
+    <ownedElement id="_wwlEUJNOEe2KdMA4lSL01g" label="metadata" xmi:id="_n5ljxZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="id" length="7" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_n5ljxpNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="order_id" length="8" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_n5ljx5NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="customer_id" length="7" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_n5ljyJNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="first_name" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5ljyZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="last_name" length="3" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5ljypNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="email" length="20" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5ljy5NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="payment_method_id" length="8" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_n5ljzJNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="method" length="11" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5ljzZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="token" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5ljzpNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="type" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5ljz5NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="last_digits" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_n5lj0JNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="expiry_month" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_n5lj0ZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="expiry_year" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_n5lj0pNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="street_1" length="12" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj05NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="street_2" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj1JNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="city" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj1ZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="state" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj1pNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="country_iso2" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj15NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="zip" length="5" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_n5lj2JNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="products_id" length="8" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj2ZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="store_product_id" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj2pNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="order_product_id" length="5" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj25NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="name" length="24" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj3JNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="sku" length="8" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj3ZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="products_options" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj3pNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="quantity" length="3" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj35NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="price" length="3" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj4JNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="total" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj4ZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="frequency" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_n5lj4pNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="unit" length="5" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj45NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="subtotal" length="4" pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float" xmi:id="_n5lj5JNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shipping_cost" length="4" pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float" xmi:id="_n5lj5ZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="total1" length="5" pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float" xmi:id="_n5lj5pNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="status" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj55NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shipping_address_street_1" length="12" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj6JNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shipping_address_street_2" length="9" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj6ZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shipping_address_city" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj6pNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shipping_address_state" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj65NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shipping_address_country_iso2" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj7JNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shipping_address_zip" length="5" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_n5lj7ZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shipping_method" length="37" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj7pNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="signup_date" length="10" pattern="&quot;yyyy-MM-dd&quot;" talendType="id_Date" xmi:id="_n5lj75NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="pause_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj8JNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cancellation_date" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj8ZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="next_payment_date" length="10" pattern="&quot;yyyy-MM-dd&quot;" talendType="id_Date" xmi:id="_n5lj8pNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="created_time" length="25" pattern="&quot;yyyy-MM-dd&quot;" talendType="id_Date" xmi:id="_n5lj85NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="last_modified" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_n5lj9JNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="last_updated_source" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj9ZNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="last_updated_method" length="28" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj9pNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="last_updated_event_timestamp" length="25" pattern="&quot;yyyy-MM-dd&quot;" talendType="id_Date" xmi:id="_n5lj95NQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="last_updated_event_id" length="36" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_n5lj-JNQEe2KdMA4lSL01g" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e3fdfde8-39e8-4877-a792-c876a0b1ae11"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xdMTzFxtY/vD/4mJeq/pHQMPVwfp42U8DMbIXfKFBmP5tApohP+yyDFNI16EqT0fhIrUTqcs/tAe
+a3x0X8S1YQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_62d48d05-5a7b-4ba0-b491-52cc63d006c9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>S/1Lp8VDwOwwQ+YX+cDeGxNx/ud7SZp9vv0QA0OjIflyJxbhpWb6ukCKhyPXzk+jKTRDnZAd1G/L
+NoTUZiPbXw==</DigestValue></Reference></SignedInfo><SignatureValue>eXP2DUGQHk3i/5WLSKkUeZNAZKM2LMSBisbKbXpEhX0jX9p0NNiCfkfNFqgsGtWF91jRW2Baubof
+Ogr4i0JFCZe0/iwEp/bqgA0gWl7iRXDm6rNzVIQ3g2EEPoOCfzSWHfFscZVdso3p+aONF6kDEXZ7
+5SrtbnlZIKFRr46RRL209Wygkz8Mv95UlnXFn2rBTmLUzMad/8j2I1O7GnzV02/D+BAQZTblMC45
+lhiiv3lXuw/DGh77Rcp+jfhdshg1nPwDEYz06L6CkJBhR3WATS/l8fY1mypgKXM4qaul77ht6mRj
+VL6TOVYQOvAzdMCjiqA/gFh7YCkqnJ/4IydPJw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_62d48d05-5a7b-4ba0-b491-52cc63d006c9" Target="#_e3fdfde8-39e8-4877-a792-c876a0b1ae11"><Timestamp>2023-01-13 14:43:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
