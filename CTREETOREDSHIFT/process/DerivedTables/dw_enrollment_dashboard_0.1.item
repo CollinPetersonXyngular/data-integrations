@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_J5ZOcHlxEeytHsR2vZvGyg" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="19999"/>
+    <contextParameter comment="" internalId="_J5ZOcXlxEeytHsR2vZvGyg" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_J5ZOcnlxEeytHsR2vZvGyg" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_J5ZOc3lxEeytHsR2vZvGyg" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_J5Z1gHlxEeytHsR2vZvGyg" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:oDdRaJpGT9+3CC3fvaqtk3rKwjW+cC13tSDNGxSiekANfE3fMgbqWPYQb57hO9Fv"/>
+    <contextParameter comment="" internalId="_J5Z1gXlxEeytHsR2vZvGyg" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_J5Z1gnlxEeytHsR2vZvGyg" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" internalId="_J5Z1g3lxEeytHsR2vZvGyg" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_J5Z1hHlxEeytHsR2vZvGyg" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xyndbcluster.cluster-c5lyjxktqflt.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_J5Z1hXlxEeytHsR2vZvGyg" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_J5Z1hnlxEeytHsR2vZvGyg" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_J5Z1h3lxEeytHsR2vZvGyg" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:FFMCsNSuqIrrnLrmx8kiNQxVsK8nbUz000aRTUuIuxrhGj7xs3jO49n0KIxkNsuW"/>
+    <contextParameter comment="" internalId="_J5Z1iHlxEeytHsR2vZvGyg" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_J5Z1iXlxEeytHsR2vZvGyg" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="" internalId="_J5Z1inlxEeytHsR2vZvGyg" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_J5Z1i3lxEeytHsR2vZvGyg" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xyndbcluster.cluster-cilo6pqeze5v.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_J5Z1jHlxEeytHsR2vZvGyg" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_J5Z1jXlxEeytHsR2vZvGyg" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_J5Z1jnlxEeytHsR2vZvGyg" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:qnW3bXcJ2UwS8HLVM2tbt3ZC+0kyV1etNt8bVsJJ2mCJdgCWOPnW4f25mQ7aRWvH"/>
+    <contextParameter comment="" internalId="_J5Z1j3lxEeytHsR2vZvGyg" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_J5Z1kHlxEeytHsR2vZvGyg" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <context confirmationNeeded="false" name="DefaultProduction">
+    <contextParameter comment="" internalId="_J5Z1kXlxEeytHsR2vZvGyg" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="19997"/>
+    <contextParameter comment="" internalId="_J5Z1knlxEeytHsR2vZvGyg" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_J5Z1k3lxEeytHsR2vZvGyg" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_J5Z1lHlxEeytHsR2vZvGyg" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_J5Z1lXlxEeytHsR2vZvGyg" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:dpPnhYf7oONNJfuHCMkEWlrObYH+/iwES4dXQ/xlRPWRhqpjLP0dPOBjslF0u/gH"/>
+    <contextParameter comment="" internalId="_J5Z1lnlxEeytHsR2vZvGyg" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_J5Z1l3lxEeytHsR2vZvGyg" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:H9IotcIRPYXlerqAgJf7tTp0Esrg1LYXhJNzd8DK"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:l9OPWRl0+wOJnRjjwNNiIWl8vIjc/5YNiHFM/4OM"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_9MPP40CvEeu3bLVe3VddqA" name="DataOperation"/>
+    <routinesParameter id="_9OU6kECvEeu3bLVe3VddqA" name="Mathematical"/>
+    <routinesParameter id="_9Ow_cECvEeu3bLVe3VddqA" name="Numeric"/>
+    <routinesParameter id="_9O6wdkCvEeu3bLVe3VddqA" name="Relational"/>
+    <routinesParameter id="_9QZ-NkCvEeu3bLVe3VddqA" name="SQLike"/>
+    <routinesParameter id="_9PNrYECvEeu3bLVe3VddqA" name="StringHandling"/>
+    <routinesParameter id="_9PhNYECvEeu3bLVe3VddqA" name="TalendDataGenerator"/>
+    <routinesParameter id="_9PqXVkCvEeu3bLVe3VddqA" name="TalendDate"/>
+    <routinesParameter id="_9QQ0QECvEeu3bLVe3VddqA" name="TalendStringUtil"/>
+    <routinesParameter id="_9P9SRkCvEeu3bLVe3VddqA" name="TalendString"/>
+  </parameters>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Aurora_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Aurora_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Aurora_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Aurora_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.Aurora_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:dnBruraIn4MM1CNkvKIiuLgrihgiCQUugPl1AhqNZy/1mEJRAdKtsrwKASimwYUk+Wbk"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw - dw_enrollment_dashboard"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dw_enrollment_dashboard&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;SELECT&#13;&#10;  sponsor_initial_order.account_id,&#13;&#10;  sponsor_initial_order.start_date AS entry_date,&#13;&#10;  COALESCE(d.comm_eligible_date, sponsor_initial_order.start_date) AS comm_eligible_date,&#13;&#10;  upgrade.date_log AS upgrade_date,&#13;&#10;  enrollees.start_date AS enrolling_date,&#13;&#10;  enrollees.start_date - sponsor_initial_order.start_date AS days_since_start,&#13;&#10;  enrollees.start_date - d.comm_eligible_date AS days_since_comm_eligible,&#13;&#10;  COUNT(enrollees.account_id) AS num_enrollees,&#13;&#10;  SUM(CASE WHEN enrollees.account_type = 'D' THEN 1 ELSE 0 END) AS num_dist,&#13;&#10;  SUM(CASE WHEN enrollees.account_type = 'M' THEN 1 ELSE 0 END) AS num_mem,&#13;&#10;  SUM(CASE WHEN enrollees.account_type = 'C' THEN 1 ELSE 0 END) AS num_cust,&#13;&#10;  CASE&#13;&#10;    WHEN dcdd.account_id IS NULL THEN FALSE&#13;&#10;    WHEN dcdd.commissionable_date &lt;= enrollees.start_date THEN TRUE&#13;&#10;    ELSE FALSE&#13;&#10;  END AS qs,&#13;&#10;  CASE&#13;&#10;    WHEN xb.dist_id IS NULL THEN FALSE&#13;&#10;    WHEN xb.paid_date &lt;= enrollees.start_date THEN TRUE&#13;&#10;    ELSE FALSE&#13;&#10;  END AS xb,&#13;&#10;  nearest_exec.account_sponsor_id AS nearest_exec,&#13;&#10;  CASE WHEN COALESCE(current_sponsor_rank.begin_rank, 0) &gt;= 10 THEN 0 ELSE nearest_exec.slevel END AS levels_to_exec,&#13;&#10;  nearest_exec.executive_rank,&#13;&#10;  CASE WHEN nearest_exec.account_sponsor_id = nearest_dir.account_sponsor_id THEN NULL ELSE nearest_dir.account_sponsor_id END AS nearest_dir,&#13;&#10;  CASE&#13;&#10;    WHEN nearest_exec.account_sponsor_id = nearest_dir.account_sponsor_id THEN NULL&#13;&#10;    WHEN COALESCE(current_sponsor_rank.begin_rank, 0) &gt;= 6 THEN 0 ELSE nearest_dir.slevel&#13;&#10;  END AS levels_to_dir,&#13;&#10;  nearest_dir.director_rank,&#13;&#10;  current_sponsor_rank.begin_rank AS account_rank,&#13;&#10;  current_timestamp AS dw_upload_dt&#13;&#10;FROM&#13;&#10;  --Getting start date of account&#13;&#10;  (SELECT&#13;&#10;    account_id,&#13;&#10;    commissionable_date AS start_date,&#13;&#10;    ROW_NUMBER() OVER (PARTITION BY account_id ORDER BY commissionable_date, order_id) AS rn&#13;&#10;  FROM&#13;&#10;    dw_orders&#13;&#10;  WHERE&#13;&#10;    is_fraud IS FALSE&#13;&#10;    AND order_status BETWEEN 2 AND 8&#13;&#10;    --AND order_type = 'initial'&#13;&#10;    AND account_type &lt;&gt; 'C'&#13;&#10;  ) sponsor_initial_order&#13;&#10;  --Getting comm status date&#13;&#10;  INNER JOIN dw_accounts d ON sponsor_initial_order.account_id = d.account_id&#13;&#10;  LEFT JOIN&#13;&#10;    (SELECT&#13;&#10;      dist_id,&#13;&#10;      date_log,&#13;&#10;      ROW_NUMBER() OVER (PARTITION BY dist_id ORDER BY date_log DESC) AS rn&#13;&#10;    FROM&#13;&#10;      upldb&#13;&#10;    WHERE&#13;&#10;      old_value = 'M'&#13;&#10;      AND new_value = 'D'&#13;&#10;      AND field = 'Dist Status'&#13;&#10;    ) upgrade ON sponsor_initial_order.account_id = upgrade.dist_id AND upgrade.rn = 1&#13;&#10;  INNER JOIN&#13;&#10;    (SELECT&#13;&#10;      enroll_date.account_sponsor_id,&#13;&#10;      dwo.account_id,&#13;&#10;      dwo.commissionable_date AS start_date,&#13;&#10;      CASE WHEN downgrade.dist_id IS NOT NULL THEN 'M' ELSE dwo.account_type END AS account_type,&#13;&#10;      ROW_NUMBER() OVER (PARTITION BY dwo.account_id ORDER BY dwo.commissionable_date, dwo.order_id) AS rn&#13;&#10;    FROM&#13;&#10;      dw_orders dwo&#13;&#10;      INNER JOIN&#13;&#10;        (SELECT&#13;&#10;          account_sponsor_id,&#13;&#10;          account_id,&#13;&#10;          effective_from_dtz_pt,&#13;&#10;          ROW_NUMBER() OVER (PARTITION BY account_id ORDER BY effective_from_dtz_pt) AS rn&#13;&#10;        FROM&#13;&#10;          dw_enrollment_history&#13;&#10;        WHERE&#13;&#10;          account_sponsor_id &gt; 5&#13;&#10;          AND slevel = 1&#13;&#10;          AND effective_from_dtz_pt::DATE &gt;= CURRENT_DATE - 2&#13;&#10;        ) enroll_date ON dwo.account_id = enroll_date.account_id AND enroll_date.rn = 1&#13;&#10;      LEFT JOIN (SELECT dist_id, ROW_NUMBER() OVER (PARTITION BY dist_id ORDER BY date_log) AS rn FROM upldb&#13;&#10;        WHERE field = 'Dist-Status' AND old_value = 'D' AND new_value = 'M' AND pgm_name = 'fxdststs') downgrade ON dwo.account_id = downgrade.dist_id&#13;&#10;          AND downgrade.rn = 1&#13;&#10;    WHERE&#13;&#10;      dwo.is_fraud IS FALSE&#13;&#10;      AND dwo.order_status BETWEEN 2 AND 8&#13;&#10;      AND dwo.order_type = 'initial'&#13;&#10;    ) enrollees ON sponsor_initial_order.account_id = enrollees.account_sponsor_id&#13;&#10;  --Quick Start Earners&#13;&#10;  LEFT JOIN dw_comm_daily_detail dcdd ON sponsor_initial_order.account_id = dcdd.account_id AND dcdd.bonus_type = 'quick start'&#13;&#10;  --Xtreme Builder Earners&#13;&#10;  LEFT JOIN&#13;&#10;    (SELECT&#13;&#10;      dist_id,&#13;&#10;      paid_date,&#13;&#10;      ROW_NUMBER() OVER (PARTITION BY dist_id ORDER BY paid_date) AS rn&#13;&#10;    FROM&#13;&#10;      dw_xtreme_bldr_earners&#13;&#10;    ) xb ON sponsor_initial_order.account_id = xb.dist_id AND xb.rn = 1&#13;&#10;  --Levels from executive&#13;&#10;  LEFT JOIN&#13;&#10;    (SELECT&#13;&#10;      dweh3.account_sponsor_id,&#13;&#10;      dweh3.account_id,&#13;&#10;      dweh3.effective_from_dtz_pt,&#13;&#10;      dweh3.slevel,&#13;&#10;      CASE&#13;&#10;        WHEN dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt17, '2099-12-31') THEN 17&#13;&#10;        WHEN dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt16, '2099-12-31') THEN 16&#13;&#10;        WHEN dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt15, '2099-12-31') THEN 15&#13;&#10;        WHEN dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt14, '2099-12-31') THEN 14&#13;&#10;        WHEN dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt13, '2099-12-31') THEN 13&#13;&#10;        WHEN dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt12, '2099-12-31') THEN 12&#13;&#10;        WHEN dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt11, '2099-12-31') THEN 11&#13;&#10;        WHEN dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt10, '2099-12-31') THEN 10&#13;&#10;      END AS executive_rank,&#13;&#10;      ROW_NUMBER() OVER (PARTITION BY dweh3.account_id ORDER BY dweh3.slevel) AS rn&#13;&#10;    FROM&#13;&#10;      dw_enrollment_history dweh3&#13;&#10;      INNER JOIN&#13;&#10;        (SELECT&#13;&#10;          dist_id, rnk_dt10, rnk_dt11, rnk_dt12, rnk_dt13, rnk_dt14, rnk_dt15, rnk_dt16, rnk_dt17&#13;&#10;        FROM&#13;&#10;          bwtdb&#13;&#10;        WHERE&#13;&#10;          rnk_dt10 IS NOT NULL&#13;&#10;          AND dw_pv_date = (SELECT MAX(dw_pv_date) FROM bwtdb)&#13;&#10;        ) bwt ON dweh3.account_sponsor_id = bwt.dist_id&#13;&#10;          AND (dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt17, '2099-12-31')&#13;&#10;            OR dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt16, '2099-12-31')&#13;&#10;            OR dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt15, '2099-12-31')&#13;&#10;            OR dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt14, '2099-12-31')&#13;&#10;            OR dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt13, '2099-12-31')&#13;&#10;            OR dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt12, '2099-12-31')&#13;&#10;            OR dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt11, '2099-12-31')&#13;&#10;            OR dweh3.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt.rnk_dt10, '2099-12-31'))&#13;&#10;    WHERE&#13;&#10;      dweh3.account_sponsor_id &gt; 5&#13;&#10;    ) nearest_exec ON sponsor_initial_order.account_id = nearest_exec.account_id AND nearest_exec.rn = 1&#13;&#10;  LEFT JOIN&#13;&#10;    (SELECT&#13;&#10;      dweh4.account_sponsor_id,&#13;&#10;      dweh4.account_id,&#13;&#10;      dweh4.effective_from_dtz_pt,&#13;&#10;      dweh4.slevel,&#13;&#10;      CASE&#13;&#10;        WHEN dweh4.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt1.rnk_dt9, '2099-12-31')&#13;&#10;          AND dweh4.effective_from_dtz_pt::DATE &lt; COALESCE(bwt1.rnk_dt10, '2099-12-31') THEN 9&#13;&#10;        WHEN dweh4.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt1.rnk_dt8, '2099-12-31')&#13;&#10;          AND dweh4.effective_from_dtz_pt::DATE &lt; COALESCE(bwt1.rnk_dt10, '2099-12-31') THEN 8&#13;&#10;        WHEN dweh4.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt1.rnk_dt7, '2099-12-31')&#13;&#10;          AND dweh4.effective_from_dtz_pt::DATE &lt; COALESCE(bwt1.rnk_dt10, '2099-12-31') THEN 7&#13;&#10;        WHEN dweh4.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt1.rnk_dt6, '2099-12-31')&#13;&#10;          AND dweh4.effective_from_dtz_pt::DATE &lt; COALESCE(bwt1.rnk_dt10, '2099-12-31') THEN 6&#13;&#10;      END AS director_rank,&#13;&#10;      ROW_NUMBER() OVER (PARTITION BY dweh4.account_id ORDER BY dweh4.slevel) AS rn&#13;&#10;    FROM&#13;&#10;      dw_enrollment_history dweh4&#13;&#10;      INNER JOIN&#13;&#10;        (SELECT&#13;&#10;          dist_id, rnk_dt6, rnk_dt7, rnk_dt8, rnk_dt9, rnk_dt10&#13;&#10;        FROM&#13;&#10;          bwtdb&#13;&#10;        WHERE&#13;&#10;          rnk_dt6 IS NOT NULL&#13;&#10;          AND dw_pv_date = (SELECT MAX(dw_pv_date) FROM bwtdb)&#13;&#10;        ) bwt1 ON dweh4.account_sponsor_id = bwt1.dist_id&#13;&#10;          AND (dweh4.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt1.rnk_dt9, '2099-12-31')&#13;&#10;            OR dweh4.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt1.rnk_dt8, '2099-12-31')&#13;&#10;            OR dweh4.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt1.rnk_dt7, '2099-12-31')&#13;&#10;            OR dweh4.effective_from_dtz_pt::DATE &gt;= COALESCE(bwt1.rnk_dt6, '2099-12-31'))&#13;&#10;    WHERE&#13;&#10;      dweh4.account_sponsor_id &gt; 5&#13;&#10;    ) nearest_dir ON sponsor_initial_order.account_id = nearest_dir.account_id AND nearest_dir.rn = 1&#13;&#10;  LEFT JOIN (SELECT dist_id, begin_rank, end_rank, paid_rank, dw_pv_date&#13;&#10;    FROM bwtdb) current_sponsor_rank ON sponsor_initial_order.account_id = current_sponsor_rank.dist_id&#13;&#10;      AND date_part('year', enrollees.start_date) * 100 + date_part('month', enrollees.start_date) = current_sponsor_rank.dw_pv_date&#13;&#10;WHERE&#13;&#10;  sponsor_initial_order.rn = 1&#13;&#10;  AND enrollees.start_date &gt;= CURRENT_DATE - 2&#13;&#10;GROUP BY&#13;&#10;  sponsor_initial_order.account_id,&#13;&#10;  dcdd.account_id,&#13;&#10;  xb.dist_id,&#13;&#10;  sponsor_initial_order.start_date,&#13;&#10;  d.comm_eligible_date,&#13;&#10;  upgrade.date_log,&#13;&#10;  enrollees.start_date,&#13;&#10;  dcdd.commissionable_date,&#13;&#10;  xb.paid_date,&#13;&#10;  nearest_exec.account_sponsor_id,&#13;&#10;  nearest_exec.slevel,&#13;&#10;  nearest_exec.executive_rank,&#13;&#10;  nearest_dir.account_sponsor_id,&#13;&#10;  nearest_dir.slevel,&#13;&#10;  nearest_dir.director_rank,&#13;&#10;  current_sponsor_rank.begin_rank&#13;&#10;ORDER BY&#13;&#10;  sponsor_initial_order.account_id,&#13;&#10;  enrollees.start_date&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Aurora_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comm_eligible_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="entry_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="upgrade_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="enrolling_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="days_since_start"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="days_since_comm_eligible"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_enrollees"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_dist"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_mem"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_cust"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qs"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="xb"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nearest_exec_account_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="levels_to_exec"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="executive_rank"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nearest_dir_account_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="levels_to_dir"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="director_rank"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_rank"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_upload_dt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dw_enrollment_dashboard" name="tDBInput_1">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="entry_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="upgrade_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="13" name="enrolling_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="days_since_start" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="days_since_comm_eligible" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_enrollees" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_dist" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_mem" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_cust" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'false'" key="false" length="1" name="qs" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'false'" key="false" length="1" name="xb" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="nearest_exec_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="levels_to_exec" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="executive_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="nearest_dir_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="levels_to_dir" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="director_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="account_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'now()'" key="false" length="29" name="dw_upload_dt" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_aifkIHlwEeytHsR2vZvGyg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dw_enrollment_dashboard" name="out">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="entry_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="upgrade_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="13" name="enrolling_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="days_since_start" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="days_since_comm_eligible" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_enrollees" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_dist" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_mem" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_cust" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'false'" key="false" length="1" name="qs" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'false'" key="false" length="1" name="xb" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="nearest_exec_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="levels_to_exec" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="executive_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="nearest_dir_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="levels_to_dir" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="director_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="account_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'now()'" key="false" length="29" name="dw_upload_dt" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.account_id" name="account_id" type="id_Long"/>
+        <mapperTableEntries expression="row1.comm_eligible_date" name="comm_eligible_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.entry_date" name="entry_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.upgrade_date" name="upgrade_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.enrolling_date" name="enrolling_date" type="id_Date"/>
+        <mapperTableEntries expression="row1.days_since_start" name="days_since_start" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.days_since_comm_eligible" name="days_since_comm_eligible" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.num_enrollees" name="num_enrollees" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row1.num_dist" name="num_dist" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row1.num_mem" name="num_mem" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row1.num_cust" name="num_cust" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row1.qs" name="qs" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="row1.xb" name="xb" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="row1.nearest_exec_account_id" name="nearest_exec_account_id" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.levels_to_exec" name="levels_to_exec" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row1.executive_rank" name="executive_rank" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row1.nearest_dir_account_id" name="nearest_dir_account_id" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.levels_to_dir" name="levels_to_dir" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row1.director_rank" name="director_rank" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row1.account_rank" name="account_rank" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row1.dw_upload_dt" name="dw_upload_dt" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="account_id" type="id_Long"/>
+        <mapperTableEntries name="comm_eligible_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="entry_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="upgrade_date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="enrolling_date" type="id_Date"/>
+        <mapperTableEntries name="days_since_start" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="days_since_comm_eligible" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="num_enrollees" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="num_dist" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="num_mem" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="num_cust" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="qs" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="xb" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="nearest_exec_account_id" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="levels_to_exec" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="executive_rank" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="nearest_dir_account_id" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="levels_to_dir" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="director_rank" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="account_rank" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="dw_upload_dt" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Aurora_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Aurora_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Aurora_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Aurora_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.Aurora_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:R07vqjJgfIa6+zbjkW3ExHSPOyfSD+agkpZoktw33Q5VBdzEqOloSdjT/4QXDJF4BsO4"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dw_enrollment_dashboard&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw - dw_enrollment_dashboard"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Aurora_AdditionalParams"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comm_eligible_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="entry_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="upgrade_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="enrolling_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="days_since_start"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="days_since_comm_eligible"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_enrollees"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_dist"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_mem"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_cust"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qs"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="xb"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nearest_exec_account_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="levels_to_exec"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="executive_rank"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nearest_dir_account_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="levels_to_dir"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="director_rank"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_rank"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_upload_dt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dw_enrollment_dashboard" name="tDBOutput_1">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="entry_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="upgrade_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="13" name="enrolling_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="days_since_start" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="days_since_comm_eligible" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_enrollees" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_dist" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_mem" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_cust" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'false'" key="false" length="1" name="qs" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'false'" key="false" length="1" name="xb" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="nearest_exec_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="levels_to_exec" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="executive_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="nearest_dir_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="levels_to_dir" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="director_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="account_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'now()'" key="false" length="29" name="dw_upload_dt" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="dw_enrollment_dashboard" name="REJECT">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="entry_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="upgrade_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="13" name="enrolling_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="days_since_start" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="days_since_comm_eligible" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_enrollees" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_dist" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_mem" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="num_cust" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'false'" key="false" length="1" name="qs" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'false'" key="false" length="1" name="xb" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="nearest_exec_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="levels_to_exec" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="executive_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="nearest_dir_account_id" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="levels_to_dir" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="director_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="account_rank" nullable="true" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'now()'" key="false" length="29" name="dw_upload_dt" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f8ae1cad-7a16-4734-b0ef-9e2390911951"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8KXvPeWatRHAIWzxww8jUkHHhwYi6j1lV4pcWaZQH3a4oBX0QdDt2ZUrvK8WDt2JaP0kR6x34Rlk
+JTyniFtthA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_20c348f3-ac5b-455f-9708-1c47d1c5c878"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eu4ZbP3E9JKtEDAYKF2Aj7QMzktVhPXmnrcgn2GV+OYsmVYdKYA+4r/+vSK82a92uzwtAKMOOklK
+TIPt3gpjLQ==</DigestValue></Reference></SignedInfo><SignatureValue>eZ3iklXBfKBJumHMCP1CZKR2UxUjqezmoQFmYbkWVr5ad077GFaEgfMDhZpfGH/naEpqzy8J8/1y
+vOva6B3x+YdI8XyJ/xJwNStd3KHXlUqv3nOrOVI+4dMNuZ34T7NlteO7jQ8IryOr82G/VB3TUA4m
+kqCXLGXo/a745WHmJbKYB0KC0lIkS3waVAChtdZA6hmkOupSyzGtFSPESdXW5CaG9c3RIzv4qai3
+U80QNdEVxD8PJjVpfk1HhAi9wcpZbeH1kmyI99Bk+tXr4vST8WzpEy5kBXVHuOgj4bkerv2vXtXH
+/cLkGpiVObALV9m6yqCOg6aPx0tcELBC5s1sVA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_20c348f3-ac5b-455f-9708-1c47d1c5c878" Target="#_f8ae1cad-7a16-4734-b0ef-9e2390911951"><Timestamp>2023-01-25 17:01:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

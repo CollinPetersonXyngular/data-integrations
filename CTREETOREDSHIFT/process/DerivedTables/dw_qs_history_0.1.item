@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_pRh_0GHUEey28uPnAi5N4g" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="19999"/>
+    <contextParameter comment="" internalId="_pRh_0WHUEey28uPnAi5N4g" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_pRh_0mHUEey28uPnAi5N4g" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_pRh_02HUEey28uPnAi5N4g" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_pRh_1GHUEey28uPnAi5N4g" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:aeBBmFVtSry8cxKqWxh91AJiv3KoyOHcsF+n9t2bdVoleDMFkZeb+N5b/0ZNC4F9"/>
+    <contextParameter comment="" internalId="_pRh_1WHUEey28uPnAi5N4g" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_pRh_1mHUEey28uPnAi5N4g" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" internalId="_pRh_12HUEey28uPnAi5N4g" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pRh_2GHUEey28uPnAi5N4g" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xyndbcluster.cluster-c5lyjxktqflt.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_pRh_2WHUEey28uPnAi5N4g" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_pRh_2mHUEey28uPnAi5N4g" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_pRh_22HUEey28uPnAi5N4g" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:Dkx7j57JdgeFnXjVTVaTaXKJm3LV3+kY9n93hwXJ0frx8VAcLyv/MdeyM+Gu8vlZ"/>
+    <contextParameter comment="" internalId="_pRh_3GHUEey28uPnAi5N4g" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_pRh_3WHUEey28uPnAi5N4g" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="" internalId="_pRh_3mHUEey28uPnAi5N4g" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pRh_32HUEey28uPnAi5N4g" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xyndbcluster.cluster-cilo6pqeze5v.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_pRh_4GHUEey28uPnAi5N4g" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_pRh_4WHUEey28uPnAi5N4g" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_pRh_4mHUEey28uPnAi5N4g" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:d0Y+/hdYJOi2BM3o/gsIQF9l0jTawTGKXc9GrXjyt0f9phENGJUen00xDejF6UGL"/>
+    <contextParameter comment="" internalId="_pRh_42HUEey28uPnAi5N4g" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_pRh_5GHUEey28uPnAi5N4g" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <context confirmationNeeded="false" name="DefaultProduction">
+    <contextParameter comment="" internalId="_pRh_5WHUEey28uPnAi5N4g" name="Aurora_Port" prompt="Aurora_Port?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="19997"/>
+    <contextParameter comment="" internalId="_pRh_5mHUEey28uPnAi5N4g" name="Aurora_Server" prompt="Aurora_Server?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_pRh_52HUEey28uPnAi5N4g" name="Aurora_AdditionalParams" prompt="Aurora_AdditionalParams?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_pRh_6GHUEey28uPnAi5N4g" name="Aurora_Database" prompt="Aurora_Database?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="DataTrax"/>
+    <contextParameter comment="" internalId="_pRh_6WHUEey28uPnAi5N4g" name="Aurora_Password" prompt="Aurora_Password?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_Password" value="enc:system.encryption.key.v1:Rct/gMH0ukdAVMQM9CEJhRRnf5VjOLZYgPE8+zx4wOXPgPI0hO/9M0+z6l4735p6"/>
+    <contextParameter comment="" internalId="_pRh_6mHUEey28uPnAi5N4g" name="Aurora_Schema" prompt="Aurora_Schema?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="public"/>
+    <contextParameter comment="" internalId="_pRh_62HUEey28uPnAi5N4g" name="Aurora_Login" prompt="Aurora_Login?" promptNeeded="false" repositoryContextId="_l2ms0GS3EeuTn6xEN4xmUg" type="id_String" value="xynadmin"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms1G&quot;,&quot;-Xmx4G&quot;,&quot;-XX:-UseGCOverheadLimit&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:VEUn8xOqDL+WbwJVQ239jB1YTPTT2iKWbNJDFjP5"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:WshCPo86fUmo7r0XLjWLPnBNSsh812v6bePaJKF/"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_9MPP40CvEeu3bLVe3VddqA" name="DataOperation"/>
+    <routinesParameter id="_9OU6kECvEeu3bLVe3VddqA" name="Mathematical"/>
+    <routinesParameter id="_9Ow_cECvEeu3bLVe3VddqA" name="Numeric"/>
+    <routinesParameter id="_9O6wdkCvEeu3bLVe3VddqA" name="Relational"/>
+    <routinesParameter id="_9QZ-NkCvEeu3bLVe3VddqA" name="SQLike"/>
+    <routinesParameter id="_9PNrYECvEeu3bLVe3VddqA" name="StringHandling"/>
+    <routinesParameter id="_9PhNYECvEeu3bLVe3VddqA" name="TalendDataGenerator"/>
+    <routinesParameter id="_9PqXVkCvEeu3bLVe3VddqA" name="TalendDate"/>
+    <routinesParameter id="_9QQ0QECvEeu3bLVe3VddqA" name="TalendStringUtil"/>
+    <routinesParameter id="_9P9SRkCvEeu3bLVe3VddqA" name="TalendString"/>
+  </parameters>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Aurora_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Aurora_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Aurora_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Aurora_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.Aurora_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uLm/DG9fvsvOyia8Gs9A072EVgDZA/G0ss4X8DxTByXdJp5tJ6wH61a69eCqNN7zGl09"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw - dw_qs_history"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dw_qs_history&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;SELECT&#13;&#10;    qs_totals.account_id,&#13;&#10;    qs_totals.comm_eligible_date,&#13;&#10;    qs_totals.qs_paid_date,&#13;&#10;    qs_totals.city,&#13;&#10;    qs_totals.state,&#13;&#10;    qs_totals.country_code,&#13;&#10;    qs_totals.initial_region,&#13;&#10;    qs_totals.initial_subregion,&#13;&#10;    qs_totals.qual_ppv_30_days AS ppv_30_days,&#13;&#10;    qs_totals.qual_ppv_31_45_days AS ppv_31_45_days,&#13;&#10;    COUNT(CASE WHEN qs_totals.volume_30_days &gt;= 120 THEN qs_totals.enrollee_account_id END) AS qualified_enrollee_count_30_days,&#13;&#10;    SUM(CASE WHEN qs_totals.volume_30_days &gt;= 120 THEN qs_totals.volume_30_days ELSE 0 END) AS qualified_enrollee_volume_30_days,&#13;&#10;    COUNT(CASE WHEN qs_totals.volume_30_days BETWEEN 1 AND 119 THEN qs_totals.enrollee_account_id END) AS non_qualified_enrollee_count_30_days,&#13;&#10;    SUM(CASE WHEN qs_totals.volume_30_days BETWEEN 1 AND 119 THEN qs_totals.volume_30_days ELSE 0 END) AS non_qualified_enrollee_volume_30_days,&#13;&#10;    COUNT(CASE WHEN qs_totals.volume_30_days &lt; 120 AND qs_totals.volume_30_days + qs_totals.volume_31_45_days &gt;= 120&#13;&#10;        THEN qs_totals.enrollee_account_id END) AS qualified_enrollee_count_31_45_days,&#13;&#10;    SUM(CASE WHEN qs_totals.volume_30_days &lt; 120 AND qs_totals.volume_30_days + qs_totals.volume_31_45_days &gt;= 120&#13;&#10;        THEN qs_totals.volume_30_days + qs_totals.volume_31_45_days ELSE 0 END) AS qualified_enrollee_volume_31_45_days,&#13;&#10;    COUNT(CASE WHEN qs_totals.volume_30_days = 0 AND qs_totals.volume_30_days + qs_totals.volume_31_45_days &lt; 120&#13;&#10;        THEN qs_totals.enrollee_account_id END) AS non_qualified_enrollee_count_31_45_days,&#13;&#10;    SUM(CASE WHEN qs_totals.volume_30_days = 0 AND qs_totals.volume_30_days + qs_totals.volume_31_45_days &lt; 120&#13;&#10;        THEN qs_totals.volume_31_45_days ELSE 0 END) AS non_qualified_enrollee_volume_31_45_days,&#13;&#10;    CASE&#13;&#10;        WHEN qs_totals.qs_paid_date IS NOT NULL THEN TRUE&#13;&#10;        WHEN qs_totals.qual_ppv_30_days &gt;= 120 AND COUNT(CASE WHEN qs_totals.volume_30_days &gt;= 120 THEN qs_totals.enrollee_account_id END) &gt;= 4&#13;&#10;            THEN TRUE&#13;&#10;        ELSE FALSE&#13;&#10;    END AS qs_qualified&#13;&#10;FROM (&#13;&#10;    SELECT&#13;&#10;        qs_totals_summary.account_id,&#13;&#10;        qs_totals_summary.enrollee_account_id,&#13;&#10;        qs_totals_summary.comm_eligible_date,&#13;&#10;        qs_totals_summary.qs_paid_date,&#13;&#10;        qs_totals_summary.city,&#13;&#10;        qs_totals_summary.state,&#13;&#10;        qs_totals_summary.country_code,&#13;&#10;        qs_totals_summary.initial_region,&#13;&#10;        qs_totals_summary.initial_subregion,&#13;&#10;        qs_totals_summary.spon_qualifying_volume_30_days AS qual_ppv_30_days,&#13;&#10;        qs_totals_summary.spon_qualifying_volume_31_45_days AS qual_ppv_31_45_days,&#13;&#10;        SUM(CASE WHEN DATE_DIFF(qs_totals_summary.enrollee_initial_order_date, qs_totals_summary.comm_eligible_date) &lt;= 29&#13;&#10;            THEN COALESCE(qs_totals_summary.enrollee_qualifying_volume_30_days, 0) - COALESCE(qs_totals_summary.enrollee_return_qualifying_volume_30_days, 0) ELSE 0 END) AS volume_30_days,&#13;&#10;        SUM(CASE WHEN DATE_DIFF(qs_totals_summary.enrollee_initial_order_date, qs_totals_summary.comm_eligible_date) BETWEEN 30 AND 44&#13;&#10;            THEN COALESCE(qs_totals_summary.enrollee_qualifying_volume_31_45_days, 0) - COALESCE(qs_totals_summary.enrollee_return_qualifying_volume_31_45_days, 0) ELSE 0 END) AS volume_31_45_days&#13;&#10;    FROM (&#13;&#10;        SELECT&#13;&#10;            sponsor.account_id,&#13;&#10;            sponsor.comm_eligible_date,&#13;&#10;            TO_DATE(btr.group_number::varchar(8), 'YYYYMMDD') AS qs_paid_date,&#13;&#10;            sponsor.city,&#13;&#10;            sponsor.state,&#13;&#10;            sponsor.country_code,&#13;&#10;            CASE&#13;&#10;                WHEN dlp.account_id IS NOT NULL AND initial_region.commissionable_date &lt;= '2019-10-31' THEN 'Latino'&#13;&#10;                WHEN initial_region.ship_to_country = 'PRI' AND initial_region.commissionable_date &lt;= '2019-10-31' THEN 'Latino'&#13;&#10;                WHEN initial_region.ship_to_st = 'PR' AND initial_region.commissionable_date &lt;= '2019-10-31' THEN 'Latino'&#13;&#10;                ELSE regions.region&#13;&#10;            END AS initial_region,&#13;&#10;            regions.subregion AS initial_subregion,&#13;&#10;            sponsor.spon_qualifying_volume_30_days,&#13;&#10;            sponsor.spon_qualifying_volume_31_45_days,&#13;&#10;            enrollments.account_id AS enrollee_account_id,&#13;&#10;            enrollee_initial_order.commissionable_date AS enrollee_initial_order_date,&#13;&#10;            CASE WHEN DATE_DIFF(enrollee_initial_order.commissionable_date, sponsor.comm_eligible_date) &lt;= 29&#13;&#10;                THEN enrollee_initial_order.qualifying_volume ELSE 0 END AS enrollee_qualifying_volume_30_days,&#13;&#10;            CASE WHEN DATE_DIFF(enrollee_initial_order.commissionable_date, sponsor.comm_eligible_date) &gt;= 30&#13;&#10;                THEN enrollee_initial_order.qualifying_volume ELSE 0 END AS enrollee_qualifying_volume_31_45_days,&#13;&#10;            CASE WHEN DATE_DIFF(COALESCE(enrollee_return_qs_vol.commissionable_date, '1900-01-01'), sponsor.comm_eligible_date) BETWEEN 0 AND 29&#13;&#10;                THEN COALESCE(enrollee_return_qs_vol.qualifying_volume, 0) ELSE 0 END AS enrollee_return_qualifying_volume_30_days,&#13;&#10;            CASE WHEN DATE_DIFF(COALESCE(enrollee_return_qs_vol.commissionable_date, '1900-01-01'), sponsor.comm_eligible_date) BETWEEN 30 AND 44&#13;&#10;                THEN COALESCE(enrollee_return_qs_vol.qualifying_volume, 0) ELSE 0 END AS enrollee_return_qualifying_volume_31_45_days&#13;&#10;        FROM (&#13;&#10;            SELECT&#13;&#10;                dwa.account_id,&#13;&#10;                dwa.comm_eligible_date,&#13;&#10;                dwa.city,&#13;&#10;                dwa.state,&#13;&#10;                dwa.country_code,&#13;&#10;                SUM(CASE WHEN spon_ppv.commissionable_date BETWEEN dwa.comm_eligible_date - INTERVAL '29 days' AND dwa.comm_eligible_date + INTERVAL '29 days'&#13;&#10;                    THEN spon_ppv.qualifying_volume - COALESCE(return_spon_qs_vol.qualifying_volume, 0) ELSE 0 END) AS spon_qualifying_volume_30_days,&#13;&#10;                SUM(CASE WHEN spon_ppv.commissionable_date BETWEEN dwa.comm_eligible_date + INTERVAL '30 days' AND dwa.comm_eligible_date + INTERVAL '44 days'&#13;&#10;                    THEN spon_ppv.qualifying_volume - COALESCE(return_spon_qs_vol.qualifying_volume, 0) ELSE 0 END) AS spon_qualifying_volume_31_45_days&#13;&#10;            FROM&#13;&#10;                dw_accounts dwa&#13;&#10;                LEFT JOIN dw_orders spon_ppv ON dwa.account_id = spon_ppv.account_id&#13;&#10;                    AND spon_ppv.order_status BETWEEN 2 AND 8&#13;&#10;                    AND spon_ppv.is_fraud IS FALSE&#13;&#10;                    AND spon_ppv.commissionable_date BETWEEN dwa.comm_eligible_date - INTERVAL '29 days' AND dwa.comm_eligible_date + INTERVAL '44 days'&#13;&#10;                LEFT JOIN dw_return_orders return_spon_qs_vol ON spon_ppv.order_id = return_spon_qs_vol.order_id&#13;&#10;                    AND return_spon_qs_vol.order_status BETWEEN 2 AND 8&#13;&#10;                    AND return_spon_qs_vol.is_fraud IS FALSE&#13;&#10;                    AND return_spon_qs_vol.commissionable_date BETWEEN dwa.comm_eligible_date - INTERVAL '29 days' AND dwa.comm_eligible_date + INTERVAL '44 days'&#13;&#10;            WHERE&#13;&#10;                dwa.comm_eligible_date IS NOT NULL&#13;&#10;                AND dwa.is_fraud IS FALSE&#13;&#10;                AND dwa.comm_eligible_date &gt;= '2015-11-01'&#13;&#10;                AND dwa.account_id &lt;&gt; 11000008&#13;&#10;                AND dwa.account_id &gt; 5&#13;&#10;            GROUP BY&#13;&#10;                dwa.account_id,&#13;&#10;                dwa.comm_eligible_date,&#13;&#10;                dwa.city,&#13;&#10;                dwa.state,&#13;&#10;                dwa.country_code&#13;&#10;            ORDER BY&#13;&#10;                dwa.account_id&#13;&#10;            ) sponsor&#13;&#10;            LEFT JOIN btrdaily btr ON sponsor.account_id = btr.dist_id AND btr.bonus_type = 3&#13;&#10;            LEFT JOIN (&#13;&#10;                SELECT&#13;&#10;                    dwo.account_id,&#13;&#10;                    dwo.order_id,&#13;&#10;                    dwo.commissionable_date,&#13;&#10;                    dwo.ship_to_addr_3,&#13;&#10;                    dwo.ship_to_city,&#13;&#10;                    dwo.ship_to_st,&#13;&#10;                    dwo.ship_to_country,&#13;&#10;                    dwo.ship_to_zip,&#13;&#10;                    ROW_NUMBER() OVER (PARTITION BY dwo.account_id ORDER BY dwo.commissionable_date, dwo.order_id) AS rn&#13;&#10;                FROM&#13;&#10;                    dw_orders dwo&#13;&#10;                    INNER JOIN dw_accounts dwa1 ON dwo.account_id = dwa1.account_id AND dwa1.comm_eligible_date IS NOT NULL&#13;&#10;                        AND dwo.commissionable_date &gt;= dwa1.comm_eligible_date&#13;&#10;                WHERE&#13;&#10;                    dwo.order_status BETWEEN 2 AND 8&#13;&#10;                    AND dwo.is_fraud IS FALSE&#13;&#10;                ) initial_region ON sponsor.account_id = initial_region.account_id AND initial_region.rn = 1&#13;&#10;            LEFT JOIN dw_language_pref dlp ON initial_region.account_id = dlp.account_id AND dlp.language_pref = 'Spanish'&#13;&#10;            LEFT JOIN dw_phl_zips_lookup dpzl ON initial_region.ship_to_country = 'PHL' AND initial_region.ship_to_zip = '0' || dpzl.zip_code&#13;&#10;            LEFT JOIN dw_phl_zips_lookup dpzl_addr3 ON initial_region.ship_to_country = 'PHL'&#13;&#10;                AND CASE&#13;&#10;                    WHEN LENGTH(REGEXP_REPLACE(initial_region.ship_to_addr_3, '[^0-9]', '')) = 4 THEN REGEXP_REPLACE(initial_region.ship_to_addr_3, '[^0-9]', '') = dpzl_addr3.zip_code&#13;&#10;                    ELSE REGEXP_REPLACE(initial_region.ship_to_addr_3, '[^0-9]', '') = '0' || dpzl_addr3.zip_code&#13;&#10;                END&#13;&#10;            LEFT JOIN dw_geo_code dwgc ON LEFT(initial_region.ship_to_zip, 5)::VARCHAR(5) = dwgc.postal_code&#13;&#10;            LEFT JOIN dw_regions regions ON initial_region.ship_to_country = regions.country_code&#13;&#10;                AND initial_region.commissionable_date BETWEEN regions.effective_from_date AND regions.effective_to_date&#13;&#10;                AND CASE&#13;&#10;                    WHEN LOWER(initial_region.ship_to_st) = 'tx' AND regions.county &lt;&gt; '' THEN LOWER(initial_region.ship_to_st) = LOWER(regions.state_abbr)&#13;&#10;                        AND LOWER(dwgc.county) = LOWER(regions.county)&#13;&#10;                    WHEN LOWER(initial_region.ship_to_st) = 'tx' THEN LOWER(initial_region.ship_to_st) = LOWER(regions.state_abbr)&#13;&#10;                    WHEN initial_region.ship_to_country IN ('USA', 'CAN') THEN LOWER(initial_region.ship_to_st) = LOWER(regions.state_abbr)&#13;&#10;                    WHEN initial_region.ship_to_country IN ('PRI') THEN regions.state_abbr = 'PR'&#13;&#10;                    WHEN COALESCE(dpzl.state, '') &lt;&gt; '' THEN LOWER(dpzl.state) = LOWER(regions.state_abbr)&#13;&#10;                    WHEN COALESCE(dpzl_addr3.state, '') &lt;&gt; '' THEN LOWER(dpzl_addr3.state) = LOWER(regions.state_abbr)&#13;&#10;                    ELSE '' = LOWER(regions.state_abbr)&#13;&#10;                END&#13;&#10;                AND CASE&#13;&#10;                    WHEN initial_region.ship_to_country IN ('PRI') THEN regions.state_abbr = 'PR'&#13;&#10;                    WHEN initial_region.ship_to_country IN ('USA', 'CAN') AND initial_region.commissionable_date &lt;= '2015-10-31'&#13;&#10;                        AND LENGTH(initial_region.ship_to_st) &gt; 2 AND LENGTH(initial_region.ship_to_city) = 2 THEN LOWER(initial_region.ship_to_city) = LOWER(regions.state_abbr)&#13;&#10;                    WHEN initial_region.ship_to_country IN ('USA', 'CAN') AND initial_region.commissionable_date &gt; '2015-10-31' THEN LOWER(initial_region.ship_to_st) = LOWER(regions.state_abbr)&#13;&#10;                    WHEN initial_region.ship_to_country IN ('PHL') AND dpzl.state IS NOT NULL THEN LOWER(dpzl.state) = LOWER(regions.state_abbr)&#13;&#10;                    WHEN initial_region.ship_to_country IN ('PHL') AND dpzl_addr3.state IS NOT NULL THEN LOWER(dpzl_addr3.state) = LOWER(regions.state_abbr)&#13;&#10;                    ELSE '' = LOWER(regions.state_abbr)&#13;&#10;                END&#13;&#10;            LEFT JOIN (&#13;&#10;                SELECT&#13;&#10;                    account_sponsor_id,&#13;&#10;                    account_id,&#13;&#10;                    effective_from_dtz_pt::DATE AS effective_from_date,&#13;&#10;                    ROW_NUMBER() OVER (PARTITION BY account_id ORDER BY effective_from_dtz_pt) AS rn&#13;&#10;                FROM&#13;&#10;                    dw_enrollment_history&#13;&#10;                WHERE&#13;&#10;                    account_sponsor_id &gt; 5&#13;&#10;                    AND slevel = 1&#13;&#10;                ) enrollments ON sponsor.account_id = enrollments.account_sponsor_id-- AND enrollments.account_sponsor_id = 6764736 --AND enrollments.rn = 1&#13;&#10;                AND enrollments.effective_from_date BETWEEN sponsor.comm_eligible_date AND sponsor.comm_eligible_date + INTERVAL '44 days'&#13;&#10;            LEFT JOIN dw_orders enrollee_initial_order ON enrollments.account_id = enrollee_initial_order.account_id&#13;&#10;                AND enrollee_initial_order.is_inception_volume IS TRUE&#13;&#10;                AND enrollee_initial_order.is_fraud IS FALSE&#13;&#10;                AND enrollee_initial_order.order_status BETWEEN 2 AND 8&#13;&#10;                AND enrollee_initial_order.commissionable_date BETWEEN sponsor.comm_eligible_date - INTERVAL '29 days' AND sponsor.comm_eligible_date + INTERVAL '44 days'&#13;&#10;            LEFT JOIN dw_return_orders enrollee_return_qs_vol ON enrollee_initial_order.order_id = enrollee_return_qs_vol.order_id&#13;&#10;                AND enrollee_return_qs_vol.order_status BETWEEN 2 AND 8&#13;&#10;                AND enrollee_return_qs_vol.is_fraud IS FALSE&#13;&#10;                AND enrollee_return_qs_vol.commissionable_date BETWEEN sponsor.comm_eligible_date - INTERVAL '29 days' AND sponsor.comm_eligible_date + INTERVAL '44 days'&#13;&#10;&#9;&#9;&#9;&#9;AND enrollee_return_qs_vol.commissionable_date &lt; TO_DATE(btr.group_number::varchar(8), 'YYYYMMDD')&#13;&#10;        ORDER BY&#13;&#10;            sponsor.account_id,&#13;&#10;            enrollments.account_id&#13;&#10;        ) qs_totals_summary&#13;&#10;    GROUP BY&#13;&#10;        qs_totals_summary.account_id,&#13;&#10;        qs_totals_summary.enrollee_account_id,&#13;&#10;        qs_totals_summary.comm_eligible_date,&#13;&#10;        qs_totals_summary.qs_paid_date,&#13;&#10;        qs_totals_summary.city,&#13;&#10;        qs_totals_summary.state,&#13;&#10;        qs_totals_summary.country_code,&#13;&#10;        qs_totals_summary.initial_region,&#13;&#10;        qs_totals_summary.initial_subregion,&#13;&#10;        qs_totals_summary.spon_qualifying_volume_30_days,&#13;&#10;        qs_totals_summary.spon_qualifying_volume_31_45_days&#13;&#10;    ORDER BY&#13;&#10;        qs_totals_summary.account_id&#13;&#10;    ) qs_totals&#13;&#10;WHERE&#13;&#10;    qs_totals.comm_eligible_date &lt; '2018-06-29'&#13;&#10;GROUP BY&#13;&#10;    qs_totals.account_id,&#13;&#10;    qs_totals.comm_eligible_date,&#13;&#10;    qs_totals.qs_paid_date,&#13;&#10;    qs_totals.city,&#13;&#10;    qs_totals.state,&#13;&#10;    qs_totals.country_code,&#13;&#10;    qs_totals.initial_region,&#13;&#10;    qs_totals.initial_subregion,&#13;&#10;    qs_totals.qual_ppv_30_days,&#13;&#10;    qs_totals.qual_ppv_31_45_days&#13;&#10;&#13;&#10;UNION ALL&#13;&#10;&#13;&#10;SELECT&#13;&#10;    sponsor_totals.account_id,&#13;&#10;    sponsor_totals.comm_eligible_date,&#13;&#10;    sponsor_totals.qs_paid_date,&#13;&#10;    sponsor_totals.city,&#13;&#10;    sponsor_totals.state,&#13;&#10;    sponsor_totals.country_code,&#13;&#10;    sponsor_totals.initial_region,&#13;&#10;    sponsor_totals.initial_subregion,&#13;&#10;    sponsor_totals.ppv_30_days,&#13;&#10;    sponsor_totals.ppv_31_45_days,&#13;&#10;    sponsor_totals.qualified_enrollee_count_30_days,&#13;&#10;    sponsor_totals.qualified_enrollee_volume_30_days,&#13;&#10;    sponsor_totals.non_qualified_enrollee_count_30_days,&#13;&#10;    sponsor_totals.non_qualified_enrollee_volume_30_days,&#13;&#10;    sponsor_totals.qualified_enrollee_count_31_45_days,&#13;&#10;    sponsor_totals.qualified_enrollee_volume_31_45_days,&#13;&#10;    sponsor_totals.non_qualified_enrollee_count_31_45_days,&#13;&#10;    sponsor_totals.non_qualified_enrollee_volume_31_45_days,&#13;&#10;    CASE&#13;&#10;        WHEN sponsor_totals.qs_paid_date IS NOT NULL THEN TRUE&#13;&#10;        WHEN sponsor_totals.ppv_30_days &gt;= 120 AND sponsor_totals.qualified_enrollee_count_30_days &gt;= 4 THEN TRUE&#13;&#10;        ELSE FALSE&#13;&#10;    END AS qs_qualified&#13;&#10;FROM (&#13;&#10;    SELECT&#13;&#10;        sponsor_enrollments.account_id,&#13;&#10;        sponsor_enrollments.comm_eligible_date,&#13;&#10;        sponsor_enrollments.qs_paid_date,&#13;&#10;        sponsor_enrollments.city,&#13;&#10;        sponsor_enrollments.state,&#13;&#10;        sponsor_enrollments.country_code,&#13;&#10;        sponsor_enrollments.initial_region,&#13;&#10;        sponsor_enrollments.initial_subregion,&#13;&#10;        sponsor_enrollments.ppv_30_days,&#13;&#10;        0 AS ppv_31_45_days,&#13;&#10;        COUNT(CASE WHEN sponsor_enrollments.volume_30_days &gt;= 120 THEN sponsor_enrollments.enrollee_account_id END) AS qualified_enrollee_count_30_days,&#13;&#10;        SUM(CASE WHEN sponsor_enrollments.volume_30_days &gt;= 120 THEN sponsor_enrollments.volume_30_days ELSE 0 END) AS qualified_enrollee_volume_30_days,&#13;&#10;        COUNT(CASE WHEN sponsor_enrollments.volume_30_days &lt; 120 THEN sponsor_enrollments.enrollee_account_id END) AS non_qualified_enrollee_count_30_days,&#13;&#10;        SUM(CASE WHEN sponsor_enrollments.volume_30_days &lt; 120 THEN sponsor_enrollments.volume_30_days ELSE 0 END) AS non_qualified_enrollee_volume_30_days,&#13;&#10;        0 AS qualified_enrollee_count_31_45_days,&#13;&#10;        0 AS qualified_enrollee_volume_31_45_days,&#13;&#10;        0 AS non_qualified_enrollee_count_31_45_days,&#13;&#10;        0 AS non_qualified_enrollee_volume_31_45_days&#13;&#10;    FROM (&#13;&#10;        SELECT&#13;&#10;            enrollee_totals.account_id,&#13;&#10;            enrollee_totals.enrollee_account_id,&#13;&#10;            enrollee_totals.comm_eligible_date,&#13;&#10;            enrollee_totals.qs_paid_date,&#13;&#10;            enrollee_totals.city,&#13;&#10;            enrollee_totals.state,&#13;&#10;            enrollee_totals.country_code,&#13;&#10;            enrollee_totals.initial_region,&#13;&#10;            enrollee_totals.initial_subregion,&#13;&#10;            CASE&#13;&#10;                WHEN COALESCE(date_trunc('month', fourth_enrollee_date.effective_from_date), '1900-01-01')::DATE = date_trunc('month', enrollee_totals.comm_eligible_date)::DATE&#13;&#10;                    AND comm_month_sponsor_vol.ppv &gt;= 120 THEN comm_month_sponsor_vol.ppv&#13;&#10;                ELSE GREATEST(COALESCE(comm_month_sponsor_vol.ppv, 0), COALESCE(prev_comm_month_sponsor_vol.ppv, 0), COALESCE(post_comm_month_sponsor_vol.ppv, 0))&#13;&#10;            END AS ppv_30_days,&#13;&#10;            0 AS ppv_31_45_days,&#13;&#10;            SUM(COALESCE(enrollee_totals.enrollee_qualifying_volume, 0)) AS volume_30_days,&#13;&#10;            0 AS volume_31_45_days&#13;&#10;        FROM (&#13;&#10;            SELECT&#13;&#10;                sponsor.account_id,&#13;&#10;                initial_region.ship_to_city AS city,&#13;&#10;                initial_region.ship_to_st AS state,&#13;&#10;                initial_region.ship_to_country AS country_code,&#13;&#10;                CASE&#13;&#10;                    WHEN dlp.account_id IS NOT NULL AND initial_region.commissionable_date &lt;= '2019-10-31' THEN 'Latino'&#13;&#10;                    WHEN initial_region.ship_to_country = 'PRI' AND initial_region.commissionable_date &lt;= '2019-10-31' THEN 'Latino'&#13;&#10;                    WHEN initial_region.ship_to_st = 'PR' AND initial_region.commissionable_date &lt;= '2019-10-31' THEN 'Latino'&#13;&#10;                    ELSE regions.region&#13;&#10;                END AS initial_region,&#13;&#10;                regions.subregion AS initial_subregion,&#13;&#10;                enrollments.account_id AS enrollee_account_id,&#13;&#10;                sponsor.comm_eligible_date,&#13;&#10;                TO_DATE(btr.group_number::varchar(8), 'YYYYMMDD') AS qs_paid_date,&#13;&#10;                enrollee_initial_order.order_id,&#13;&#10;                enrollee_initial_order.commissionable_date,&#13;&#10;                SUM(enrollee_initial_order.qualifying_volume - COALESCE(enrollee_return_qs_vol.qualifying_volume, 0)) AS enrollee_qualifying_volume&#13;&#10;            FROM&#13;&#10;                dw_accounts sponsor&#13;&#10;                LEFT JOIN btrdaily btr ON sponsor.account_id = btr.dist_id AND btr.bonus_type = 3&#13;&#10;                LEFT JOIN (&#13;&#10;                    SELECT&#13;&#10;                        account_sponsor_id,&#13;&#10;                        account_id,&#13;&#10;                        effective_from_dtz_pt::DATE AS effective_from_date,&#13;&#10;                        ROW_NUMBER() OVER (PARTITION BY account_id ORDER BY effective_from_dtz_pt) AS rn&#13;&#10;                    FROM&#13;&#10;                        dw_enrollment_history&#13;&#10;                    WHERE&#13;&#10;                        account_sponsor_id &gt; 5&#13;&#10;                        AND slevel = 1&#13;&#10;                    ) enrollments ON sponsor.account_id = enrollments.account_sponsor_id&#13;&#10;--                        AND enrollments.rn = 1&#13;&#10;                        AND enrollments.effective_from_date BETWEEN sponsor.comm_eligible_date AND sponsor.comm_eligible_date + INTERVAL '29 days'&#13;&#10;                LEFT JOIN dw_orders enrollee_initial_order ON enrollments.account_id = enrollee_initial_order.account_id&#13;&#10;                        AND enrollee_initial_order.is_inception_volume IS TRUE&#13;&#10;                        AND enrollee_initial_order.is_fraud IS FALSE&#13;&#10;                        AND enrollee_initial_order.order_status BETWEEN 2 AND 8&#13;&#10;                        AND enrollee_initial_order.commissionable_date BETWEEN sponsor.comm_eligible_date - INTERVAL '29 days' AND sponsor.comm_eligible_date + INTERVAL '29 days'&#13;&#10;                        AND enrollee_initial_order.commissionable_date &lt;= TO_DATE(COALESCE(btr.group_number::varchar(8), '209912'), 'YYYYMMDD')&#13;&#10;                LEFT JOIN dw_return_orders enrollee_return_qs_vol ON enrollee_initial_order.order_id = enrollee_return_qs_vol.order_id&#13;&#10;                        AND enrollee_return_qs_vol.order_status BETWEEN 2 AND 8&#13;&#10;                        AND enrollee_return_qs_vol.is_fraud IS FALSE&#13;&#10;                        AND enrollee_return_qs_vol.commissionable_date BETWEEN sponsor.comm_eligible_date - INTERVAL '29 days' AND sponsor.comm_eligible_date + INTERVAL '29 days'&#13;&#10;                        AND enrollee_return_qs_vol.commissionable_date &lt;= TO_DATE(COALESCE(btr.group_number::varchar(8), '209912'), 'YYYYMMDD')&#13;&#10;                LEFT JOIN (&#13;&#10;                    SELECT&#13;&#10;                        dwo.account_id,&#13;&#10;                        dwo.order_id,&#13;&#10;                        dwo.order_type,&#13;&#10;                        dwo.commissionable_date,&#13;&#10;                        dwo.ship_to_addr_3,&#13;&#10;                        dwo.ship_to_city,&#13;&#10;                        dwo.ship_to_st,&#13;&#10;                        dwo.ship_to_country,&#13;&#10;                        dwo.ship_to_zip,&#13;&#10;                        ROW_NUMBER() OVER (PARTITION BY dwo.account_id ORDER BY dwo.commissionable_date, dwo.order_id) AS rn&#13;&#10;                    FROM&#13;&#10;                        dw_orders dwo&#13;&#10;                        INNER JOIN dw_accounts dwa1 ON dwo.account_id = dwa1.account_id AND dwa1.comm_eligible_date IS NOT NULL&#13;&#10;                            AND dwo.commissionable_date &gt;= dwa1.comm_eligible_date&#13;&#10;                    WHERE&#13;&#10;                        dwo.order_status BETWEEN 2 AND 8&#13;&#10;                        AND dwo.is_fraud IS FALSE&#13;&#10;--                        AND dwo.order_type = 'initial'&#13;&#10;                    ) initial_region ON sponsor.account_id = initial_region.account_id AND initial_region.rn = 1&#13;&#10;                LEFT JOIN dw_language_pref dlp ON initial_region.account_id = dlp.account_id AND dlp.language_pref = 'Spanish'&#13;&#10;                LEFT JOIN dw_phl_zips_lookup dpzl ON initial_region.ship_to_country = 'PHL' AND initial_region.ship_to_zip = '0' || dpzl.zip_code&#13;&#10;                LEFT JOIN dw_phl_zips_lookup dpzl_addr3 ON initial_region.ship_to_country = 'PHL'&#13;&#10;                    AND CASE&#13;&#10;                        WHEN LENGTH(REGEXP_REPLACE(initial_region.ship_to_addr_3, '[^0-9]', '')) = 4 THEN REGEXP_REPLACE(initial_region.ship_to_addr_3, '[^0-9]', '') = dpzl_addr3.zip_code&#13;&#10;                        ELSE REGEXP_REPLACE(initial_region.ship_to_addr_3, '[^0-9]', '') = '0' || dpzl_addr3.zip_code&#13;&#10;                    END&#13;&#10;                LEFT JOIN dw_geo_code dwgc ON LEFT(initial_region.ship_to_zip, 5)::VARCHAR(5) = dwgc.postal_code&#13;&#10;                LEFT JOIN dw_regions regions ON initial_region.ship_to_country = regions.country_code&#13;&#10;                    AND initial_region.commissionable_date BETWEEN regions.effective_from_date AND regions.effective_to_date&#13;&#10;                    AND CASE&#13;&#10;                        WHEN LOWER(initial_region.ship_to_st) = 'tx' AND regions.county &lt;&gt; '' THEN LOWER(initial_region.ship_to_st) = LOWER(regions.state_abbr)&#13;&#10;                            AND LOWER(dwgc.county) = LOWER(regions.county)&#13;&#10;                        WHEN LOWER(initial_region.ship_to_st) = 'tx' THEN LOWER(initial_region.ship_to_st) = LOWER(regions.state_abbr)&#13;&#10;                        WHEN initial_region.ship_to_country IN ('USA', 'CAN') THEN LOWER(initial_region.ship_to_st) = LOWER(regions.state_abbr)&#13;&#10;                        WHEN initial_region.ship_to_country IN ('PRI') THEN regions.state_abbr = 'PR'&#13;&#10;                        WHEN COALESCE(dpzl.state, '') &lt;&gt; '' THEN LOWER(dpzl.state) = LOWER(regions.state_abbr)&#13;&#10;                        WHEN COALESCE(dpzl_addr3.state, '') &lt;&gt; '' THEN LOWER(dpzl_addr3.state) = LOWER(regions.state_abbr)&#13;&#10;                        ELSE '' = LOWER(regions.state_abbr)&#13;&#10;                    END&#13;&#10;                    AND CASE&#13;&#10;                        WHEN initial_region.ship_to_country IN ('PRI') THEN regions.state_abbr = 'PR'&#13;&#10;                        WHEN initial_region.ship_to_country IN ('USA', 'CAN') AND initial_region.commissionable_date &lt;= '2015-10-31'&#13;&#10;                            AND LENGTH(initial_region.ship_to_st) &gt; 2 AND LENGTH(initial_region.ship_to_city) = 2 THEN LOWER(initial_region.ship_to_city) = LOWER(regions.state_abbr)&#13;&#10;                        WHEN initial_region.ship_to_country IN ('USA', 'CAN') AND initial_region.commissionable_date &gt; '2015-10-31' THEN LOWER(initial_region.ship_to_st) = LOWER(regions.state_abbr)&#13;&#10;                        WHEN initial_region.ship_to_country IN ('PHL') AND dpzl.state IS NOT NULL THEN LOWER(dpzl.state) = LOWER(regions.state_abbr)&#13;&#10;                        WHEN initial_region.ship_to_country IN ('PHL') AND dpzl_addr3.state IS NOT NULL THEN LOWER(dpzl_addr3.state) = LOWER(regions.state_abbr)&#13;&#10;                        ELSE '' = LOWER(regions.state_abbr)&#13;&#10;                    END&#13;&#10;            WHERE&#13;&#10;                sponsor.comm_eligible_date &gt;= '2018-06-29'&#13;&#10;            GROUP BY&#13;&#10;                sponsor.account_id,&#13;&#10;                initial_region.ship_to_city,&#13;&#10;                initial_region.ship_to_st,&#13;&#10;                initial_region.ship_to_country,&#13;&#10;                CASE&#13;&#10;                    WHEN dlp.account_id IS NOT NULL AND initial_region.commissionable_date &lt;= '2019-10-31' THEN 'Latino'&#13;&#10;                    WHEN initial_region.ship_to_country = 'PRI' AND initial_region.commissionable_date &lt;= '2019-10-31' THEN 'Latino'&#13;&#10;                    WHEN initial_region.ship_to_st = 'PR' AND initial_region.commissionable_date &lt;= '2019-10-31' THEN 'Latino'&#13;&#10;                    ELSE regions.region&#13;&#10;                END,&#13;&#10;                regions.subregion,&#13;&#10;                enrollments.account_id,&#13;&#10;                sponsor.comm_eligible_date,&#13;&#10;                TO_DATE(btr.group_number::varchar(8), 'YYYYMMDD'),&#13;&#10;                enrollee_initial_order.order_id,&#13;&#10;                enrollee_initial_order.commissionable_date&#13;&#10;            ) enrollee_totals&#13;&#10;            LEFT JOIN (&#13;&#10;                SELECT&#13;&#10;                    sponsor1.account_id,&#13;&#10;                    sponsor1.comm_eligible_date,&#13;&#10;                    TO_DATE(btr1.group_number::varchar(8), 'YYYYMMDD') AS qs_paid_date,&#13;&#10;                    enrollments1.account_id AS enrollee_account_id,&#13;&#10;                    enrollments1.effective_from_date,&#13;&#10;                    SUM(enrollee_initial_order1.qualifying_volume - COALESCE(enrollee_return_qs_vol1.qualifying_volume, 0)) AS enrollee_qualifying_volume,&#13;&#10;                    ROW_NUMBER() OVER (PARTITION BY sponsor1.account_id ORDER BY enrollments1.effective_from_date) AS rn&#13;&#10;                FROM&#13;&#10;                    dw_accounts sponsor1&#13;&#10;                    LEFT JOIN btrdaily btr1 ON sponsor1.account_id = btr1.dist_id AND btr1.bonus_type = 3&#13;&#10;                    LEFT JOIN (&#13;&#10;                        SELECT&#13;&#10;                            account_sponsor_id,&#13;&#10;                            account_id,&#13;&#10;                            effective_from_dtz_pt::DATE AS effective_from_date,&#13;&#10;                            ROW_NUMBER() OVER (PARTITION BY account_id ORDER BY effective_from_dtz_pt) AS rn&#13;&#10;                        FROM&#13;&#10;                            dw_enrollment_history&#13;&#10;                        WHERE&#13;&#10;                            account_sponsor_id &gt; 5&#13;&#10;                            AND slevel = 1&#13;&#10;                        ) enrollments1 ON sponsor1.account_id = enrollments1.account_sponsor_id&#13;&#10;--                            AND enrollments1.rn = 1&#13;&#10;                            AND enrollments1.effective_from_date BETWEEN sponsor1.comm_eligible_date AND sponsor1.comm_eligible_date + INTERVAL '29 days'&#13;&#10;                            INNER JOIN dw_orders enrollee_initial_order1 ON enrollments1.account_id = enrollee_initial_order1.account_id&#13;&#10;                                AND enrollee_initial_order1.is_inception_volume IS TRUE&#13;&#10;                                AND enrollee_initial_order1.is_fraud IS FALSE&#13;&#10;                                AND enrollee_initial_order1.order_status BETWEEN 2 AND 8&#13;&#10;                                AND enrollee_initial_order1.commissionable_date BETWEEN sponsor1.comm_eligible_date - INTERVAL '29 days' AND sponsor1.comm_eligible_date + INTERVAL '29 days'&#13;&#10;                                AND enrollee_initial_order1.commissionable_date &lt;= TO_DATE(COALESCE(btr1.group_number::varchar(8), '209912'), 'YYYYMMDD')&#13;&#10;                            LEFT JOIN dw_return_orders enrollee_return_qs_vol1 ON enrollee_initial_order1.order_id = enrollee_return_qs_vol1.order_id&#13;&#10;                                AND enrollee_return_qs_vol1.order_status BETWEEN 2 AND 8&#13;&#10;                                AND enrollee_return_qs_vol1.is_fraud IS FALSE&#13;&#10;                                AND enrollee_return_qs_vol1.commissionable_date BETWEEN sponsor1.comm_eligible_date - INTERVAL '29 days' AND sponsor1.comm_eligible_date + INTERVAL '29 days'&#13;&#10;                                AND enrollee_return_qs_vol1.commissionable_date &lt;= TO_DATE(COALESCE(btr1.group_number::varchar(8), '209912'), 'YYYYMMDD')&#13;&#10;                WHERE&#13;&#10;                    sponsor1.comm_eligible_date &gt;= '2018-06-29'&#13;&#10;                GROUP BY&#13;&#10;                    sponsor1.account_id,&#13;&#10;                    sponsor1.comm_eligible_date,&#13;&#10;                    TO_DATE(btr1.group_number::varchar(8), 'YYYYMMDD'),&#13;&#10;                    enrollments1.account_id,&#13;&#10;                    enrollments1.effective_from_date&#13;&#10;                HAVING&#13;&#10;                    SUM(enrollee_initial_order1.qualifying_volume - COALESCE(enrollee_return_qs_vol1.qualifying_volume, 0)) &gt;= 120&#13;&#10;                ORDER BY&#13;&#10;                    sponsor1.comm_eligible_date,&#13;&#10;                    sponsor1.account_id,&#13;&#10;                    enrollments1.account_id&#13;&#10;                ) fourth_enrollee_date ON enrollee_totals.account_id = fourth_enrollee_date.account_id&#13;&#10;                    AND fourth_enrollee_date.rn = 4&#13;&#10;            LEFT JOIN (&#13;&#10;                SELECT&#13;&#10;                    dwo1.account_id,&#13;&#10;                    date_trunc('month', dwo1.commissionable_date)::DATE AS commissionable_month,&#13;&#10;                    SUM(dwo1.qualifying_volume - COALESCE(dwo1.in_period_return_qualifying_volume, 0)) AS ppv&#13;&#10;                FROM&#13;&#10;                    dw_orders dwo1&#13;&#10;                    INNER JOIN dw_accounts dwa1 ON dwo1.account_id = dwa1.account_id&#13;&#10;                        AND dwo1.commissionable_date BETWEEN dwa1.comm_eligible_date AND (dwa1.comm_eligible_date + INTERVAL '29 days')&#13;&#10;                WHERE&#13;&#10;                    dwo1.is_fraud IS FALSE&#13;&#10;                    AND dwo1.order_status BETWEEN 2 AND 8&#13;&#10;                GROUP BY&#13;&#10;                    dwo1.account_id,&#13;&#10;                    date_trunc('month', dwo1.commissionable_date)::DATE&#13;&#10;                ) post_comm_month_sponsor_vol ON enrollee_totals.account_id = post_comm_month_sponsor_vol.account_id&#13;&#10;                    AND date_trunc('month', (enrollee_totals.comm_eligible_date + INTERVAL '29 days'))::DATE = post_comm_month_sponsor_vol.commissionable_month&#13;&#10;            LEFT JOIN (&#13;&#10;                SELECT&#13;&#10;                    dwo1.account_id,&#13;&#10;                    date_trunc('month', dwo1.commissionable_date)::DATE AS commissionable_month,&#13;&#10;                    SUM(dwo1.qualifying_volume - COALESCE(dwo1.in_period_return_qualifying_volume, 0)) AS ppv&#13;&#10;                FROM&#13;&#10;                    dw_orders dwo1&#13;&#10;                    INNER JOIN dw_accounts dwa1 ON dwo1.account_id = dwa1.account_id&#13;&#10;                        AND dwo1.commissionable_date BETWEEN date_trunc('month', dwa1.comm_eligible_date) - INTERVAL '1 month' AND dwa1.comm_eligible_date + INTERVAL '29 days'&#13;&#10;                WHERE&#13;&#10;                    dwo1.is_fraud IS FALSE&#13;&#10;                    AND dwo1.order_status BETWEEN 2 AND 8&#13;&#10;                GROUP BY&#13;&#10;                    dwo1.account_id,&#13;&#10;                    date_trunc('month', dwo1.commissionable_date)::DATE&#13;&#10;                ) comm_month_sponsor_vol ON enrollee_totals.account_id = comm_month_sponsor_vol.account_id&#13;&#10;                    AND date_trunc('month', enrollee_totals.comm_eligible_date)::DATE = comm_month_sponsor_vol.commissionable_month&#13;&#10;            LEFT JOIN (&#13;&#10;                SELECT&#13;&#10;                    dwo1.account_id,&#13;&#10;                    date_trunc('month', dwo1.commissionable_date)::DATE AS commissionable_month,&#13;&#10;                    SUM(dwo1.qualifying_volume - COALESCE(dwo1.in_period_return_qualifying_volume, 0)) AS ppv&#13;&#10;                FROM&#13;&#10;                    dw_orders dwo1&#13;&#10;                    INNER JOIN dw_accounts dwa1 ON dwo1.account_id = dwa1.account_id&#13;&#10;                        AND dwo1.commissionable_date BETWEEN date_trunc('month', dwa1.comm_eligible_date) - INTERVAL '1 month' AND dwa1.comm_eligible_date + INTERVAL '29 days'&#13;&#10;                WHERE&#13;&#10;                    dwo1.is_fraud IS FALSE&#13;&#10;                    AND dwo1.order_status BETWEEN 2 AND 8&#13;&#10;                GROUP BY&#13;&#10;                    dwo1.account_id,&#13;&#10;                    date_trunc('month', dwo1.commissionable_date)::DATE&#13;&#10;                ) prev_comm_month_sponsor_vol ON enrollee_totals.account_id = prev_comm_month_sponsor_vol.account_id&#13;&#10;                    AND date_trunc('month', enrollee_totals.comm_eligible_date - INTERVAL '1 month')::DATE = prev_comm_month_sponsor_vol.commissionable_month&#13;&#10;        GROUP BY&#13;&#10;            enrollee_totals.account_id,&#13;&#10;            enrollee_totals.enrollee_account_id,&#13;&#10;            enrollee_totals.comm_eligible_date,&#13;&#10;            enrollee_totals.qs_paid_date,&#13;&#10;            enrollee_totals.city,&#13;&#10;            enrollee_totals.state,&#13;&#10;            enrollee_totals.country_code,&#13;&#10;            enrollee_totals.initial_region,&#13;&#10;            enrollee_totals.initial_subregion,&#13;&#10;            prev_comm_month_sponsor_vol.ppv,&#13;&#10;            comm_month_sponsor_vol.ppv,&#13;&#10;            post_comm_month_sponsor_vol.ppv,&#13;&#10;            COALESCE(date_trunc('month', fourth_enrollee_date.effective_from_date), '1900-01-01')::DATE&#13;&#10;        ) sponsor_enrollments&#13;&#10;    GROUP BY&#13;&#10;        sponsor_enrollments.account_id,&#13;&#10;        sponsor_enrollments.comm_eligible_date,&#13;&#10;        sponsor_enrollments.qs_paid_date,&#13;&#10;        sponsor_enrollments.city,&#13;&#10;        sponsor_enrollments.state,&#13;&#10;        sponsor_enrollments.country_code,&#13;&#10;        sponsor_enrollments.initial_region,&#13;&#10;        sponsor_enrollments.initial_subregion,&#13;&#10;        sponsor_enrollments.ppv_30_days&#13;&#10;    ) sponsor_totals&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Aurora_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comm_eligible_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qs_paid_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country_code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="initial_region"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="initial_subregion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ppv_30_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ppv_31_45_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_count_30_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_volume_30_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_count_30_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_volume_30_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_count_31_45_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_volume_31_45_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_count_31_45_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_volume_31_45_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qs_qualified"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dw_qs_history" name="tDBInput_1">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="qs_paid_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_subregion" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="qs_qualified" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/dw_qs_history.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dw_qs_history" name="tFileOutputDelimited_1">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="qs_paid_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_subregion" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="qs_qualified" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw - dw_qs_history"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace/dw_qs_history.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/workspace&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comm_eligible_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qs_paid_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country_code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="initial_region"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="initial_subregion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ppv_30_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ppv_31_45_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_count_30_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_volume_30_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_count_30_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_volume_30_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_count_31_45_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_volume_31_45_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_count_31_45_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_volume_31_45_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qs_qualified"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comm_eligible_date"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qs_paid_date"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country_code"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="initial_region"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="initial_subregion"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ppv_30_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ppv_31_45_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_count_30_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_volume_30_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_count_30_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_volume_30_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_count_31_45_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_volume_31_45_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_count_31_45_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_volume_31_45_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qs_qualified"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dw_qs_history" name="tFileInputDelimited_1">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="qs_paid_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_subregion" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="qs_qualified" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="dw_qs_history" name="REJECT">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="qs_paid_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_subregion" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="qs_qualified" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Aurora_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Aurora_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Aurora_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Aurora_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.Aurora_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oihzhSgqw3WJdRk5ejfE0LtjG6j314KnD2+VJVifYfK7v8XQEFCS8PpGuhWYbgU+jiis"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dw_qs_history&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw - dw_qs_history"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Aurora_AdditionalParams"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comm_eligible_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qs_paid_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country_code"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="initial_region"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="initial_subregion"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ppv_30_days"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ppv_31_45_days"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_count_30_days"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_volume_30_days"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_count_30_days"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_volume_30_days"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_count_31_45_days"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qual_enrollee_volume_31_45_days"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_count_31_45_days"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_qual_enrollee_volume_31_45_days"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qs_qualified"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dw_qs_history" name="tDBOutput_1">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="qs_paid_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_subregion" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="qs_qualified" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="dw_qs_history" name="REJECT">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="qs_paid_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_subregion" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="qs_qualified" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Aurora_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Aurora_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Aurora_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Aurora_Schema"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.Aurora_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tfy4C8CzC6TiTd2vQl/EJMFmKxCGlDnEGGSeM7EeNybBiOxFmBh9cTm+bPaAg3xWRFR2"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RjOUBMcEeuSi67XXGFvgw - dw_qs_history"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dw_qs_history&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Truncate Table dw_qs_history&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Aurora_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="account_id"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dw_qs_history" name="tDBRow_1">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="qs_paid_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_subregion" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="qs_qualified" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="dw_qs_history" name="REJECT">
+      <column comment="" key="true" length="19" name="account_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="comm_eligible_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="qs_paid_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="initial_subregion" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="ppv_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_30_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_30_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="non_qual_enrollee_count_31_45_days" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="non_qual_enrollee_volume_31_45_days" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="qs_qualified" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tFileInputDelimited_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e652b61f-b5c6-4360-8e6e-00024b783f51"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SJZxG569ot8brjwQIXP/Cdpjvenm3D+aUFFmQF0QQUiH70K6C0y3PlBX31JFBMuUKKeDslU/f2IL
+malU8Vc4WQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e73cb542-a19f-4f41-969d-0fd64e294c1c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jR7YX3vLhe5pNU/KxQ3VEr2Qee9xqogC439K3P8sQnnyZkzvdD493xu8XXSg40huKM8uqJmDWrtB
+XP/mAntMTw==</DigestValue></Reference></SignedInfo><SignatureValue>SoEAnEp5G+khaKVqm/8IAzHeSvoZWI97Rk1ZhbbEORgAk8bgeFZ7bplFQ/oTINZ/UaOY2Nf0ZxVv
+KeS/SRxaXYgEsen2G8vcyu7Hs7uTtvMbES7EdQnVuLWea8Et4RopYMZqRnM5zRUfZEFNjVQ9tRTg
+Akm6iP4sbLky98i5OWRZDq/+xmID3eiPq+E2hmvnG04I+Ey+m4HLw1kokWnLfYDuRBBiFsAnV2+H
+arTSLBYU+PA+kT3n//KNKZbFTqZuOFt9EVn5kLnlS7T2wb1emqn9rh1qp+r/2SQQGG76AjHTg5Fi
+US+JpIltyF6kRKU1QnOlSHE1jBp6PFNHh3myRA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e73cb542-a19f-4f41-969d-0fd64e294c1c" Target="#_e652b61f-b5c6-4360-8e6e-00024b783f51"><Timestamp>2023-01-25 17:01:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
